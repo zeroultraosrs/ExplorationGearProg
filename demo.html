@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ladlor's Ironman Gear Progression</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 35px);
+            /* changed to define 3 columns */
+            grid-gap: 5px;
+            align-items: center;
+            justify-items: center;
+            margin: 10px;
+        }
+
+        .container>img,
+        .container>p {
+            border: 1px solid transparent;
+            width: 35px;
+            height: 35px;
+            object-fit: scale-down;
+        }
+
+        .container>p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            column-gap: 10px;
+            align-items: center;
+            /* To align arrows with the container */
+        }
+
+        .arrow {
+            margin: 0 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: fit-content;
+            transform: scale(2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="container">
+            <img src="images/Amulet_of_strength.webp" alt="Amulet of strength">
+            <img src="images/Climbing_boots.webp" alt="Climbing boots">
+        </div>
+        <div class="arrow">→</div>
+        <div class="container">
+            <img src="images/Iban's_staff_(u).webp" alt="Amulet of strength">
+            <img src="images/Protect_from_Melee.webp" alt="Climbing boots">
+        </div>
+        <div class="arrow">→</div>
+        <div class="container">
+            <img src="images/Fighter_torso.webp" alt="Fighter torso">
+            <img src="images/Granite_body.webp" alt="Granite body">
+        </div>
+        <div class="arrow">→</div>
+        <div class="container">
+            <img src="images/Helm_of_neitiznot.webp" alt="Helm_of_neitiznot">
+            <img src="images/Book_of_the_dead.webp" alt="Book_of_the_dead">
+        </div>
+        <div class="arrow">→</div>
+        <div class="container">
+            <img src="images/Dragon_defender.webp" alt="Dragon_defender">
+            <img src="images/Barrows_gloves.webp" alt="Barrows_gloves">
+        </div>
+        <div class="arrow">→</div>
+        <div class="container">
+            <img src="images/Berserker_ring_(i).webp" alt="Berserker_ring_(i)">
+            <img src="images/Piety.webp" alt="Piety">
+        </div>
+        <div class="arrow">→</div>
+        <div class="container">
+            <img src="images/Ava's_accumulator.webp" alt="Ava's_accumulator">
+            <img src="images/Chinchompa.webp" alt="Chinchompa">
+            <img src="images/Ranged_icon.webp" alt="Ranged icon">
+            <p>70</p>
+        </div>
+        <!-- Arrows and other containers continue as before -->
+    </div>
+</body>
+
+</html>
