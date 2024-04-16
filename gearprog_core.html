@@ -1,15 +1,4 @@
-<!-- 
-Some documentation
- <div class="row"> defines the row-like element,
-<div class="container"> defines the groups of items, and can contain any amount of items
-<div class="arrow">→</div>
-
-the rest is standard HTML afaik.
-
-TO DO:
-modify container such that a single image is vertically centered w.r.t row, or alternatively define a "container2" which has this property
--->
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -19,12 +8,17 @@ modify container such that a single image is vertically centered w.r.t row, or a
 </head>
 <style>
     .container {
-        /* configure grid structure */
         display: grid;
         grid-template-rows: 35px 35px;
+        /* pixel size here */
         grid-auto-columns: 35px;
         grid-auto-flow: column dense;
+    }
+
+    /* Irrelevant styles */
+    .container {
         grid-gap: 5px;
+        counter-reset: num;
         margin: 10px;
         /* background-color: cadetblue; */
     }
@@ -37,8 +31,8 @@ modify container such that a single image is vertically centered w.r.t row, or a
     }
 
     .container>img:only-child {
-        align-items: center;
-        background-color: cadetblue;
+        grid-column-start: 1;
+        grid-row-start: 1;
     }
 
     .green-background {
@@ -56,6 +50,7 @@ modify container such that a single image is vertically centered w.r.t row, or a
         /* Vertical centering */
     }
 </style>
+
 
 <style>
     .row {
@@ -260,54 +255,4 @@ modify container such that a single image is vertically centered w.r.t row, or a
             <img src="images/Ancestral_robe_top.webp" alt="ancestral robe top">
             <img src="images/Ancestral_robe_bottom.webp" alt="ancestral robe bottom">
         </div>
-        <!-- <div class="arrow">→</div>
-        <div class="container">
-            <img src="images/Masori_body_(f).webp" alt="masori body f">
-            <img src="images/Masori_chaps_(f).webp" alt="masori chaps f">
-            <img src="images/Masori_mask_(f).webp" alt="masori mask f">
-            <img src="images/Twisted_buckler.webp" alt="twisted buckler">
-            <img src="images/Zaryte_crossbow.webp" alt="zaryte crossbow">
-            <img src="images/Zaryte_vambraces.webp" alt="zaryte vambraces">
-            <img src="images/Scythe_of_vitur.webp" alt="scythe of vitur">
-            <img src="images/Avernic_defender.webp" alt="avernic defender">
-            <img src="images/Torva_platebody.webp" alt="torva platebody">
-            <img src="images/Torva_platelegs.webp" alt="torva platelegs">
-            <img src="images/Torva_full_helm.webp" alt="torva full helm">
-        </div> -->
     </div>
-    <h2>Further suggestions</h2>
-    <p>broadly applicable </p>
-    <div class="row">
-        <div class="container">
-            <img src="images/Masori_body_(f).webp" alt="masori body f">
-            <img src="images/Masori_chaps_(f).webp" alt="masori chaps f">
-            <img src="images/Masori_mask_(f).webp" alt="masori mask f">
-            <img src="images/Dizana's_quiver.webp" alt="dizana's quiver">
-            <img src="images/Torva_platebody.webp" alt="torva platebody">
-            <img src="images/Torva_platelegs.webp" alt="torva platelegs">
-            <img src="images/Torva_full_helm.webp" alt="torva full helm">
-            <img src="images/Zaryte_vambraces.webp" alt="zaryte vambraces">
-            <img src="images/Scythe_of_vitur.webp" alt="scythe of vitur">
-            <img src="images/Avernic_defender.webp" alt="avernic defender">
-            <img src="images/Saturated_heart.webp" alt="saturated heart">
-        </div>
-    </div>
-    <p>nichely applicable</p>
-    <div class="row">
-        <div class="container">
-            <img src="images/Kodai_wand.webp" alt="kodai wand">
-            <img src="images/Elidinis'_ward.webp" alt="elidinis ward">
-            <img src="images/Zaryte_crossbow.webp" alt="zaryte crossbow">
-            <img src="images/Twisted_buckler.webp" alt="twisted buckler">
-            <img src="images/Virtus_robe_top.webp" alt="virtus robe top">
-            <img src="images/Virtus_robe_bottom.webp" alt="virtus robe bottom">
-            <img src="images/Virtus_mask.webp" alt="virtus mask">
-            <img src="images/Magus_ring.webp" alt="magus ring">
-            <img src="images/Venator_ring.webp" alt="venator ring">
-            <img src="images/Bellator_ring.webp" alt="bellator ring">
-        </div>
-    </div>
-    <p>downright unreasonable</p>
-</body>
-
-</html>
