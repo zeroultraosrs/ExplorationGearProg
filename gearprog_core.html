@@ -6,40 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Gear Progression</title>
 </head>
+
 <style>
-    .container {
+    .multiple {
+        /* configure grid structure */
         display: grid;
         grid-template-rows: 35px 35px;
-        /* pixel size here */
         grid-auto-columns: 35px;
         grid-auto-flow: column dense;
-    }
-
-    /* Irrelevant styles */
-    .container {
         grid-gap: 5px;
-        counter-reset: num;
         margin: 10px;
         /* background-color: cadetblue; */
     }
 
-    .container>img {
+    .multiple>img {
         border: 2px solid;
         width: 35px;
         height: 35px;
         object-fit: scale-down
     }
 
-    .container>img:only-child {
-        grid-column-start: 1;
-        grid-row-start: 1;
+    .multiple>img:only-child {
+        align-items: center;
+        background-color: rgb(160, 95, 95);
     }
 
     .green-background {
         background-color: rgb(0, 200, 0);
     }
 
-    .container span {
+    .multiple span {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -49,9 +45,32 @@
         /* Horizontal centering */
         /* Vertical centering */
     }
+
+    .single {
+        /* configure grid structure */
+        display: flex;
+        align-items: center;
+        /* center vertically */
+        justify-content: center;
+        /* center horizontally */
+        grid-auto-columns: 35px;
+        grid-auto-flow: column dense;
+        grid-gap: 5px;
+        margin: 10px;
+        /* background-color: cadetblue; */
+    }
+
+    .single>img {
+        border: 2px solid;
+        width: 35px;
+        height: 35px;
+        object-fit: scale-down
+    }
+
+    .green-background {
+        background-color: rgb(0, 200, 0);
+    }
 </style>
-
-
 <style>
     .row {
         display: flex;
@@ -76,98 +95,98 @@
     <p>Credit to parasailer</p>
     <h2>Core gear progression</h2>
     <div class="row">
-        <div class="container">
+        <div class="multiple">
             <img src="images/Amulet_of_strength.webp" alt="amulet of strength" class="green-background">
             <img src="images/Climbing_boots.webp" alt="climbing boots" class="green-background">
         </div>
         <div class="arrow">→</div>
-        <div class="container">
+        <div class="multiple">
             <img src="images/Iban's_staff_(u).webp" alt="upgraded iban's staff">
             <img src="images/Protect_from_Melee.webp" alt="climbing boots">
         </div>
         <div class="arrow">→</div>
-        <div class="container">
+        <div class="multiple">
             <img src="images/Fighter_torso.webp" alt="fighter torso">
             <img src="images/Granite_body.webp" alt="granite body">
         </div>
         <div class="arrow">→</div>
-        <div class="container">
+        <div class="multiple">
             <img src="images/Helm_of_neitiznot.webp" alt="helm of neitiznot">
             <img src="images/Book_of_the_dead.webp" alt="book of the dead">
         </div>
         <div class="arrow">→</div>
-        <div class="container">
+        <div class="multiple">
             <img src="images/Dragon_defender.webp" alt="Dragon defender">
             <img src="images/Barrows_gloves.webp" alt="barrows gloves">
         </div>
         <div class="arrow">→</div>
-        <div class="container">
+        <div class="multiple">
             <img src="images/Berserker_ring_(i).webp" alt="imbued berserker ring">
             <img src="images/Piety.webp" alt="piety">
         </div>
         <div class="arrow">→</div>
-        <div class="container">
+        <div class="multiple">
             <img src="images/Ava's_accumulator.webp" alt="ava's accumulator">
             <img src="images/Chinchompa.webp" alt="chinchompa">
             <img src="images/Ranged_icon.webp" alt="ranged icon">
             <span>70</span>
         </div>
         <div class="arrow">→</div>
-        <div class="container">
+        <div class="multiple">
             <img src="images/Dark_altar_(Construction)_icon.webp" alt="dark altar">
             <img src="images/Pharaoh's_sceptre_(1).webp" alt="pharaoh's sceptre">
             <img src="images/Fancy_rejuvenation_pool_icon.webp" alt="fancy rejuvenation pool">
             <img src="images/Basic_jewellery_box_icon.webp" alt="basic jewellery box">
         </div>
         <div class="arrow">→</div>
-        <div class="container">
+        <div class="single">
             <img src="images/Imbued_zamorak_cape.webp" alt="imbued zamorak cape">
         </div>
         <div class="arrow">→</div>
-        <div class="container">
+        <div class="multiple">
             <img src="images/Black_mask.webp" alt="black mask">
             <img src="images/Warped_sceptre_(uncharged).webp" alt="warped sceptre">
         </div>
         <div class="arrow">→</div>
-        <div class="container">
+        <div class="multiple">
             <img src="images/Amulet_of_glory(6).webp" alt="amulet of glory">
             <img src="images/Karamja_gloves_3.webp" alt="karamja gloves 3">
             <img src="images/Broad_arrowheads_5.webp" alt="broad arrowheads">
             <img src="images/Bonecrusher.webp" alt="bonecrusher">
         </div>
         <div class="arrow">→</div>
-        <div class="container">
+        <div class="single">
             <img src="images/Ghommal's_hilt_2.webp" alt="ghommal's hilt 2">
         </div>
         <div class="arrow">→</div>
-        <div class="container">
+        <div class="multiple">
             <img src="images/Void_ranger_helm.webp" alt="void knight ranger helm">
             <img src="images/Void_knight_gloves.webp" alt="void knight gloves">
             <img src="images/Elite_void_top.webp" alt="elite void top">
             <img src="images/Elite_void_robe.webp" alt="elite void robe">
         </div>
         <div class="arrow">→</div>
-        <div class="container">
+        <div class="multiple">
             <img src="images/Crystal_helm_(Amlodd).webp" alt="crystal helm">
             <img src="images/Bow_of_faerdhinen_(c)_(Amlodd).webp" alt="bow of faerdhinen">
             <img src="images/Crystal_body_(Amlodd).webp" alt="crystal body">
             <img src="images/Crystal_legs_(Amlodd).webp" alt="">
         </div>
         <div class="arrow">→</div>
-        <div class="container">
+        <div class="single">
             <img src="images/Explorer's_ring_4.webp" alt="explorer's ring 4">
         </div>
         <div class="arrow">→</div>
-        <div class="container">
+        <div class="single">
             <img src="images/Ava's_assembler.webp" alt="ava's assembler">
         </div>
         <div class="arrow">→</div>
-        <div class="container">
+        <div class="multiple">
             <img src="images/Ancient_icon.webp" alt="ancient icon">
             <img src="images/Fire_cape.webp" alt="fire cape">
         </div>
         <div class="arrow">→</div>
-        <div class="container">
+        <div class="multiple">
             <img src="images/Occult_altar_icon.webp" alt="occult altar icon">
             <img src="images/Ornate_jewellery_box_icon.webp" alt="ornate jewellery box icon">
             <img src="images/Fairy_ring_(Construction)_icon.webp" alt="fairy ring">
@@ -176,7 +195,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="container">
+        <div class="multiple">
             <img src="images/Slayer_helmet_(i).webp" alt="slayer helmet">
             <img src="images/Zamorakian_hasta.webp" alt="zamorakian hasta">
             <img src="images/Amulet_of_torture.webp" alt="amulet of torture">
@@ -186,17 +205,17 @@
             <img src="images/Bandos_godsword.webp" alt="bandos godsword">
         </div>
         <div class="arrow">→</div>
-        <div class="container">
+        <div class="multiple">
             <img src="images/Voidwaker.webp" alt="voidwaker">
             <img src="images/Dragon_pickaxe.webp" alt="dragon pickaxe">
         </div>
         <div class="arrow">→</div>
-        <div class="container">
+        <div class="multiple">
             <img src="images/Osmumten's_fang.webp" alt="osmumten's fang">
             <img src="images/Thread_of_elidinis.webp" alt="thread of elidinis">
         </div>
         <div class="arrow">→</div>
-        <div class="container">
+        <div class="multiple">
             <img src="images/Trident_of_the_seas_(full).webp" alt="trident of the seas">
             <img src="images/Abyssal_tentacle.webp" alt="abyssal tentacle">
             <img src="images/Abyssal_whip.webp" alt="abyssal whip">
@@ -207,47 +226,47 @@
             <img src="images/Tormented_bracelet.webp" alt="tormented bracelet">
         </div>
         <div class="arrow">→</div>
-        <div class="container">
+        <div class="single">
             <img src="images/Desert_amulet_4.webp" alt="desert amulet 4">
         </div>
         <div class="arrow">→</div>
-        <div class="container">
+        <div class="multiple">
             <img src="images/Primordial_boots.webp" alt="primordial boots">
             <img src="images/Occult_necklace.webp" alt="occult necklace">
         </div>
         <div class="arrow">→</div>
-        <div class="container">
+        <div class="multiple">
             <img src="images/Toxic_blowpipe.webp" alt="toxic blowpipe">
             <img src="images/Trident_of_the_swamp.webp" alt="trident of the swamp">
         </div>
         <div class="arrow">→</div>
-        <div class="container">
+        <div class="single">
             <img src="images/Morytania_legs_4.webp" alt="morytania legs 4">
         </div>
         <div class="arrow">→</div>
-        <div class="container">
+        <div class="multiple">
             <img src="images/Dragon_hunter_lance.webp" alt="dragon hunter lance">
             <img src="images/Ferocious_gloves.webp" alt="ferocious gloves">
         </div>
         <div class="arrow">→</div>
-        <div class="container">
+        <div class="single">
             <img src="images/Ultor_ring.webp" alt="ultor ring">
         </div>
         <div class="arrow">→</div>
-        <div class="container">
+        <div class="single">
             <img src="images/Rigour.webp" alt="rigour">
         </div>
         <div class="arrow">→</div>
-        <div class="container">
+        <div class="single">
             <img src="images/Infernal_cape.webp" alt="infernal cape">
         </div>
         <div class="arrow">→</div>
-        <div class="container">
+        <div class="multiple">
             <img src="images/Tumeken's_shadow.webp" alt="tumeken's shadow">
             <img src="images/Lightbearer.webp" alt="lightbearer">
         </div>
         <div class="arrow">→</div>
-        <div class="container">
+        <div class="multiple">
             <img src="images/Twisted_bow.webp" alt="twisted bow">
             <img src="images/Dragon_claws.webp" alt="dragon claws">
             <img src="images/Ancestral_hat.webp" alt="ancestral hat">
