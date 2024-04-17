@@ -3,6 +3,11 @@
     border: 2px solid;
     width: 35px;
     height: 35px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: bisque; */
 }
 
 .skill>img {
@@ -12,13 +17,10 @@
 }
 
 .skill>span {
-    display: block;
-    width: 100%;
-    height: 100%;
+    font-size: 0.8rem;
 }
 
 .multiple {
-    /* configure grid structure */
     display: grid;
     grid-template-rows: 35px 35px;
     grid-auto-columns: 35px;
@@ -34,6 +36,14 @@
     height: 35px;
     object-fit: scale-down
 }
+
+.multiple>skill {
+    border: 2px solid;
+    width: 35px;
+    height: 35px;
+    object-fit: scale-down
+}
+
 
 .multiple>img:only-child {
     align-items: center;
@@ -53,44 +63,14 @@
     border: 2px solid;
 }
 
-.single {
-    /* configure grid structure */
-    display: flex;
-    align-items: center;
-    /* center vertically */
-    justify-content: center;
-    /* center horizontally */
-    grid-auto-columns: 35px;
-    grid-auto-flow: column dense;
-    grid-gap: 5px;
-    margin: 10px;
-    background-color: cadetblue;
-}
-
-.single>img {
-    border: 2px solid;
-    width: 35px;
-    height: 35px;
-    object-fit: scale-down;
-}
-
 .row>img {
     margin: 10px;
-    background-color: aquamarine;
-
+    /* background-color: aquamarine; */
     border: 2px solid;
     width: 35px;
     height: 35px;
     object-fit: scale-down;
 }
-
-.single>a {
-    border: 2px solid;
-    width: 35px;
-    height: 35px;
-    object-fit: scale-down
-}
-
 
 .green-background {
     background-color: rgb(0, 200, 0);
