@@ -14,90 +14,9 @@ the rest is standard HTML afaik.
 <head>
     <meta charset="=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Gear Progression</title>
+    <title>Speculative Gear Progression</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<style>
-    .multiple {
-        /* configure grid structure */
-        display: grid;
-        grid-template-rows: 35px 35px;
-        grid-auto-columns: 35px;
-        grid-auto-flow: column dense;
-        grid-gap: 5px;
-        margin: 10px;
-        /* background-color: cadetblue; */
-    }
-
-    .multiple>img {
-        border: 2px solid;
-        width: 35px;
-        height: 35px;
-        object-fit: scale-down
-    }
-
-    .multiple>img:only-child {
-        align-items: center;
-        background-color: rgb(160, 95, 95);
-    }
-
-    .green-background {
-        background-color: rgb(0, 200, 0);
-    }
-
-    .multiple span {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 35px;
-        height: 35px;
-        border: 2px solid;
-        /* Horizontal centering */
-        /* Vertical centering */
-    }
-
-    .single {
-        /* configure grid structure */
-        display: flex;
-        align-items: center;
-        /* center vertically */
-        justify-content: center;
-        /* center horizontally */
-        grid-auto-columns: 35px;
-        grid-auto-flow: column dense;
-        grid-gap: 5px;
-        margin: 10px;
-        /* background-color: cadetblue; */
-    }
-
-    .single>img {
-        border: 2px solid;
-        width: 35px;
-        height: 35px;
-        object-fit: scale-down
-    }
-
-    .green-background {
-        background-color: rgb(0, 200, 0);
-    }
-</style>
-<style>
-    .row {
-        display: flex;
-        flex-direction: row;
-        column-gap: 10px;
-        /* background-color: blue; */
-    }
-</style>
-<style>
-    .arrow {
-        margin: 35px 0;
-        justify-content: center;
-        height: fit-content;
-        align-items: bottom;
-        scale: 2;
-        /* background-color: red; */
-    }
-</style>
 
 <body>
     <h1>Ladlor's Ironman Gear Progression</h1>
@@ -105,6 +24,16 @@ the rest is standard HTML afaik.
     <h2>Core gear progression</h2>
     <div class="row">
         <div class="multiple">
+            <div class="skill">
+                <img src="images/Slayer_icon.webp" alt="idk">
+                <span>69</span>
+            </div>
+        </div>
+        <div class="multiple">
+            <div class="item">
+                <img src="images/Amulet_of_strength.webp" alt="amulet of strength">
+                <span>69</span>
+            </div>
             <img src="images/Amulet_of_strength.webp" alt="amulet of strength">
             <img src="images/Climbing_boots.webp" alt="climbing boots">
             <img src="images/Infinity_top.webp" alt="infinity top">
@@ -164,6 +93,8 @@ the rest is standard HTML afaik.
             <img src="images/Amulet_of_glory(6).webp" alt="amulet of glory">
             <img src="images/Piety.webp" alt="piety">
             <img src="images/Broad_arrowheads_5.webp" alt="broad arrowheads">
+            <img src="images/Slayer_icon.webp" alt="slayer">
+            <span>69</span>
         </div>
         <div class="arrow">→</div>
         <div class="multiple">
@@ -218,11 +149,11 @@ the rest is standard HTML afaik.
         </div>
         <div class="arrow">→</div>
         <div class="multiple">
+            <img src="images/Lizardmen_icon.webp" alt="lizardmen">
+            <img src="images/Black_demon_icon.webp" alt="black demon">
             <img src="images/Slayer_helmet_(i).webp" alt="slayer helmet">
             <img src="images/Ancient_icon.webp" alt="ancient icon">
             <img src="images/Arclight.webp" alt="arclight">
-            <img src="images/Lizardmen_icon.webp" alt="lizardmen">
-            <img src="images/Black_demon_icon.webp" alt="black demon">
         </div>
         <div class="arrow">→</div>
         <div class="single">
@@ -232,13 +163,13 @@ the rest is standard HTML afaik.
         <div class="multiple">
             <img src="images/Bandos_chestplate.webp" alt="bandos chestplate">
             <img src="images/Bandos_tassets.webp" alt="bandos tassets">
-            <img src="images/Zamorakian_hasta.webp" alt="zamorakian hasta">
             <img src="images/Bandos_godsword.webp" alt="bandos godsword">
         </div>
         <div class="arrow">→</div>
         <div class="multiple">
             <img src="images/Amulet_of_torture.webp" alt="amulet of torture">
             <img src="images/Tormented_bracelet.webp" alt="tormented bracelet">
+            <img src="images/Zamorakian_hasta.webp" alt="zamorakian hasta">
         </div>
         <div class="arrow">→</div>
         <div class="multiple">
@@ -257,9 +188,7 @@ the rest is standard HTML afaik.
             <img src="images/Augury.png" alt="augury">
         </div>
         <div class="arrow">→</div>
-        <div class="single">
-            <img src="images/Ring_of_suffering_(ri).webp" alt="ring of suffering">
-        </div>
+        <img src="images/Ring_of_suffering_(ri).webp" alt="ring of suffering">
         <div class="arrow">→</div>
         <div class="single">
             <img src="images/Toxic_blowpipe.webp" alt="toxic blowpipe">
@@ -269,81 +198,91 @@ the rest is standard HTML afaik.
             <img src="images/Infernal_cape.webp" alt="infernal cape">
         </div>
         <div class="arrow">→</div>
+        <div class="single">
+            <img src="images/Ghommal's_hilt_4.webp" alt="ghommal's hilt 4">
+        </div>
+        <div class="arrow">→</div>
         <div class="multiple">
-            <img src="images/Trident_of_the_seas_(full).webp" alt="trident of the seas">
             <img src="images/Abyssal_tentacle.webp" alt="abyssal tentacle">
+            <img src="images/Trident_of_the_seas_(full).webp" alt="trident of the seas">
             <img src="images/Abyssal_whip.webp" alt="abyssal whip">
             <img src="images/Neitiznot_faceguard.webp" alt="neitiznot faceguard">
-            <img src="images/Dragon_boots.webp" alt="dragon boots">
             <img src="images/Dragon_warhammer.webp" alt="dragon warhammer">
+            <img src="images/Dragon_boots.webp" alt="dragon boots">
+        </div>
+        <div class="arrow">→</div>
+        <div class="multiple">
+            <img src="images/Desert_amulet_4.webp" alt="desert amulet 4">
+            <img src="images/Rada's_blessing_4.webp" alt="rada's blessing 4">
         </div>
         <div class="arrow">→</div>
         <div class="multiple">
             <img src="images/Primordial_boots.webp" alt="primordial boots">
             <img src="images/Occult_necklace.webp" alt="occult necklace">
-        </div>
-        <div class="arrow">→</div>
-        <div class="single">
-            <img src="images/Trident_of_the_swamp.webp" alt="trident of the swamp">
-        </div>
-        <div class="arrow">→</div>
-        <div class="single">
-            <img src="images/Morytania_legs_4.webp" alt="morytania legs 4">
+            <img src="images/Achievement_diary_cape_(t).webp" alt="achievement diary cape">
         </div>
         <div class="arrow">→</div>
         <div class="multiple">
+            <img src="images/Trident_of_the_swamp.webp" alt="trident of the swamp">
             <img src="images/Dragon_hunter_lance.webp" alt="dragon hunter lance">
             <img src="images/Ferocious_gloves.webp" alt="ferocious gloves">
         </div>
-        <div class="arrow">→</div>
+        <!-- <div class="arrow">→</div>
+            <div class="multiple">
+                <img src="images/Masori_body_(f).webp" alt="masori body f">
+                <img src="images/Masori_chaps_(f).webp" alt="masori chaps f">
+                <img src="images/Masori_mask_(f).webp" alt="masori mask f">
+                <img src="images/Twisted_buckler.webp" alt="twisted buckler">
+                <img src="images/Zaryte_crossbow.webp" alt="zaryte crossbow">
+                <img src="images/Zaryte_vambraces.webp" alt="zaryte vambraces">
+                <img src="images/Scythe_of_vitur.webp" alt="scythe of vitur">
+                <img src="images/Avernic_defender.webp" alt="avernic defender">
+                <img src="images/Torva_platebody.webp" alt="torva platebody">
+                <img src="images/Torva_platelegs.webp" alt="torva platelegs">
+                <img src="images/Torva_full_helm.webp" alt="torva full helm">
+            </div> -->
+    </div>
+    <div class="row">
         <div class="single">
             <img src="images/Ultor_ring.webp" alt="ultor ring">
         </div>
         <div class="arrow">→</div>
         <div class="multiple">
+            <img src="images/Dizana's_quiver.webp" alt="dizana's quiver">
+            <img src="images/Avernic_defender.webp" alt="avernic defender">
+        </div>
+        <div class="arrow">→</div>
+        <div class="multiple">
             <img src="images/Tumeken's_shadow.webp" alt="tumeken's shadow">
+            <img src="images/Elidinis'_ward.webp" alt="elidinis' ward">
+            <img src="images/Magus_ring.webp" alt="magus ring">
         </div>
         <div class="arrow">→</div>
         <div class="multiple">
             <img src="images/Twisted_bow.webp" alt="twisted bow">
             <img src="images/Dragon_claws.webp" alt="dragon claws">
             <img src="images/Ancestral_hat.webp" alt="ancestral hat">
-            <img src="images/Augury.png" alt="augury">
+            <img src="images/Elder_maul.webp" alt="elder maul">
             <img src="images/Ancestral_robe_top.webp" alt="ancestral robe top">
             <img src="images/Ancestral_robe_bottom.webp" alt="ancestral robe bottom">
         </div>
-        <!-- <div class="arrow">→</div>
+        <div class="arrow">→</div>
         <div class="multiple">
             <img src="images/Masori_body_(f).webp" alt="masori body f">
             <img src="images/Masori_chaps_(f).webp" alt="masori chaps f">
             <img src="images/Masori_mask_(f).webp" alt="masori mask f">
-            <img src="images/Twisted_buckler.webp" alt="twisted buckler">
-            <img src="images/Zaryte_crossbow.webp" alt="zaryte crossbow">
+            <img src="images/Venator_ring.webp" alt="venator ring">
             <img src="images/Zaryte_vambraces.webp" alt="zaryte vambraces">
-            <img src="images/Scythe_of_vitur.webp" alt="scythe of vitur">
-            <img src="images/Avernic_defender.webp" alt="avernic defender">
+            <img src="images/Saturated_heart.webp" alt="saturated heart">
             <img src="images/Torva_platebody.webp" alt="torva platebody">
             <img src="images/Torva_platelegs.webp" alt="torva platelegs">
             <img src="images/Torva_full_helm.webp" alt="torva full helm">
-        </div> -->
+            <img src="images/Scythe_of_vitur.webp" alt="scythe of vitur">
+            <img src="images/Ghommal's_avernic_defender_5.webp" alt="Ghommal's avernic defender 5">
+        </div>
     </div>
     <h2>Further suggestions</h2>
     <p>broadly applicable </p>
-    <div class="row">
-        <div class="multiple">
-            <img src="images/Masori_body_(f).webp" alt="masori body f">
-            <img src="images/Masori_chaps_(f).webp" alt="masori chaps f">
-            <img src="images/Masori_mask_(f).webp" alt="masori mask f">
-            <img src="images/Dizana's_quiver.webp" alt="dizana's quiver">
-            <img src="images/Torva_platebody.webp" alt="torva platebody">
-            <img src="images/Torva_platelegs.webp" alt="torva platelegs">
-            <img src="images/Torva_full_helm.webp" alt="torva full helm">
-            <img src="images/Zaryte_vambraces.webp" alt="zaryte vambraces">
-            <img src="images/Scythe_of_vitur.webp" alt="scythe of vitur">
-            <img src="images/Avernic_defender.webp" alt="avernic defender">
-            <img src="images/Saturated_heart.webp" alt="saturated heart">
-        </div>
-    </div>
     <p>nichely applicable</p>
     <div class="row">
         <div class="multiple">
@@ -355,10 +294,11 @@ the rest is standard HTML afaik.
             <img src="images/Virtus_robe_bottom.webp" alt="virtus robe bottom">
             <img src="images/Virtus_mask.webp" alt="virtus mask">
             <img src="images/Magus_ring.webp" alt="magus ring">
-            <img src="images/Venator_ring.webp" alt="venator ring">
             <img src="images/Bellator_ring.webp" alt="bellator ring">
         </div>
+
     </div>
+
     <!-- <p>downright unreasonable</p> -->
 </body>
 

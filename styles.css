@@ -1,0 +1,114 @@
+.skill {
+    /* background-color: blueviolet; */
+    border: 2px solid;
+    width: 35px;
+    height: 35px;
+}
+
+.skill>img {
+    width: 20px;
+    height: 20px;
+    object-fit: scale-down
+}
+
+.skill>span {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.multiple {
+    /* configure grid structure */
+    display: grid;
+    grid-template-rows: 35px 35px;
+    grid-auto-columns: 35px;
+    grid-auto-flow: column dense;
+    grid-gap: 5px;
+    margin: 10px;
+    /* background-color: cadetblue; */
+}
+
+.multiple>img {
+    border: 2px solid;
+    width: 35px;
+    height: 35px;
+    object-fit: scale-down
+}
+
+.multiple>img:only-child {
+    align-items: center;
+    background-color: rgb(160, 95, 95);
+}
+
+.green-background {
+    background-color: rgb(0, 200, 0);
+}
+
+.multiple>span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border: 2px solid;
+}
+
+.single {
+    /* configure grid structure */
+    display: flex;
+    align-items: center;
+    /* center vertically */
+    justify-content: center;
+    /* center horizontally */
+    grid-auto-columns: 35px;
+    grid-auto-flow: column dense;
+    grid-gap: 5px;
+    margin: 10px;
+    background-color: cadetblue;
+}
+
+.single>img {
+    border: 2px solid;
+    width: 35px;
+    height: 35px;
+    object-fit: scale-down;
+}
+
+.row>img {
+    margin: 10px;
+    background-color: aquamarine;
+
+    border: 2px solid;
+    width: 35px;
+    height: 35px;
+    object-fit: scale-down;
+}
+
+.single>a {
+    border: 2px solid;
+    width: 35px;
+    height: 35px;
+    object-fit: scale-down
+}
+
+
+.green-background {
+    background-color: rgb(0, 200, 0);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
+    /* background-color: blue; */
+}
+
+.arrow {
+    margin: 0;
+    justify-content: center;
+    height: fit-content;
+    align-items: bottom;
+    scale: 2;
+    /* background-color: red; */
+}
