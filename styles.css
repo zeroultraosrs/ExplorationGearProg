@@ -1,8 +1,9 @@
+/* all thing assumed 35 px x 40px*/
 .skill {
     /* background-color: blueviolet; */
     border: 2px solid;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -22,8 +23,8 @@
 
 .multiple {
     display: grid;
-    grid-template-rows: 35px 35px;
-    grid-auto-columns: 35px;
+    grid-template-rows: 40px 40px;
+    grid-auto-columns: 40px;
     grid-auto-flow: column dense;
     grid-gap: 5px;
     margin: 10px;
@@ -32,15 +33,15 @@
 
 .multiple>img {
     border: 2px solid;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     object-fit: scale-down
 }
 
 .multiple>skill {
     border: 2px solid;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     object-fit: scale-down
 }
 
@@ -58,8 +59,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     border: 2px solid;
 }
 
@@ -67,8 +68,8 @@
     margin: 10px;
     /* background-color: aquamarine; */
     border: 2px solid;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     object-fit: scale-down;
 }
 
