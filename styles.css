@@ -64,24 +64,27 @@
     border: 2px solid;
 }
 
-.row>img {
+.flex-container>img {
     margin: 10px;
-    /* background-color: aquamarine; */
     border: 2px solid;
     width: 40px;
     height: 40px;
     object-fit: scale-down;
+    /* background-color: aquamarine; */
 }
 
 .green-background {
     background-color: rgb(0, 200, 0);
 }
 
-.row {
+.flex-container {
+    margin: auto;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
+    max-width: 1000px;
     column-gap: 10px;
     align-items: center;
+    justify-content: center;
     /* background-color: blue; */
 }
 
