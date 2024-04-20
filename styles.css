@@ -27,7 +27,7 @@
     grid-auto-columns: 40px;
     grid-auto-flow: column dense;
     grid-gap: 5px;
-    margin: 10px;
+    margin: 2px;
     /* background-color: cadetblue; */
 }
 
@@ -35,7 +35,8 @@
     border: 2px solid;
     width: 40px;
     height: 40px;
-    object-fit: scale-down
+    object-fit: scale-down;
+    /* background-color: aqua; */
 }
 
 .multiple>skill {
@@ -64,32 +65,58 @@
     border: 2px solid;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    /* column-gap: 10px; */
+    /* background-color: blue; */
+}
+
 .row>img {
-    margin: 10px;
-    /* background-color: aquamarine; */
+    margin: 20px;
     border: 2px solid;
     width: 40px;
     height: 40px;
     object-fit: scale-down;
+    /* background-color: aquamarine; */
 }
 
-.green-background {
-    background-color: rgb(0, 200, 0);
-}
-
-.row {
+.row-reverse {
     display: flex;
-    flex-direction: row;
-    column-gap: 10px;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: center;
     align-items: center;
-    /* background-color: blue; */
+    /* column-gap: 10px; */
+    /* background-color: red; */
+}
+
+.row-reverse>img {
+    margin: 20px;
+    border: 2px solid;
+    width: 40px;
+    height: 40px;
+    object-fit: scale-down;
+    /* background-color: aquamarine; */
 }
 
 .arrow {
-    margin: 0;
+    display: flex;
     justify-content: center;
-    height: fit-content;
-    align-items: bottom;
-    scale: 2;
-    /* background-color: red; */
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    /* background-color: yellow; */
+    font-size: 30px;
+}
+
+.row-arrow {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
