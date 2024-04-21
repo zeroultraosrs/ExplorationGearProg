@@ -65,13 +65,19 @@
     border: 2px solid;
 }
 
+
+.green-background {
+    background-color: rgb(0, 200, 0);
+}
+
 .flex-container {
+    /* margin: auto; */
     display: flex;
-    flex-direction: flex-container;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-flow: row wrap;
+    max-width: 1000px;
+    column-gap: 10px;
     align-items: center;
-    /* column-gap: 10px; */
+    justify-content: center;
     /* background-color: blue; */
 }
 
