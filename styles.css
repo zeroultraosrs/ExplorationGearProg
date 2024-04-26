@@ -75,13 +75,14 @@
     display: flex;
     flex-flow: row wrap;
     column-gap: 10px;
+    row-gap: 50px;
     align-items: center;
     justify-content: center;
     /* background-color: blue; */
 }
 
 .flex-container>img {
-    margin: 20px;
+    /* margin: 20px; */
     border: 2px solid;
     width: 40px;
     height: 40px;
