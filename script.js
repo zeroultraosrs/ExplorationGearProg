@@ -1,12 +1,22 @@
 // Get the parent element that contains all the images
-var imagesContainer = document.querySelector(".flex-container");
+// Get all elements with the "skill" class
+var skillContainers = document.querySelectorAll(".skill");
 
-// Add click event listener to the parent element
-imagesContainer.addEventListener("click", function (event) {
-    // Check if the clicked element is an image
-    console.log("Clicked element:", event.target);
-    if (event.target.tagName === "IMG" || event.target.classList.contains("skill")) {
+// Add click event listener to each skill container
+skillContainers.forEach(function (container) {
+    container.addEventListener("click", function (event) {
+        // Toggle the "green-background" class on the clicked skill container
+        container.classList.toggle("green-background");
+    });
+});
+
+// Get all images outside the "skill" containers
+var imagesOutsideSkill = document.querySelectorAll(".flex-container img:not(.skill img)");
+
+// Add click event listener to each image outside the "skill" containers
+imagesOutsideSkill.forEach(function (image) {
+    image.addEventListener("click", function (event) {
         // Toggle the "green-background" class on the clicked image
-        event.target.classList.toggle("green-background");
-    }
+        image.classList.toggle("green-background");
+    });
 });
