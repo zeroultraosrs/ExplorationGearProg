@@ -5,7 +5,7 @@ var imagesContainer = document.querySelector(".flex-container");
 imagesContainer.addEventListener("click", function (event) {
     // Check if the clicked element is an image
     console.log("Clicked element:", event.target);
-    if (event.target.tagName === "IMG" || EventSource.target.classList.contains("skill")) {
+    if (event.target.tagName === "IMG" || event.target.classList.contains("skill")) {
         // Toggle the "green-background" class on the clicked image
         event.target.classList.toggle("green-background");
     }
