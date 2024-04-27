@@ -8,7 +8,8 @@ skillContainers.forEach(function (container, index) {
         // Toggle the "green-background" class on the clicked skill container
         container.classList.toggle("green-background");
         // Save item background in local storage
-        localStorage.setItem('containerIndex' + index, container.classList.contains('green-background') ? "on" : "off");
+        backgroundStates.skillContainers[index] = container.classList.contains('green-background') ? "on" : "off";
+        localStorage.setItem('backgroundStates', JSON.stringify(backgroundStates));
     });
 });
 
@@ -21,26 +22,30 @@ imagesOutsideSkill.forEach(function (image, index) {
         // Toggle the "green-background" class on the clicked image
         image.classList.toggle("green-background");
         // Save item background in local storage
-        localStorage.setItem('imageIndex' + index, image.classList.contains('green-background') ? "on" : "off");
+        backgroundStates.imagesOutsideSkill[index] = image.classList.contains('green-background') ? "on" : "off";
+        localStorage.setItem('backgroundStates', JSON.stringify(backgroundStates));
     });
 });
 
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize or load the state from localStorage
+    var savedBackgroundStates = JSON.parse(localStorage.getItem('backgroundStates'));
+    var backgroundStates = savedBackgroundStates || { skillContainers: [], imagesOutsideSkill: [] };
+
+    // Set item backgrounds on load
     skillContainers.forEach((container, index) => {
-        const background = localStorage.getItem('containerIndex' + index);
-        if (background == "on") {
+        if (backgroundStates.skillContainers[index] === "on") {
             container.classList.add('green-background');
         } else {
             container.classList.remove('green-background');
         }
     });
     imagesOutsideSkill.forEach((image, index) => {
-        const background = localStorage.getItem('imageIndex' + index);
-        if (background == "on") {
+        if (backgroundStates.imagesOutsideSkill[index] === "on") {
             image.classList.add('green-background');
         } else {
             image.classList.remove('green-background');
         }
     });
-}
+});
