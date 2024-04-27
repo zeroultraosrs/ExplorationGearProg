@@ -25,8 +25,8 @@ imagesOutsideSkill.forEach(function (image, index) {
     });
 });
 
-// Set item backgrounds on load
-window.onload = function() {
+
+document.addEventListener('DOMContentLoaded', function() {
     skillContainers.forEach((container, index) => {
         const background = localStorage.getItem('containerIndex' + index);
         if (background == "on") {
