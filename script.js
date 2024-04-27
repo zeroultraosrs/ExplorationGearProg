@@ -27,12 +27,11 @@ imagesOutsideSkill.forEach(function (image, index) {
     });
 });
 
+// Initialize or load the state from localStorage
+var savedBackgroundStates = JSON.parse(localStorage.getItem('backgroundStates'));
+var backgroundStates = savedBackgroundStates || { skillContainers: [], imagesOutsideSkill: [] };
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize or load the state from localStorage
-    var savedBackgroundStates = JSON.parse(localStorage.getItem('backgroundStates'));
-    var backgroundStates = savedBackgroundStates || { skillContainers: [], imagesOutsideSkill: [] };
-
     // Set item backgrounds on load
     skillContainers.forEach((container, index) => {
         if (backgroundStates.skillContainers[index] === "on") {
