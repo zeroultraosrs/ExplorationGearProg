@@ -1,24 +1,27 @@
-/* all thing assumed 35 px x 40px*/
+/* All elements are assumed to be 35px x 40px */
+
+/* Styles for skill containers */
 .skill {
     border: 2px solid;
     width: 40px;
     height: 40px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
 .skill>img {
     width: 20px;
     height: 20px;
-    object-fit: scale-down
+    object-fit: scale-down;
 }
 
 .skill>span {
     font-size: 0.8rem;
 }
 
+/* Styles for multiple items container */
 .multiple {
     display: grid;
     grid-template-rows: 40px 40px;
@@ -26,6 +29,7 @@
     grid-auto-flow: column dense;
     grid-gap: 5px;
     margin: 2px;
+    /* Optional background color */
     /* background-color: cadetblue; */
 }
 
@@ -34,26 +38,36 @@
     width: 40px;
     height: 40px;
     object-fit: scale-down;
+    /* Optional background color */
     /* background-color: aqua; */
 }
 
-.multiple>skill {
+/* Corrected selector for .skill inside .multiple */
+.multiple>.skill {
     border: 2px solid;
     width: 40px;
     height: 40px;
-    object-fit: scale-down
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-
+/* Styles for single child images inside .multiple */
 .multiple>img:only-child {
+    /* Center alignment */
+    display: flex;
+    justify-content: center;
     align-items: center;
     background-color: rgb(160, 95, 95);
 }
 
+/* Green background class for toggled elements */
 .green-background {
     background-color: rgb(0, 200, 0);
 }
 
+/* Styles for span elements inside .multiple */
 .multiple>span {
     display: flex;
     justify-content: center;
@@ -63,49 +77,76 @@
     border: 2px solid;
 }
 
-
-.green-background {
-    background-color: rgb(0, 200, 0);
-}
-
+/* Styles for the main flex container */
 .flex-container {
-    /* margin: auto; */
     display: flex;
     flex-flow: row wrap;
     column-gap: 10px;
     row-gap: 50px;
     align-items: center;
     justify-content: center;
+    /* Optional background color */
     /* background-color: blue; */
 }
 
 .flex-container>img {
-    /* margin: 20px; */
     border: 2px solid;
     width: 40px;
     height: 40px;
     object-fit: scale-down;
+    /* Optional background color */
     /* background-color: aquamarine; */
 }
 
+/* Styles for arrow elements */
 .arrow {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40px;
     height: 40px;
-    /* background-color: yellow; */
     font-size: 30px;
+    /* Optional background color */
+    /* background-color: yellow; */
 }
 
-h1 {
-    text-align: center;
-}
-
-h2 {
-    text-align: center;
-}
-
+/* Center alignment for headings and paragraphs */
+h1,
+h2,
 p {
     text-align: center;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #2c2c2c;
+    /* Darker background for better contrast */
+    color: #e0e0e0;
+    /* Softer light text to reduce eye strain */
+}
+
+/* Adjust other elements as needed */
+body.dark-mode .skill,
+body.dark-mode .multiple>img,
+body.dark-mode .flex-container>img {
+    border-color: #aaaaaa;
+    /* Light gray borders for a softer look */
+}
+
+body.dark-mode .arrow {
+    color: #e0e0e0;
+    /* Softer light arrow color */
+}
+
+body.dark-mode .green-background {
+    background-color: #008000;
+    /* Brightened green for better visibility */
+}
+
+/* Style for the dark mode toggle button in dark mode */
+body.dark-mode #dark-mode-toggle {
+    background-color: #555555;
+    /* Subtle dark gray background for button */
+    color: #ffffff;
+    /* White text for contrast */
 }
