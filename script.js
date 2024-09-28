@@ -1,126 +1,97 @@
-// We wrap all of our code inside an Immediately Invoked Function Expression (IIFE)
-// This helps to avoid polluting the global namespace and prevents variables
-// from being accessible outside of this script
+// Wrap your code in an IIFE to avoid polluting the global namespace
 (function () {
-    // Initialize or load the state from localStorage
-    let backgroundStates;
-    try {
-        // Try to parse the saved background states from localStorage
-        backgroundStates = JSON.parse(localStorage.getItem('backgroundStates'));
-    } catch (e) {
-        // If there's an error (e.g., the data is corrupted), we set backgroundStates to null
-        backgroundStates = null;
-    }
-    // If we couldn't load backgroundStates from localStorage, we initialize it as an empty object
-    if (!backgroundStates) {
-        backgroundStates = {
-            skillContainers: [],
-            imagesOutsideSkill: []
-        };
+    // Declare variables that will be used across functions
+    let backgroundStates = {
+        skillContainers: [],
+        imagesOutsideSkill: []
+    };
+    let skillContainers;
+    let imagesOutsideSkill;
+    let darkModeToggle;
+
+    // Function to initialize the application
+    function init() {
+        setImageAttributes();
+        cacheDOMElements();
+        loadStates();
+        bindEvents();
+        restoreStates();
+        loadDarkMode();
     }
 
-    // Function to generate attributes based on the image source
+    // Function to set 'alt', 'title', and 'id' attributes based on the image 'src'
     function setImageAttributes() {
-        // Select all image elements
         const images = document.querySelectorAll('img');
 
         images.forEach(function (img) {
-            // Get the 'src' attribute value
             const src = img.getAttribute('src');
-
-            // Extract the file name with extension
             const fileNameWithExtension = src.substring(src.lastIndexOf('/') + 1);
-
-            // Remove the file extension
             const fileName = fileNameWithExtension.substring(0, fileNameWithExtension.lastIndexOf('.'));
-
-            // Replace underscores with spaces to create a display name
             let displayName = fileName.replace(/_/g, ' ');
-
-            // Handle special cases or adjust formatting if needed
-            // For example, if the file name has multiple underscores representing spaces
-
-            // Capitalize the first letter of each word
             displayName = displayName.replace(/\b\w/g, function (char) {
                 return char.toUpperCase();
             });
-
-            // Generate 'id' by replacing spaces with hyphens and converting to lowercase
             const id = displayName.replace(/ /g, '-').toLowerCase();
 
-            // Set the 'alt' attribute for accessibility
             img.setAttribute('alt', displayName);
-
-            // Set the 'title' attribute for tooltip text
             img.setAttribute('title', displayName);
-
-            // Set the 'id' attribute for potential future use
             img.setAttribute('id', id);
         });
     }
 
-    // Function to save the current background states to localStorage
-    function saveBackgroundStates() {
-        // Convert the backgroundStates object into a JSON string and save it in localStorage
-        localStorage.setItem('backgroundStates', JSON.stringify(backgroundStates));
+    // Function to cache frequently accessed DOM elements
+    function cacheDOMElements() {
+        skillContainers = document.querySelectorAll('.skill');
+        imagesOutsideSkill = document.querySelectorAll('.flex-container img:not(.skill img)');
+        darkModeToggle = document.getElementById('dark-mode-toggle');
     }
 
-    // Function to toggle the background color of an element and update its state
-    function toggleBackground(element, index, type) {
-        // Toggle the 'green-background' class on the element
-        element.classList.toggle('green-background');
-
-        // Update the backgroundStates object to reflect the new state
-        if (element.classList.contains('green-background')) {
-            backgroundStates[type][index] = 'on';
-        } else {
-            backgroundStates[type][index] = 'off';
+    // Function to load background and dark mode states from localStorage
+    function loadStates() {
+        // Load background states
+        try {
+            const savedBackgroundStates = JSON.parse(localStorage.getItem('backgroundStates'));
+            if (savedBackgroundStates) {
+                backgroundStates = savedBackgroundStates;
+            }
+        } catch (e) {
+            console.error('Error parsing background states from localStorage:', e);
         }
 
-        // Save the updated backgroundStates object to localStorage
-        saveBackgroundStates();
+        // Load dark mode state
+        const darkMode = localStorage.getItem('darkMode');
+        if (darkMode === 'enabled') {
+            document.body.classList.add('dark-mode');
+            if (darkModeToggle) darkModeToggle.textContent = 'Disable Dark Mode';
+        } else {
+            if (darkModeToggle) darkModeToggle.textContent = 'Enable Dark Mode';
+        }
     }
 
-    // When the document content is fully loaded
-    document.addEventListener('DOMContentLoaded', function () {
-        // Set image attributes based on their 'src'
-        setImageAttributes();
-
-        // Now that the images have their attributes set, we can select them
-        // Select all elements with the 'skill' class
-        const skillContainers = document.querySelectorAll('.skill');
-
-        // Select all images outside the 'skill' containers
-        const imagesOutsideSkill = document.querySelectorAll('.flex-container img:not(.skill img)');
-
-        // Add click event listeners to each skill container
+    // Function to bind event listeners
+    function bindEvents() {
+        // Bind click events for skill containers
         skillContainers.forEach((container, index) => {
-            // Ensure that the backgroundStates array for skillContainers is initialized at this index
-            if (backgroundStates.skillContainers[index] === undefined) {
-                backgroundStates.skillContainers[index] = 'off';
-            }
-
-            // Add a click event listener to the container
             container.addEventListener('click', () => {
-                // When the container is clicked, toggle its background and update the state
                 toggleBackground(container, index, 'skillContainers');
             });
         });
 
-        // Add click event listeners to each image outside the skill containers
+        // Bind click events for images outside skill containers
         imagesOutsideSkill.forEach((image, index) => {
-            // Ensure that the backgroundStates array for imagesOutsideSkill is initialized at this index
-            if (backgroundStates.imagesOutsideSkill[index] === undefined) {
-                backgroundStates.imagesOutsideSkill[index] = 'off';
-            }
-
-            // Add a click event listener to the image
             image.addEventListener('click', () => {
-                // When the image is clicked, toggle its background and update the state
                 toggleBackground(image, index, 'imagesOutsideSkill');
             });
         });
 
+        // Bind dark mode toggle event
+        if (darkModeToggle) {
+            darkModeToggle.addEventListener('click', toggleDarkMode);
+        }
+    }
+
+    // Function to restore background states
+    function restoreStates() {
         // Restore background states for skill containers
         skillContainers.forEach((container, index) => {
             if (backgroundStates.skillContainers[index] === 'on') {
@@ -138,5 +109,50 @@
                 image.classList.remove('green-background');
             }
         });
-    });
+    }
+
+    // Function to toggle the background color of an element and update its state
+    function toggleBackground(element, index, type) {
+        element.classList.toggle('green-background');
+
+        if (element.classList.contains('green-background')) {
+            backgroundStates[type][index] = 'on';
+        } else {
+            backgroundStates[type][index] = 'off';
+        }
+
+        saveBackgroundStates();
+    }
+
+    // Function to save the current background states to localStorage
+    function saveBackgroundStates() {
+        localStorage.setItem('backgroundStates', JSON.stringify(backgroundStates));
+    }
+
+    // Function to toggle dark mode
+    function toggleDarkMode() {
+        document.body.classList.toggle('dark-mode');
+
+        if (document.body.classList.contains('dark-mode')) {
+            darkModeToggle.textContent = 'Disable Dark Mode';
+            localStorage.setItem('darkMode', 'enabled');
+        } else {
+            darkModeToggle.textContent = 'Enable Dark Mode';
+            localStorage.setItem('darkMode', 'disabled');
+        }
+    }
+
+    // Function to load dark mode state
+    function loadDarkMode() {
+        const darkMode = localStorage.getItem('darkMode');
+        if (darkMode === 'enabled') {
+            document.body.classList.add('dark-mode');
+            if (darkModeToggle) darkModeToggle.textContent = 'Disable Dark Mode';
+        } else {
+            if (darkModeToggle) darkModeToggle.textContent = 'Enable Dark Mode';
+        }
+    }
+
+    // Initialize the application when the DOM is fully loaded
+    document.addEventListener('DOMContentLoaded', init);
 })();
