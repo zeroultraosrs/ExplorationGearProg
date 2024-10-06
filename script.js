@@ -82,6 +82,9 @@
             image.addEventListener('click', () => {
                 toggleBackground(image, index, 'imagesOutsideSkill');
             });
+            image.addEventListener('dragstart', (e) => {
+                e.preventDefault();
+            });
         });
 
         // Bind dark mode toggle event
