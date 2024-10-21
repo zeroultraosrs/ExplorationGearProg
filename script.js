@@ -1,10 +1,12 @@
 // Wrap your code in an IIFE to avoid polluting the global namespace
 (function () {
     // Declare variables that will be used across functions
-    let backgroundStates = {
-        skillContainers: [],
-        imagesOutsideSkill: []
-    };
+    // let backgroundStates = {
+    //     skillContainers: [],
+    //     imagesOutsideSkill: []
+    // };
+    let backgroundStates = {};
+
     let skillContainers;
     let imagesOutsideSkill;
     let darkModeToggle;
@@ -44,6 +46,7 @@
         skillContainers = document.querySelectorAll('.skill');
         imagesOutsideSkill = document.querySelectorAll('.flex-container img:not(.skill img)');
         darkModeToggle = document.getElementById('dark-mode-toggle');
+        console.log('darkModeToggle:', darkModeToggle); // Add this line
     }
 
     // Function to load background and dark mode states from localStorage
@@ -71,33 +74,29 @@
     // Function to bind event listeners
     function bindEvents() {
         // Bind click events for skill containers
-        skillContainers.forEach((container, index) => {
+        skillContainers.forEach((container) => {
             container.addEventListener('click', () => {
-                toggleBackground(container, index, 'skillContainers');
+                toggleBackground(container);
             });
         });
 
         // Bind click events for images outside skill containers
-        imagesOutsideSkill.forEach((image, index) => {
+        imagesOutsideSkill.forEach((image) => {
             image.addEventListener('click', () => {
-                toggleBackground(image, index, 'imagesOutsideSkill');
+                toggleBackground(image);
             });
             image.addEventListener('dragstart', (e) => {
                 e.preventDefault();
             });
         });
-
-        // Bind dark mode toggle event
-        if (darkModeToggle) {
-            darkModeToggle.addEventListener('click', toggleDarkMode);
-        }
     }
 
     // Function to restore background states
     function restoreStates() {
         // Restore background states for skill containers
-        skillContainers.forEach((container, index) => {
-            if (backgroundStates.skillContainers[index] === 'on') {
+        skillContainers.forEach((container) => {
+            const id = container.id;
+            if (backgroundStates[id] === 'on') {
                 container.classList.add('green-background');
             } else {
                 container.classList.remove('green-background');
@@ -105,8 +104,9 @@
         });
 
         // Restore background states for images outside skill containers
-        imagesOutsideSkill.forEach((image, index) => {
-            if (backgroundStates.imagesOutsideSkill[index] === 'on') {
+        imagesOutsideSkill.forEach((image) => {
+            const id = image.id;
+            if (backgroundStates[id] === 'on') {
                 image.classList.add('green-background');
             } else {
                 image.classList.remove('green-background');
@@ -115,15 +115,14 @@
     }
 
     // Function to toggle the background color of an element and update its state
-    function toggleBackground(element, index, type) {
+    function toggleBackground(element) {
         element.classList.toggle('green-background');
-
-        if (element.classList.contains('green-background')) {
-            backgroundStates[type][index] = 'on';
-        } else {
-            backgroundStates[type][index] = 'off';
+        const id = element.id;
+        if (!id) {
+            console.warn('Element does not have an ID:', element);
+            return;
         }
-
+        backgroundStates[id] = element.classList.contains('green-background') ? 'on' : 'off';
         saveBackgroundStates();
     }
 
@@ -155,6 +154,7 @@
             if (darkModeToggle) darkModeToggle.textContent = 'Enable Dark Mode';
         }
     }
+
 
     // Initialize the application when the DOM is fully loaded
     document.addEventListener('DOMContentLoaded', init);
