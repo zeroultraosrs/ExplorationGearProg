@@ -89,6 +89,10 @@
                 e.preventDefault();
             });
         });
+        // Bind dark mode toggle event
+        if (darkModeToggle) {
+            darkModeToggle.addEventListener('click', toggleDarkMode);
+        }
     }
 
     // Function to restore background states
@@ -146,7 +150,11 @@
 
     // Function to load dark mode state
     function loadDarkMode() {
-        const darkMode = localStorage.getItem('darkMode');
+        let darkMode = localStorage.getItem('darkMode');
+        if (!darkMode) {
+            darkMode = 'enabled'; // Set dark mode as the default
+            localStorage.setItem('darkMode', 'enabled');
+        }
         if (darkMode === 'enabled') {
             document.body.classList.add('dark-mode');
             if (darkModeToggle) darkModeToggle.textContent = 'Disable Dark Mode';
