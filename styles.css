@@ -5,6 +5,46 @@ p {
     text-align: center;
 }
 
+/* Styles for the main flex container */
+.chart {
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 10px;
+    row-gap: 50px;
+    align-items: center;
+    justify-content: center;
+    /* Optional background color */
+    /* background-color: blue; */
+}
+
+/* Styles for node-group items container */
+.node-group {
+    display: grid;
+    grid-template-rows: 40px 40px;
+    grid-auto-columns: 40px;
+    grid-auto-flow: column dense;
+    grid-gap: 5px;
+    margin: 2px;
+    /* Optional background color */
+    /* background-color: cadetblue; */
+}
+
+.node-group>.node {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid;
+}
+
+.node-group>.node>img {
+    width: 40px;
+    height: 40px;
+    object-fit: scale-down;
+}
+
+
 
 /* All elements are assumed to be 35px x 40px */
 
@@ -27,27 +67,6 @@ p {
 
 .skill>span {
     font-size: 0.8rem;
-}
-
-/* Styles for node-group items container */
-.node-group {
-    display: grid;
-    grid-template-rows: 40px 40px;
-    grid-auto-columns: 40px;
-    grid-auto-flow: column dense;
-    grid-gap: 5px;
-    margin: 2px;
-    /* Optional background color */
-    /* background-color: cadetblue; */
-}
-
-.node-group>.node>img {
-    border: 2px solid;
-    width: 40px;
-    height: 40px;
-    object-fit: scale-down;
-    /* Optional background color */
-    /* background-color: aqua; */
 }
 
 /* Corrected selector for .skill inside .node-group */
@@ -75,23 +94,6 @@ p {
     background-color: rgb(0, 200, 0);
 }
 
-.node {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-}
-
-.node {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-}
-
-
 /* Styles for span elements inside .node-group */
 .node-group>span {
     display: flex;
@@ -102,17 +104,6 @@ p {
     border: 2px solid;
 }
 
-/* Styles for the main flex container */
-.chart {
-    display: flex;
-    flex-flow: row wrap;
-    column-gap: 10px;
-    row-gap: 50px;
-    align-items: center;
-    justify-content: center;
-    /* Optional background color */
-    background-color: blue;
-}
 
 .chart>img {
     border: 2px solid;

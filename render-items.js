@@ -18,7 +18,11 @@ let nodegroup2 = [
     "4675",  // Ancient Staff
 ];
 
-let nodegroups = [nodegroup1, nodegroup2];
+let nodegroup3 = [
+    "10551"
+]
+
+let nodegroups = [nodegroup1, nodegroup2, nodegroup3];
 
 /**
  * Fetch item data from items.json and initiate rendering once the data is available.
