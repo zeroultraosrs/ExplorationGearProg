@@ -2,41 +2,24 @@
  * Global storage for item data loaded from items.json
  */
 let itemsData = {};
+let nodegroups = [];
+let itemStates = {};
 
-/**
- * Define the sequence of node groups (each representing a step in the progression).
- * Each node group contains a list of game IDs corresponding to specific items.
- */
-let nodegroup1 = [
-    "1725", // Amulet of Strength
-    "3105", // Climbing Boots
-    "12791", // Rune Pouch
-];
-
-let nodegroup2 = [
-    "12658", // Iban's Staff (u)
-    "4675",  // Ancient Staff
-];
-
-let nodegroup3 = [
-    "10551"
-]
-
-let nodegroups = [nodegroup1, nodegroup2, nodegroup3];
 
 /**
  * Fetch item data from items.json and initiate rendering once the data is available.
  */
-fetch("items.json")
-    .then(response => {
-        if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-        return response.json();
-    })
-    .then(data => {
-        itemsData = data; // Store the fetched data globally
-        console.log("JSON loaded:", itemsData);
+
+Promise.all([
+    fetch("items.json").then(res => res.json()),
+    fetch("sequence.json").then(res => res.json()),
+    fetch("state.json").then(res => res.json())
+])
+    .then(([items, sequence, state]) => {
+        itemsData = items;
+        itemStates = state;
+        nodegroups = Object.values(sequence); // Extract values in order
+        console.log("JSON loaded:", itemsData, nodegroups);
         startRenderProgression();
     })
     .catch(error => console.error("Error loading JSON:", error));
@@ -58,22 +41,32 @@ function startRenderProgression() {
         nodeGroupDiv.classList.add("node-group");
 
         // Populate the node-group with individual nodes
-        for (let gameID of nodegroup) {
+        for (let node of nodegroup) {
             let nodeDiv = document.createElement("div");
             nodeDiv.classList.add("node");
-            nodeDiv.id = "node-${gameID}";
 
-            let itemData = itemsData[gameID];
-            if (!itemData) {
-                console.warn(`⚠️ Missing data for GameID: ${gameID}`);
-                continue;
+            if (Array.isArray(node)) {
+                // 
+                handle_skill(nodeGroupDiv, nodeDiv, node);
             }
+            else {
+                let itemName = node;
+                nodeDiv.id = itemName;
+                let itemData = itemsData[itemName];
+                if (!itemData) {
+                    console.warn(`Missing data for item: ${itemName}`);
+                    continue;
+                }
 
-            // Create an image element for the item
-            let img = document.createElement("img");
-            img.src = itemData.imgSrc;
-            img.alt = itemData.itemName;
-            img.title = itemData.itemName;
+                // Create an image element for the item
+                let img = document.createElement("img");
+                img.src = itemData.imgSrc;
+                img.alt = itemName;
+                img.title = itemName;
+                if (itemStates[itemName] === 1) {
+                    img.style.backgroundColor = "green";
+                }
+            }
 
 
 
@@ -101,4 +94,17 @@ function startRenderProgression() {
     } else {
         console.error("No element with ID 'chart-container' found in the document.");
     }
+}
+
+
+function handle_skill(nodeGroupDiv, nodeDiv, node) {
+    let lvlNum = node[0];
+    let skillName = node[1];
+    let skillDiv = document.createElement("div");
+    skillDiv.classList.add("skill");
+    let img = document.createElement("img");
+    img.src = `images/${skillName}_icon.webp`;
+    skillDiv.appendChild(img);
+    skillDiv.
+
 }

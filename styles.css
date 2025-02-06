@@ -13,8 +13,6 @@ p {
     row-gap: 50px;
     align-items: center;
     justify-content: center;
-    /* Optional background color */
-    /* background-color: blue; */
 }
 
 /* Styles for node-group items container */
@@ -25,8 +23,6 @@ p {
     grid-auto-flow: column dense;
     grid-gap: 5px;
     margin: 2px;
-    /* Optional background color */
-    /* background-color: cadetblue; */
 }
 
 .node-group>.node {
@@ -45,8 +41,29 @@ p {
 }
 
 
+/* === SPECIAL CASE: SINGLE ITEM IN NODE-GROUP === */
+.node-group:has(> .node:only-child) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-/* All elements are assumed to be 35px x 40px */
+/* Ensure that the node takes full space */
+.node-group:has(> .node:only-child)>.node {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ensure image inside that node behaves like it used to */
+.node-group:has(> .node:only-child)>.node>img {
+    border: 2px solid;
+    width: 40px;
+    height: 40px;
+    object-fit: scale-down;
+}
 
 /* Styles for skill containers */
 .skill {
