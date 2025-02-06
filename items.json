@@ -1,87 +1,612 @@
 {
     "1725": {
-        "itemName": "Amulet of Strength",
+        "itemName": "Amulet of strength",
         "imgSrc": "images/Amulet_of_strength.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Amulet_of_strength"
     },
     "3105": {
-        "itemName": "Climbing Boots",
+        "itemName": "Climbing boots",
         "imgSrc": "images/Climbing_boots.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Climbing_boots"
     },
     "12791": {
-        "itemName": "Rune Pouch",
+        "itemName": "12791",
         "imgSrc": "images/Rune_pouch.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Rune_pouch"
     },
     "12658": {
-        "itemName": "Iban's Staff (u)",
+        "itemName": "Iban's staff (u)",
         "imgSrc": "images/Iban's_staff_(u).webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Iban's_staff_(u)"
     },
+    "skip": {
+        "itemName": "Protect from Melee",
+        "imgSrc": "images/Protect_from_Melee.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Protect_from_Melee"
+    },
     "4675": {
-        "itemName": "Ancient Staff",
+        "itemName": "Ancient staff",
         "imgSrc": "images/Ancient_staff.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Ancient_staff"
     },
+    "skip": {
+        "itemName": "Eagle Eye",
+        "imgSrc": "images/Eagle_Eye.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Eagle_Eye"
+    },
     "10551": {
-        "itemName": "Fighter Torso",
+        "itemName": "Fighter torso",
         "imgSrc": "images/Fighter_torso.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
     },
     "10564": {
-        "itemName": "Granite Body",
+        "itemName": "Granite body",
         "imgSrc": "images/Granite_body.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Granite_body"
     },
     "4587": {
-        "itemName": "Dragon Scimitar",
+        "itemName": "Dragon scimitar",
         "imgSrc": "images/Dragon_scimitar.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Dragon_scimitar"
     },
     "11773": {
-        "itemName": "Berserker Ring (i)",
+        "itemName": "Berserker ring (i)",
         "imgSrc": "images/Berserker_ring_(i).webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Berserker_ring_(i)"
     },
     "13226": {
-        "itemName": "Herb Sack",
+        "itemName": "Herb sack",
         "imgSrc": "images/Herb_sack.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Herb_sack"
     },
     "12954": {
-        "itemName": "Dragon Defender",
+        "itemName": "Dragon defender",
         "imgSrc": "images/Dragon_defender.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Dragon_defender"
     },
     "7462": {
-        "itemName": "Barrows Gloves",
+        "itemName": "Barrows gloves",
         "imgSrc": "images/Barrows_gloves.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Barrows_gloves"
     },
     "10828": {
-        "itemName": "Helm of Neitiznot",
+        "itemName": "Helm of neitiznot",
         "imgSrc": "images/Helm_of_neitiznot.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Helm_of_neitiznot"
     },
     "25818": {
-        "itemName": "Book of the Dead",
+        "itemName": "Book of the dead",
         "imgSrc": "images/Book_of_the_dead.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Book_of_the_dead"
     },
     "10499": {
-        "itemName": "Ava's Accumulator",
+        "itemName": "Ava's accumulator",
         "imgSrc": "images/Ava's_accumulator.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Ava's_accumulator"
     },
+    "skip": {
+        "itemName": "Piety",
+        "imgSrc": "images/Piety.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Piety"
+    },
     "24882": {
-        "itemName": "Plank Sack",
+        "itemName": "Plank sack",
         "imgSrc": "images/Plank_sack.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Plank_sack"
     },
-    "12020": {
-        "itemName": "Gem bag",
+    "": {
+        "itemName": "Open gem bag",
         "imgSrc": "images/Open_gem_bag.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Gem_bag"
+        "wikiLink": "https://oldschool.runescape.wiki/w/Open_gem_bag"
+    },
+    "24481": {
+        "itemName": "Black mask",
+        "imgSrc": "images/Black_mask.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Black_mask"
+    },
+    "21795": {
+        "itemName": "Imbued zamorak cape",
+        "imgSrc": "images/Imbued_zamorak_cape.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Imbued_zamorak_cape"
+    },
+    "13116": {
+        "itemName": "Bonecrusher",
+        "imgSrc": "images/Bonecrusher.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Bonecrusher"
+    },
+    "25781": {
+        "itemName": "Ash sanctifier",
+        "imgSrc": "images/Ash_sanctifier.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Ash_sanctifier"
+    },
+    "skip4": {
+        "itemName": "Bigger and Badder",
+        "imgSrc": "images/Bigger_and_Badder.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Bigger_and_Badder"
+    },
+    "29289": {
+        "itemName": "Mixed hide cape",
+        "imgSrc": "images/Mixed_hide_cape.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Mixed_hide_cape"
+    },
+    "29286": {
+        "itemName": "Mixed hide boots",
+        "imgSrc": "images/Mixed_hide_boots.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Mixed_hide_boots"
+    },
+    "10034": {
+        "itemName": "Red chinchompa",
+        "imgSrc": "images/Red_chinchompa.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Red_chinchompa"
+    },
+    "11664": {
+        "itemName": "Void ranger helm",
+        "imgSrc": "images/Void_ranger_helm.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Void_ranger_helm"
+    },
+    "8842": {
+        "itemName": "Void knight gloves",
+        "imgSrc": "images/Void_knight_gloves.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Void_knight_gloves"
+    },
+    "13072": {
+        "itemName": "Elite void top",
+        "imgSrc": "images/Elite_void_top.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Elite_void_top"
+    },
+    "13073": {
+        "itemName": "Elite void robe",
+        "imgSrc": "images/Elite_void_robe.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Elite_void_robe"
+    },
+    "23987": {
+        "itemName": "Crystal halberd",
+        "imgSrc": "images/Crystal_halberd.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Crystal_halberd"
+    },
+    "": {
+        "itemName": "Ice Barrage",
+        "imgSrc": "images/Ice_Barrage.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Ice_Barrage"
+    },
+    "6920": {
+        "itemName": "Infinity boots",
+        "imgSrc": "images/Infinity_boots.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Infinity_boots"
+    },
+    "6889": {
+        "itemName": "Mage's book",
+        "imgSrc": "images/Mage's_book.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Mage's_book"
+    },
+    "24844": {
+        "itemName": "Ring of endurance",
+        "imgSrc": "images/Ring_of_endurance.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Ring_of_endurance"
+    },
+    "23971": {
+        "itemName": "Crystal helm",
+        "imgSrc": "images/Crystal_helm.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Crystal_helm"
+    },
+    "25867": {
+        "itemName": "Bow of faerdhinen (c)",
+        "imgSrc": "images/Bow_of_faerdhinen_(c).webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Bow_of_faerdhinen_(c)"
+    },
+    "23975": {
+        "itemName": "Crystal body",
+        "imgSrc": "images/Crystal_body.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Crystal_body"
+    },
+    "23979": {
+        "itemName": "Crystal legs",
+        "imgSrc": "images/Crystal_legs.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Crystal_legs"
+    },
+    "29974": {
+        "itemName": "Prescription goggles",
+        "imgSrc": "images/Prescription_goggles.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Prescription_goggles"
+    },
+    "29988": {
+        "itemName": "Alchemist's amulet",
+        "imgSrc": "images/Alchemist's_amulet.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Alchemist's_amulet"
+    },
+    "13128": {
+        "itemName": "Explorer's ring 4",
+        "imgSrc": "images/Explorer's_ring_4.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Explorer's_ring_4"
+    },
+    "13107": {
+        "itemName": "Varrock armour 4",
+        "imgSrc": "images/Varrock_armour_4.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Varrock_armour_4"
+    },
+    "21880": {
+        "itemName": "Wrath rune",
+        "imgSrc": "images/Wrath_rune.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Wrath_rune"
+    },
+    "6570": {
+        "itemName": "Fire cape",
+        "imgSrc": "images/Fire_cape.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Fire_cape"
+    },
+    "11140": {
+        "itemName": "Karamja gloves 3",
+        "imgSrc": "images/Karamja_gloves_3.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Karamja_gloves_3"
+    },
+    "11978": {
+        "itemName": "Amulet of glory(6)",
+        "imgSrc": "images/Amulet_of_glory(6).webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Amulet_of_glory(6)"
+    },
+    "26950": {
+        "itemName": "Pharaoh's sceptre (1)",
+        "imgSrc": "images/Pharaoh's_sceptre_(1).webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Pharaoh's_sceptre_(1)"
+    },
+    "13103": {
+        "itemName": "Karamja gloves 4",
+        "imgSrc": "images/Karamja_gloves_4.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Karamja_gloves_4"
+    },
+    "13124": {
+        "itemName": "Ardougne cloak 4",
+        "imgSrc": "images/Ardougne_cloak_4.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Ardougne_cloak_4"
+    },
+    "13132": {
+        "itemName": "Fremennik sea boots 4",
+        "imgSrc": "images/Fremennik_sea_boots_4.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Fremennik_sea_boots_4"
+    },
+    "13140": {
+        "itemName": "Kandarin headgear 4",
+        "imgSrc": "images/Kandarin_headgear_4.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Kandarin_headgear_4"
+    },
+    "28140": {
+        "itemName": "Log basket",
+        "imgSrc": "images/Log_basket.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Log_basket"
+    },
+    "22109": {
+        "itemName": "Ava's assembler",
+        "imgSrc": "images/Ava's_assembler.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Ava's_assembler"
+    },
+    "25413": {
+        "itemName": "Bloodbark helm",
+        "imgSrc": "images/Bloodbark_helm.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Bloodbark_helm"
+    },
+    "25404": {
+        "itemName": "Bloodbark body",
+        "imgSrc": "images/Bloodbark_body.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Bloodbark_body"
+    },
+    "25416": {
+        "itemName": "Bloodbark legs",
+        "imgSrc": "images/Bloodbark_legs.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Bloodbark_legs"
+    },
+    "27627": {
+        "itemName": "Ancient icon",
+        "imgSrc": "images/Ancient_icon.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Ancient_icon"
+    },
+    "11812": {
+        "itemName": "Bandos hilt",
+        "imgSrc": "images/Bandos_hilt.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Bandos_hilt"
+    },
+    "11832": {
+        "itemName": "Bandos chestplate",
+        "imgSrc": "images/Bandos_chestplate.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Bandos_chestplate"
+    },
+    "11834": {
+        "itemName": "Bandos tassets",
+        "imgSrc": "images/Bandos_tassets.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Bandos_tassets"
+    },
+    "11865": {
+        "itemName": "Slayer helmet (i)",
+        "imgSrc": "images/Slayer_helmet_(i).webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Slayer_helmet_(i)"
+    },
+    "19675": {
+        "itemName": "Arclight",
+        "imgSrc": "images/Arclight.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Arclight"
+    },
+    "28583": {
+        "itemName": "Warped sceptre",
+        "imgSrc": "images/Warped_sceptre_(uncharged).webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Warped_sceptre"
+    },
+    "19553": {
+        "itemName": "Amulet of torture",
+        "imgSrc": "images/Amulet_of_torture.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Amulet_of_torture"
+    },
+    "29589": {
+        "itemName": "Emberlight",
+        "imgSrc": "images/Emberlight.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Emberlight"
+    },
+    "19547": {
+        "itemName": "Necklace of anguish",
+        "imgSrc": "images/Necklace_of_anguish.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Necklace_of_anguish"
+    },
+    "29577": {
+        "itemName": "Burning claws",
+        "imgSrc": "images/Burning_claws.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Burning_claws"
+    },
+    "19544": {
+        "itemName": "Tormented bracelet",
+        "imgSrc": "images/Tormented_bracelet.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Tormented_bracelet"
+    },
+    "29591": {
+        "itemName": "Scorching bow",
+        "imgSrc": "images/Scorching_bow.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Scorching_bow"
+    },
+    "11804": {
+        "itemName": "Bandos godsword",
+        "imgSrc": "images/Bandos_godsword.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Bandos_godsword"
+    },
+    "11770": {
+        "itemName": "Seers ring (i)",
+        "imgSrc": "images/Seers_ring_(i).webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Seers_ring_(i)"
+    },
+    "11889": {
+        "itemName": "Zamorakian hasta",
+        "imgSrc": "images/Zamorakian_hasta.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Zamorakian_hasta"
+    },
+    "27690": {
+        "itemName": "Voidwaker",
+        "imgSrc": "images/Voidwaker.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Voidwaker"
+    },
+    "11920": {
+        "itemName": "Dragon pickaxe",
+        "imgSrc": "images/Dragon_pickaxe.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Dragon_pickaxe"
+    },
+    "26219": {
+        "itemName": "Osmumten's fang",
+        "imgSrc": "images/Osmumten's_fang.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Osmumten's_fang"
+    },
+    "27279": {
+        "itemName": "Thread of elidinis",
+        "imgSrc": "images/Thread_of_elidinis.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Thread_of_elidinis"
+    },
+    "25975": {
+        "itemName": "Lightbearer",
+        "imgSrc": "images/Lightbearer.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Lightbearer"
+    },
+    "12006": {
+        "itemName": "Abyssal tentacle",
+        "imgSrc": "images/Abyssal_tentacle.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Abyssal_tentacle"
+    },
+    "11905": {
+        "itemName": "Trident of the seas",
+        "imgSrc": "images/Trident_of_the_seas_(full).webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Trident_of_the_seas_(full)"
+    },
+    "4151": {
+        "itemName": "Abyssal whip",
+        "imgSrc": "images/Abyssal_whip.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Abyssal_whip"
+    },
+    "24271": {
+        "itemName": "Neitiznot faceguard",
+        "imgSrc": "images/Neitiznot_faceguard.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Neitiznot_faceguard"
+    },
+    "13576": {
+        "itemName": "Dragon warhammer",
+        "imgSrc": "images/Dragon_warhammer.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Dragon_warhammer"
+    },
+    "11840": {
+        "itemName": "Dragon boots",
+        "imgSrc": "images/Dragon_boots.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Dragon_boots"
+    },
+    "13136": {
+        "itemName": "Desert amulet 4",
+        "imgSrc": "images/Desert_amulet_4.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Desert_amulet_4"
+    },
+    "22947": {
+        "itemName": "Rada's blessing 4",
+        "imgSrc": "images/Rada's_blessing_4.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Rada's_blessing_4"
+    },
+    "13239": {
+        "itemName": "Primordial boots",
+        "imgSrc": "images/Primordial_boots.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Primordial_boots"
+    },
+    "29801": {
+        "itemName": "Amulet of rancour",
+        "imgSrc": "images/Amulet_of_rancour.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Amulet_of_rancour"
+    },
+    "13235": {
+        "itemName": "Eternal boots",
+        "imgSrc": "images/Eternal_boots.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Eternal_boots"
+    },
+    "12002": {
+        "itemName": "Occult necklace",
+        "imgSrc": "images/Occult_necklace.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Occult_necklace"
+    },
+    "13069": {
+        "itemName": "Achievement diary cape (t)",
+        "imgSrc": "images/Achievement_diary_cape_(t).webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Achievement_diary_cape_(t)"
+    },
+    "12899": {
+        "itemName": "Trident of the swamp",
+        "imgSrc": "images/Trident_of_the_swamp.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Trident_of_the_swamp"
+    },
+    "12926": {
+        "itemName": "Toxic blowpipe",
+        "imgSrc": "images/Toxic_blowpipe.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Toxic_blowpipe"
+    },
+    "22978": {
+        "itemName": "Dragon hunter lance",
+        "imgSrc": "images/Dragon_hunter_lance.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Dragon_hunter_lance"
+    },
+    "22981": {
+        "itemName": "Ferocious gloves",
+        "imgSrc": "images/Ferocious_gloves.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Ferocious_gloves"
+    },
+    "skip": {
+        "itemName": "Rigour",
+        "imgSrc": "images/Rigour.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Rigour"
+    },
+    "28951": {
+        "itemName": "Dizana's quiver",
+        "imgSrc": "images/Dizana's_quiver.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Dizana's_quiver"
+    },
+    "22322": {
+        "itemName": "Avernic defender",
+        "imgSrc": "images/Avernic_defender.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Avernic_defender"
+    },
+    "27275": {
+        "itemName": "Tumeken's shadow",
+        "imgSrc": "images/Tumeken's_shadow.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Tumeken's_shadow"
+    },
+    "28313": {
+        "itemName": "Magus ring",
+        "imgSrc": "images/Magus_ring.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Magus_ring"
+    },
+    "20997": {
+        "itemName": "Twisted bow",
+        "imgSrc": "images/Twisted_bow.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Twisted_bow"
+    },
+    "13652": {
+        "itemName": "Dragon claws",
+        "imgSrc": "images/Dragon_claws.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Dragon_claws"
+    },
+    "21021": {
+        "itemName": "Ancestral robe top",
+        "imgSrc": "images/Ancestral_robe_top.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Ancestral_robe_top"
+    },
+    "21024": {
+        "itemName": "Ancestral robe bottom",
+        "imgSrc": "images/Ancestral_robe_bottom.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Ancestral_robe_bottom"
+    },
+    "21018": {
+        "itemName": "Ancestral hat",
+        "imgSrc": "images/Ancestral_hat.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Ancestral_hat"
+    },
+    "21003": {
+        "itemName": "Elder maul",
+        "imgSrc": "images/Elder_maul.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Elder_maul"
+    },
+    "27238": {
+        "itemName": "Masori body (f)",
+        "imgSrc": "images/Masori_body_(f).webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Masori_body_(f)"
+    },
+    "27241": {
+        "itemName": "Masori chaps (f)",
+        "imgSrc": "images/Masori_chaps_(f).webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Masori_chaps_(f)"
+    },
+    "27235": {
+        "itemName": "Masori mask (f)",
+        "imgSrc": "images/Masori_mask_(f).webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Masori_mask_(f)"
+    },
+    "25985": {
+        "itemName": "Elidinis' ward",
+        "imgSrc": "images/Elidinis'_ward.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Elidinis'_ward"
+    },
+    "27641": {
+        "itemName": "Saturated heart",
+        "imgSrc": "images/Saturated_heart.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Saturated_heart"
+    },
+    "28310": {
+        "itemName": "Venator ring",
+        "imgSrc": "images/Venator_ring.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Venator_ring"
+    },
+    "27610": {
+        "itemName": "Venator bow",
+        "imgSrc": "images/Venator_bow.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Venator_bow"
+    },
+    "28338": {
+        "itemName": "Soulreaper axe",
+        "imgSrc": "images/Soulreaper_axe.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Soulreaper_axe"
+    },
+    "26384": {
+        "itemName": "Torva platebody",
+        "imgSrc": "images/Torva_platebody.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Torva_platebody"
+    },
+    "26386": {
+        "itemName": "Torva platelegs",
+        "imgSrc": "images/Torva_platelegs.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Torva_platelegs"
+    },
+    "26382": {
+        "itemName": "Torva full helm",
+        "imgSrc": "images/Torva_full_helm.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Torva_full_helm"
+    },
+    "22325": {
+        "itemName": "Scythe of vitur",
+        "imgSrc": "images/Scythe_of_vitur.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Scythe_of_vitur"
+    },
+    "26374": {
+        "itemName": "Zaryte crossbow",
+        "imgSrc": "images/Zaryte_crossbow.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Zaryte_crossbow"
+    },
+    "26235": {
+        "itemName": "Zaryte vambraces",
+        "imgSrc": "images/Zaryte_vambraces.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Zaryte_vambraces"
     }
 }
