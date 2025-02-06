@@ -57,6 +57,7 @@ function startRenderProgression() {
         for (let gameID of nodegroup) {
             let nodeDiv = document.createElement("div");
             nodeDiv.classList.add("node");
+            nodeDiv.id = "node-${gameID}";
 
             let itemData = itemsData[gameID];
             if (!itemData) {
@@ -68,6 +69,9 @@ function startRenderProgression() {
             let img = document.createElement("img");
             img.src = itemData.imgSrc;
             img.alt = itemData.itemName;
+            img.title = itemData.itemName;
+
+
 
             // Append the image inside the node container
             nodeDiv.appendChild(img);

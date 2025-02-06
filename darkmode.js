@@ -7,7 +7,6 @@
     // };
     let backgroundStates = {};
 
-    let skillContainers;
     let imagesOutsideSkill;
     let darkModeToggle;
 
@@ -35,9 +34,9 @@
             });
             const id = displayName.replace(/ /g, '-').toLowerCase();
 
-            // img.setAttribute('alt', displayName);
-            // img.setAttribute('title', displayName);
-            // img.setAttribute('id', id);
+            img.setAttribute('alt', displayName);
+            img.setAttribute('title', displayName);
+            img.setAttribute('id', id);
         });
     }
 

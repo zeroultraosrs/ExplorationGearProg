@@ -1,3 +1,11 @@
+/* Center alignment for headings and paragraphs */
+h1,
+h2,
+p {
+    text-align: center;
+}
+
+
 /* All elements are assumed to be 35px x 40px */
 
 /* Styles for skill containers */
@@ -21,8 +29,8 @@
     font-size: 0.8rem;
 }
 
-/* Styles for multiple items container */
-.multiple {
+/* Styles for node-group items container */
+.node-group {
     display: grid;
     grid-template-rows: 40px 40px;
     grid-auto-columns: 40px;
@@ -33,7 +41,7 @@
     /* background-color: cadetblue; */
 }
 
-.multiple>img {
+.node-group>.node>img {
     border: 2px solid;
     width: 40px;
     height: 40px;
@@ -42,8 +50,8 @@
     /* background-color: aqua; */
 }
 
-/* Corrected selector for .skill inside .multiple */
-.multiple>.skill {
+/* Corrected selector for .skill inside .node-group */
+.node-group>.skill {
     border: 2px solid;
     width: 40px;
     height: 40px;
@@ -53,8 +61,8 @@
     align-items: center;
 }
 
-/* Styles for single child images inside .multiple */
-.multiple>img:only-child {
+/* Styles for single child images inside .node-group */
+.node-group>img:only-child {
     /* Center alignment */
     display: flex;
     justify-content: center;
@@ -67,8 +75,25 @@
     background-color: rgb(0, 200, 0);
 }
 
-/* Styles for span elements inside .multiple */
-.multiple>span {
+.node {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+
+.node {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+
+
+/* Styles for span elements inside .node-group */
+.node-group>span {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,7 +103,7 @@
 }
 
 /* Styles for the main flex container */
-.flex-container {
+.chart {
     display: flex;
     flex-flow: row wrap;
     column-gap: 10px;
@@ -86,10 +111,10 @@
     align-items: center;
     justify-content: center;
     /* Optional background color */
-    /* background-color: blue; */
+    background-color: blue;
 }
 
-.flex-container>img {
+.chart>img {
     border: 2px solid;
     width: 40px;
     height: 40px;
@@ -110,12 +135,6 @@
     /* background-color: yellow; */
 }
 
-/* Center alignment for headings and paragraphs */
-h1,
-h2,
-p {
-    text-align: center;
-}
 
 /* Dark Mode Styles */
 body.dark-mode {
@@ -127,8 +146,8 @@ body.dark-mode {
 
 /* Adjust other elements as needed */
 body.dark-mode .skill,
-body.dark-mode .multiple>img,
-body.dark-mode .flex-container>img {
+body.dark-mode .node-group>img,
+body.dark-mode .chart>img {
     border-color: #aaaaaa;
     /* Light gray borders for a softer look */
 }
