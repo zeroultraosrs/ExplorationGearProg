@@ -19,20 +19,10 @@
         "imgSrc": "images/Iban's_staff_(u).webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Iban's_staff_(u)"
     },
-    "skip": {
-        "itemName": "Protect from Melee",
-        "imgSrc": "images/Protect_from_Melee.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Protect_from_Melee"
-    },
     "4675": {
         "itemName": "Ancient staff",
         "imgSrc": "images/Ancient_staff.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Ancient_staff"
-    },
-    "skip": {
-        "itemName": "Eagle Eye",
-        "imgSrc": "images/Eagle_Eye.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Eagle_Eye"
     },
     "10551": {
         "itemName": "Fighter torso",
@@ -94,15 +84,15 @@
         "imgSrc": "images/Plank_sack.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Plank_sack"
     },
-    "": {
+    "24481": {
         "itemName": "Open gem bag",
         "imgSrc": "images/Open_gem_bag.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Open_gem_bag"
     },
-    "24481": {
-        "itemName": "Black mask",
+    "11784": {
+        "itemName": "Black mask (i)",
         "imgSrc": "images/Black_mask.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Black_mask"
+        "wikiLink": "https://oldschool.runescape.wiki/w/Black_mask_(i)"
     },
     "21795": {
         "itemName": "Imbued zamorak cape",
@@ -483,11 +473,6 @@
         "itemName": "Ferocious gloves",
         "imgSrc": "images/Ferocious_gloves.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Ferocious_gloves"
-    },
-    "skip": {
-        "itemName": "Rigour",
-        "imgSrc": "images/Rigour.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Rigour"
     },
     "28951": {
         "itemName": "Dizana's quiver",
