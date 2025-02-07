@@ -1,3 +1,9 @@
+:root {
+    --background-color: #555555;
+    --green-complete: rgb(0, 200, 0);
+
+}
+
 /* Center alignment for headings and paragraphs */
 h1,
 h2,
