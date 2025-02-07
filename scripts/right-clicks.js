@@ -1,36 +1,54 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // create and append menu on page load
+    // Create menu container
     const contextMenu = document.createElement("div");
-    contextMenu.id = "custom-context-menu";
+    contextMenu.id = "context-menu";
 
-
-    // title element
+    // Title element
     const menuTitle = document.createElement("div");
+    menuTitle.id = "menu-title";
+    contextMenu.appendChild(menuTitle);
 
-    contextMenu.appendChild(menuTitle); // Add title to the menu
+    // Create button container
+    const buttonContainer = document.createElement("div");
+    buttonContainer.id = "button-container";
 
+    // Wiki button configuration
     const wikiButton = document.createElement("button");
     wikiButton.id = "wiki-button";
+    wikiButton.classList.add("menu-button");
 
-    // Create spans for different colors
+    // Create spans for colored text
     const whiteText = document.createElement("span");
-    whiteText.classList.add("white-text");
+    whiteText.classList.add("left-text");
     whiteText.textContent = "Go to ";
 
     const orangeText = document.createElement("span");
-    orangeText.classList.add("orange-text");
+    orangeText.classList.add("right-text");
     orangeText.textContent = "Wiki";
 
-    // Append spans to button
     wikiButton.appendChild(whiteText);
     wikiButton.appendChild(orangeText);
+    buttonContainer.appendChild(wikiButton);
 
-    contextMenu.appendChild(wikiButton); // Add button to menu
+    // Cancel button
+    const cancelButton = document.createElement("button");
+    cancelButton.id = "cancel-button";
+    cancelButton.classList.add("menu-button");
 
-    document.body.appendChild(contextMenu); // Add the menu to the page
+    const cancelText = document.createElement("span");
+    cancelText.classList.add("left-text"); // Only uses white text
+    cancelText.textContent = "Cancel";
 
+    cancelButton.appendChild(cancelText);
+    buttonContainer.appendChild(cancelButton);
 
-    // Right click on node opens menu
+    // Append button container to menu
+    contextMenu.appendChild(buttonContainer);
+
+    // Add menu to the body
+    document.body.appendChild(contextMenu);
+
+    // Right-click event to show menu
     document.addEventListener("contextmenu", (event) => {
         let node = event.target.closest(".node");
         if (!node) return;
@@ -40,29 +58,33 @@ document.addEventListener("DOMContentLoaded", () => {
         menuTitle.textContent = node.title || "Unknown Item";
 
         let wikiLink = node.dataset.wikiLink;
-        console.log("Wiki Link:", node.dataset.wikiLink);
-        if (wikiLink) {
-            wikiButton.style.display = "block"; // Show button if a wiki link exists
-            wikiButton.onclick = () => {
-                window.open(wikiLink, "_blank"); // Open in a new tab
-                contextMenu.style.display = "none"; // Hide menu after click
-            };
-        } else {
-            wikiButton.style.display = "none"; // Hide button if no link
-            console.log("wikiLink not found")
+        if (!wikiLink) {
+            console.log("wikiLink not found.");
         }
 
+        // Set wiki button behavior
+        wikiButton.style.display = "block";
+        wikiButton.onclick = () => {
+            window.open(wikiLink, "_blank");
+            contextMenu.style.display = "none";
+        };
 
-        // Position and display the menu
+        // Set cancel button behavior
+        cancelButton.style.display = "block";
+        cancelButton.onclick = () => {
+            contextMenu.style.display = "none";
+        };
+
+        // Position and show menu
         contextMenu.style.top = `${event.pageY}px`;
         contextMenu.style.left = `${event.pageX}px`;
         contextMenu.style.display = "block";
     });
-    // click closes menu
+
+    // Click outside closes menu
     document.addEventListener("click", (event) => {
-        // If the click was **not** inside the menu, hide it
         if (!contextMenu.contains(event.target)) {
             contextMenu.style.display = "none";
         }
     });
-})
+});

@@ -1,57 +1,65 @@
-@font-face {
-    font-family: "Runescape UF";
-    src: url("../styles/fonts/Runescape-UF.ttf") format("truetype");
+:root {
+    --title-bg: #000000;
+    --menu-bg: #5D5447;
+    --text-left-hover: #FFFF00;
+    --text-left: #FFFFFF;
+    --text-right: #FF9040;
 }
 
-/* Custom Context Menu */
-#custom-context-menu {
+#context-menu {
     position: absolute;
+    background-color: var(--menu-bg);
+    border: 1px solid var(--menu-bg);
+    width: max-content;
     display: none;
-    background: black;
-    color: white;
-    border: 1px solid #a08038;
-    padding: 2px;
-    z-index: 1000;
-    min-width: 160px;
-    font-family: "Runescape UF", Arial, sans-serif;
-    font-size: 12px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
-/* Context Menu Title */
-#context-menu-title {
-    font-weight: bold;
+
+#menu-title {
+    background-color: var(--title-bg);
+    color: var(--menu-bg);
     padding: 4px;
-    border-bottom: 1px solid #a08038;
-    color: white;
+    margin-bottom: 2px;
 }
 
-/* Wiki Button (Styled like OSRS options) */
-#wiki-button {
-    width: 100%;
-    height: 18px;
-    background: #52493e;
-    color: #00ffff;
+#button-container {
+    border: 1px solid var(--title-bg);
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-button {
+    background-color: var(--menu-bg);
     border: none;
-    font-size: 12px;
-    text-align: left;
-    padding: 3px 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 6px 8px;
     cursor: pointer;
-    transition: background 0.2s;
-    font-family: Arial, sans-serif;
-    display: block;
-    border-top: 1px solid #a08038;
+    font-size: 14px;
+    width: 100%;
+    text-align: left;
 }
 
-#wiki-button:hover {
-    background: #75654a;
+.menu-button:hover .left-text {
+    color: var(--text-left-hover);
+    justify-content: left;
 }
 
-#wiki-button .white-text {
-    color: white;
+.left-text {
+    color: var(--text-left);
+    flex-grow: 1;
+    text-align: left;
+    text-shadow: 1px 1px 2px black;
+    /* Adds a slight dark shadow */
 }
 
-#wiki-button .orange-text {
-    color: #ff981f;
-    /* OSRS-style orange */
+.right-text {
+    color: var(--text-right);
+    flex-grow: 0;
+    text-shadow: 1px 1px 2px black;
+    /* Consistent styling */
 }
