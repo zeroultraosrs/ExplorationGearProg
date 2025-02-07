@@ -12,12 +12,56 @@ document.addEventListener("DOMContentLoaded", () => {
     const buttonContainer = document.createElement("div");
     buttonContainer.id = "button-container";
 
-    // Wiki button configuration
+    let wikiButton = initializeWikiButton(buttonContainer);
+    let cancelButton = initializeCancelButton(buttonContainer);
+
+    // Append to menu and body
+    contextMenu.appendChild(buttonContainer);
+    document.body.appendChild(contextMenu);
+
+    // === RIGHT CLICK EVENT ===
+    document.addEventListener("contextmenu", (event) => {
+        let node = event.target.closest(".node");
+        if (!node) return;
+        event.preventDefault(); // Prevent default browser menu
+
+        // Update title
+        menuTitle.textContent = node.title || "Unknown Item";
+
+        // Configure Wiki Button
+        let wikiLink = node.dataset.wikiLink;
+        if (wikiLink) {
+            wikiButton.style.display = "block";
+            wikiButton.onclick = () => {
+                window.open(wikiLink, "_blank");
+                contextMenu.style.display = "none";
+            };
+        } else {
+            wikiButton.style.display = "none";
+        }
+
+        // Configure Cancel Button
+        cancelButton.onclick = () => {
+            contextMenu.style.display = "none";
+        };
+
+        // Position and show menu
+        renderContextMenu(contextMenu, event);
+    });
+
+    // === CLICK OUTSIDE TO CLOSE ===
+    document.addEventListener("click", (event) => {
+        if (!contextMenu.contains(event.target)) {
+            contextMenu.style.display = "none";
+        }
+    });
+});
+
+function initializeWikiButton(buttonContainer) {
     const wikiButton = document.createElement("button");
     wikiButton.id = "wiki-button";
     wikiButton.classList.add("menu-button");
 
-    // Create spans for colored text
     const whiteText = document.createElement("span");
     whiteText.classList.add("left-text");
     whiteText.textContent = "Go to ";
@@ -29,62 +73,72 @@ document.addEventListener("DOMContentLoaded", () => {
     wikiButton.appendChild(whiteText);
     wikiButton.appendChild(orangeText);
     buttonContainer.appendChild(wikiButton);
+    return wikiButton;
+}
 
-    // Cancel button
+function initializeCancelButton(buttonContainer) {
     const cancelButton = document.createElement("button");
     cancelButton.id = "cancel-button";
     cancelButton.classList.add("menu-button");
 
     const cancelText = document.createElement("span");
-    cancelText.classList.add("left-text"); // Only uses white text
+    cancelText.classList.add("left-text");
     cancelText.textContent = "Cancel";
 
     cancelButton.appendChild(cancelText);
     buttonContainer.appendChild(cancelButton);
+    return cancelButton;
+}
 
-    // Append button container to menu
-    contextMenu.appendChild(buttonContainer);
 
-    // Add menu to the body
-    document.body.appendChild(contextMenu);
+function renderContextMenu(contextMenu, event) {
+    // Ensure menu is temporarily visible to get accurate dimensions
+    contextMenu.style.display = "block";
+    contextMenu.style.visibility = "hidden"; // Prevents flickering
 
-    // Right-click event to show menu
-    document.addEventListener("contextmenu", (event) => {
-        let node = event.target.closest(".node");
-        if (!node) return;
+    const menuWidth = contextMenu.offsetWidth;
+    const menuHeight = contextMenu.offsetHeight;
+    const screenWidth = window.innerWidth;
+    const screenHeight = window.innerHeight;
 
-        event.preventDefault(); // Prevent default browser menu
 
-        menuTitle.textContent = node.title || "Unknown Item";
+    let clickCoordX = event.pageX;
+    let posX;
+    if (clickCoordX - menuWidth / 2 < 0) { // Default rendering of box would clip out of window.
+        posX = 0; // Solves issue!
+    } else if (clickCoordX + menuWidth > screenWidth) {
+        posX = clickCoordX - menuWidth;
+        console.log("Right edge clip detected.")
+        console.log("clickCoordX:", clickCoordX);
+    } else {
+        console.log("No clip detected.")
+        posX = clickCoordX - menuWidth / 2; // Center menu horizontally at cursor
+        console.log("clickCoordX:", clickCoordX);
+    }
+    let posY = event.pageY; // Keep top edge at cursor position
 
-        let wikiLink = node.dataset.wikiLink;
-        if (!wikiLink) {
-            console.log("wikiLink not found.");
-        }
+    // Right edge overflow: Shift left if menu overflows the screen
 
-        // Set wiki button behavior
-        wikiButton.style.display = "block";
-        wikiButton.onclick = () => {
-            window.open(wikiLink, "_blank");
-            contextMenu.style.display = "none";
-        };
 
-        // Set cancel button behavior
-        cancelButton.style.display = "block";
-        cancelButton.onclick = () => {
-            contextMenu.style.display = "none";
-        };
+    if (posX + menuWidth > screenWidth) {
+        posX = screenWidth - menuWidth; // Stick to right edge
+    }
+    // Left edge overflow: Shift right if menu goes off-screen
+    if (posX < 0) {
+        posX = 0;
+    }
+    // Bottom edge overflow: Move menu upwards if needed
+    if (posY + menuHeight > screenHeight) {
+        posY = screenHeight - menuHeight;
+    }
+    // Top edge overflow: Ensure the menu is always visible
+    if (posY < 0) {
+        posY = 0;
+    }
 
-        // Position and show menu
-        contextMenu.style.top = `${event.pageY}px`;
-        contextMenu.style.left = `${event.pageX}px`;
-        contextMenu.style.display = "block";
-    });
+    // Apply computed position
+    contextMenu.style.top = `${posY}px`;
+    contextMenu.style.left = `${posX}px`;
+    contextMenu.style.visibility = "visible"; // Now show menu properly
+}
 
-    // Click outside closes menu
-    document.addEventListener("click", (event) => {
-        if (!contextMenu.contains(event.target)) {
-            contextMenu.style.display = "none";
-        }
-    });
-});
