@@ -813,5 +813,17 @@
         "imgSrc": "images/Ultor_ring.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Ultor_ring",
         "itemID": "28307"
+    },
+    "69 slayer": {
+        "wikiLink": "https://oldschool.runescape.wiki/w/Monkey_Madness_II"
+    },
+    "70 ranged": {
+        "wikiLink": "https://oldschool.runescape.wiki/w/Western_Provinces_Diary#Hard"
+    },
+    "92 ranged": {
+        "wikiLink": "https://oldschool.runescape.wiki/w/Maniacal_monkey/Strategies#Ranged_"
+    },
+    "86 strength": {
+        "wikiLink": "https://oldschool.runescape.wiki/w/Maniacal_monkey/Strategies#Ranged_"
     }
 }

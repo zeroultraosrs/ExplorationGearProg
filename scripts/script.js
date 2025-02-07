@@ -14,9 +14,7 @@
     // Function to initialize the application
     function init() {
         cacheDOMElements();
-        loadStates();
         bindEvents();
-        restoreStates();
         loadDarkMode();
     }
 
