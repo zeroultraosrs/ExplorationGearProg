@@ -13,7 +13,6 @@
 
     // Function to initialize the application
     function init() {
-        setImageAttributes();
         cacheDOMElements();
         loadStates();
         bindEvents();
