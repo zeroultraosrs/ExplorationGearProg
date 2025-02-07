@@ -234,10 +234,10 @@
         "imgSrc": "images/Amulet_of_glory(6).webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Amulet_of_glory(6)"
     },
-    "Pharaoh's sceptre (1)": {
+    "Pharaoh's sceptre": {
         "itemID": "26950",
         "imgSrc": "images/Pharaoh's_sceptre_(1).webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Pharaoh's_sceptre_(1)"
+        "wikiLink": "https://oldschool.runescape.wiki/w/Pharaoh's_sceptre"
     },
     "Karamja gloves 4": {
         "itemID": "13103",
@@ -388,6 +388,11 @@
         "itemID": "25975",
         "imgSrc": "images/Lightbearer.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Lightbearer"
+    },
+    "Ring of suffering (i)": {
+        "itemID": "19710",
+        "imgSrc": "images/Ring_of_suffering_(ri).webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Ring_of_suffering_(i)"
     },
     "Abyssal tentacle": {
         "itemID": "12006",
@@ -783,5 +788,30 @@
             "40848",
             "49993"
         ]
+    },
+    "Ghommal's hilt 2": {
+        "imgSrc": "images/Ghommal's_hilt_2.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Ghommal's_hilt_2",
+        "itemID": "25928"
+    },
+    "Ghommal's hilt 4": {
+        "imgSrc": "images/Ghommal's_hilt_4.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Ghommal's_hilt_4",
+        "itemID": "25932"
+    },
+    "Ghommal's hilt 5": {
+        "imgSrc": "images/Ghommal's_avernic_defender_5.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Ghommal's_hilt_5",
+        "itemID": "25934"
+    },
+    "Infernal cape": {
+        "imgSrc": "images/Infernal_cape.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Infernal_cape",
+        "itemID": "21295"
+    },
+    "Ultor ring": {
+        "imgSrc": "images/Ultor_ring.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Ultor_ring",
+        "itemID": "28307"
     }
 }

@@ -21,26 +21,6 @@
         loadDarkMode();
     }
 
-    // Function to set 'alt', 'title', and 'id' attributes based on the image 'src'
-    function setImageAttributes() {
-        const images = document.querySelectorAll('img');
-
-        images.forEach(function (img) {
-            const src = img.getAttribute('src');
-            const fileNameWithExtension = src.substring(src.lastIndexOf('/') + 1);
-            const fileName = fileNameWithExtension.substring(0, fileNameWithExtension.lastIndexOf('.'));
-            let displayName = fileName.replace(/_/g, ' ');
-            displayName = displayName.replace(/\b\w/g, function (char) {
-                return char.toUpperCase();
-            });
-            const id = displayName.replace(/ /g, '-').toLowerCase();
-
-            // img.setAttribute('alt', displayName);
-            // img.setAttribute('title', displayName);
-            // img.setAttribute('id', id);
-        });
-    }
-
     // Function to cache frequently accessed DOM elements
     function cacheDOMElements() {
         skillContainers = document.querySelectorAll('.skill');

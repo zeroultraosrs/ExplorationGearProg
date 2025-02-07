@@ -44,34 +44,15 @@ function startRenderProgression() {
         for (let node of nodegroup) {
             let nodeDiv = document.createElement("div");
             nodeDiv.classList.add("node");
-
-            if (Array.isArray(node)) {
-                // 
-                handle_skill(nodeGroupDiv, nodeDiv, node);
+            console.log(sanitizeId(node));
+            if (!isNaN(node.charAt(0))) {
+                // if string started with number, then this means its on the form "<number> <skill>"
+                handle_skill(nodeDiv, node);
             }
             else {
-                let itemName = node;
-                nodeDiv.id = itemName;
-                let itemData = itemsData[itemName];
-                if (!itemData) {
-                    console.warn(`Missing data for item: ${itemName}`);
-                    continue;
-                }
-
-                // Create an image element for the item
-                let img = document.createElement("img");
-                img.src = itemData.imgSrc;
-                img.alt = itemName;
-                img.title = itemName;
-                if (itemStates[itemName] === 1) {
-                    img.style.backgroundColor = "green";
-                }
+                // string is an item name
+                handle_item(nodeDiv, node);
             }
-
-
-
-            // Append the image inside the node container
-            nodeDiv.appendChild(img);
             nodeGroupDiv.appendChild(nodeDiv);
         }
 
@@ -96,15 +77,56 @@ function startRenderProgression() {
     }
 }
 
+function handle_item(nodeDiv, node) {
+    let itemData = itemsData[node];
+    if (!itemData) {
+        console.warn(`Missing data for item: ${node}`);
+        return;
+    }
+    // Create an image element for the item
+    let img = document.createElement("img");
+    img.src = itemData.imgSrc;
+    img.alt = node;
+    nodeDiv.title = node;
+    // Append the image inside the node container
+    if (itemStates[node] === 1) {
+        nodeDiv.style.backgroundColor = "green";
+    }
+    nodeDiv.id = sanitizeId(node);
+    nodeDiv.appendChild(img);
+}
 
-function handle_skill(nodeGroupDiv, nodeDiv, node) {
-    let lvlNum = node[0];
-    let skillName = node[1];
+function handle_skill(nodeDiv, node) {
+    // Expected format of node: "69 ranged"
+    let parts = node.split(" "); // Split string into parts
+    let lvlNum = parts[0]; // Extract the number part
+    let skillName = parts.slice(1).join(" "); // Extract the skill name
+    let skillNameUppercase = skillName.charAt(0).toUpperCase() + skillName.slice(1); // Capitalize first letter
+
+    // Create skill container
     let skillDiv = document.createElement("div");
     skillDiv.classList.add("skill");
-    let img = document.createElement("img");
-    img.src = `images/${skillName}_icon.webp`;
-    skillDiv.appendChild(img);
-    skillDiv.
 
+    // Create image element
+    let img = document.createElement("img");
+    img.src = `images/${skillNameUppercase}_icon.webp`;
+
+    // Create span for level number
+    let span = document.createElement("span");
+    span.textContent = lvlNum;
+
+    // Append elements
+    skillDiv.appendChild(img);
+    skillDiv.appendChild(span);
+    nodeDiv.alt = `Get ${lvlNum} ${skillName}`;
+    nodeDiv.title = `Get ${lvlNum} ${skillName}`;
+    nodeDiv.id = "lvl-" + sanitizeId(node);
+    nodeDiv.appendChild(skillDiv);
+}
+
+function sanitizeId(name) {
+    return name
+        .replace(/[^\w\s-]/g, '') // Remove special characters
+        .replace(/\s+/g, '-')     // Replace spaces with hyphens
+        .toLowerCase();           // Convert to lowercase
 }
