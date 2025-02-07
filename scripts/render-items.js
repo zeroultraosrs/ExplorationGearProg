@@ -33,20 +33,19 @@ function handle_item(node) {
     nodeDiv.classList.add("node");
 
 
+
+
     let itemData = itemsData[node];
     if (!itemData) {
         console.warn(`Missing data for item: ${node}`);
-        return null;
     }
-
-    nodeDiv.dataset.wikiLink = itemData.wikiLink;
-
     let img = document.createElement("img");
     img.src = itemData.imgSrc;
     img.alt = node;
     nodeDiv.title = node;
     nodeDiv.id = sanitizeId(node);
     nodeDiv.appendChild(img);
+    nodeDiv.dataset.wikiLink = itemData.wikiLink;
     return nodeDiv;
 }
 
@@ -81,6 +80,11 @@ function handle_skill(node) {
     nodeDiv.title = `Get ${lvlNum} ${skillName}`;
     nodeDiv.id = "lvl-" + sanitizeId(node);
     nodeDiv.appendChild(skillDiv);
+    let itemData = itemsData[node];
+    if (!itemData) {
+        console.warn(`Missing data for item: ${node}`);
+    }
+    nodeDiv.dataset.wikiLink = itemData.wikiLink;
     return nodeDiv;
 }
 
@@ -127,6 +131,7 @@ function renderChart(chartContainer) {
         nodeGroupDiv.classList.add("node-group");
 
         for (let node of nodegroup) {
+
             let nodeDiv = !isNaN(node.charAt(0)) ? handle_skill(node) : handle_item(node);
             if (nodeDiv) {
                 nodeGroupDiv.appendChild(nodeDiv);
