@@ -7,8 +7,10 @@ Welcome to Ladlor's Interactive Gear Progression Chart! This tool provides a sug
 - [Introduction](#introduction)
 - [Features](#features)
 - [Usage](#usage)
-- [Installation](#installation)
+- [Local Development](#Local-development)
 - [Contributing](#contributing)
+- [For Developers](#for-developers)
+- [File Structure](#file-structure)
 - [Acknowledgments](#acknowledgments)
 - [License](#license)
 
@@ -28,22 +30,23 @@ The chart is interactive, allowing players to track their progress by marking it
 
 ## Usage
 
-1. **Open the Chart**: Simply open the `gearprog_speculative.html` file in your preferred web browser.
-2. **Interact with Items**: Click on any gear item or skill icon to mark it as acquired. The item will be highlighted to indicate completion.
-3. **Progress Tracking**: Your selections are saved locally in your browser's storage. You can close the chart and revisit it later without losing your progress.
-4. **Resetting Progress**: If you wish to reset your progress, you can clear your browser's local storage for this site.
+1. **Access the Chart**: Visit [https://madssb.github.io/InteractiveGearProg/index.html](https://madssb.github.io/interactiveGearProg) to use the chart directly in your browser.
+2. **Track Progress**: Click on any gear item or skill icon to mark it as acquired. Progress is saved locally in your browser and will persist between visits.
+3. **Resetting Progress**: To reset your progress, clear your browser's local storage for this site.
 
-## Installation
+## Local Development
+Running the chart locally is useful for offline access or for contributors who want to customize the progression sequence for their own needs. This flexibility allows for tailoring the tool to different game modes or personal preferences.
 
-No installation is required! Follow these steps to use the chart:
+If you want to modify or host the chart locally, follow these steps:
 
-1. **Download the Files**: Ensure you have the following files in the same directory:
-   - `gearprog_speculative.html`
-   - `styles.css`
-   - `script.js`
-   - The `images` folder containing all necessary image files.
-2. **Open the HTML File**: Double-click `gearprog_speculative.html` or open it in your web browser.
-3. **Enjoy the Chart**: Start interacting with the chart as described in the [Usage](#usage) section.
+1. **Clone or Download** this repository.
+2. Ensure the following files are in the same directory:
+   - `index.html`
+   - `styles/` (containing `styles.css` and `right-clicks.css`)
+   - `scripts/` (containing `render-items.js` and `right-clicks.js`)
+   - `images/` folder with all required icons.
+3. **Open** `index.html` in your browser.
+4. **Make Changes**: Modify the JSON or JavaScript files to customize the chart.
 
 ## Contributing
 
@@ -54,11 +57,38 @@ We welcome contributions from the community to improve this gear progression cha
 3. **Submit a Pull Request**: Once your changes are ready, submit a pull request for review.
 4. **Review Process**: Contributors will review your pull request and provide feedback or merge it into the main project.
 
-## Acknowledgments
-A special thank you to the Ironscape Discord Community for their quality assurance and contributions in sequencing the milestones. Particular mention goes to:
-- **So Iron Bruh**: Quality assurance, author of *BRUHSailer*, 
-- **Parasailer** Co-author of  *Parasailer's gear progression chart*, and co-author of *BRUHSailer*, the comprehensive ironman account progression guide.
-Curent gear progression sequence is largely derived from aforementioned chart, and by extension *BRUHsailer*.
-- **Drøgøn** Quality assurance, extensive theorycrafting for new meta.
-- **Raze** Quality assurance.
+## For Developers
+This project is built with plain HTML, CSS, and JavaScript, with no external dependencies. The chart’s interactivity relies on browser localStorage for tracking user progress. Key scripts include:
+- `render-items.js`: Fetches JSON data and renders the chart dynamically.
+- `right-clicks.js`: Adds a custom context menu for enhanced interactivity.
 
+### Development Workflow
+- Edit the JSON files in `data/` to update the chart’s sequence or items.
+- Modify the JavaScript in `scripts/` for new features or bug fixes.
+
+## File Structure
+| **Directory/File**       | **Description**                                              |
+|--------------------------|--------------------------------------------------------------|
+| `index.html`             | Main entry point for the interactive chart.                  |
+| `data/`                  | Contains JSON files for defining item and skill sequences.   |
+| └─ `items.json`          | Metadata for each item, including image source and wiki link.|
+| └─ `sequence.json`       | Defines the order of items and skills in the chart.          |
+| └─ `state.json`          | Tracks the user's progress (marked items).                   |
+| `scripts/`               | JavaScript files for rendering and interactive behavior.     |
+| └─ `render-items.js`     | Handles chart rendering and interactive features.            |
+| └─ `right-clicks.js`     | Implements the custom right-click menu.                      |
+| `styles/`                | CSS files for styling the chart and context menu.            |
+| └─ `styles.css`          | Main stylesheet for the chart.                               |
+| └─ `right-clicks.css`    | Styles for the right-click context menu.                     |
+| `pages/`                 | Additional HTML pages related to the project.                |
+| └─ `changelog.html`      | Lists changes and updates.                                   |
+| └─ `faq.html`            | Frequently asked questions.                                  |
+| └─ `privacy.html`        | Privacy-related information.                                 |
+
+
+## Acknowledgments
+A special thank you to the Ironscape Discord Community for their quality assurance and contributions in sequencing the milestones. Notable mentions:
+- **So Iron Bruh**: Quality assurance, co-author of *BRUHSailer*.  
+- **Parasailer**: Author of *Parasailer's Gear Progression Chart* and co-author of *BRUHSailer*.  
+- **Drøgøn**: Quality assurance and extensive theorycrafting for new meta strategies.  
+- **Raze**: Quality assurance and valuable feedback.  
