@@ -1,6 +1,6 @@
 /**
- * Global storage for item data loaded from items.json.
- * - `itemsData`: Maps item names to their metadata (image, wiki link, etc.).
+ * Global storage for item and node data.
+ * - `itemsData`: Maps item names to their metadata (e.g., image source, wiki link).
  * - `nodegroups`: Stores ordered lists of nodes as defined in sequence.json.
  */
 let itemsData = {};
@@ -10,7 +10,7 @@ let nodegroups = [];
  * Sanitizes a string to create a safe HTML element ID.
  * - Removes special characters.
  * - Replaces spaces with hyphens.
- * - Converts to lowercase.
+ * - Converts the string to lowercase.
  * @param {string} name - The string to sanitize.
  * @returns {string} - The sanitized ID.
  */
@@ -22,23 +22,22 @@ function sanitizeId(name) {
 }
 
 /**
- * Creates a node element for an item.
+ * Creates a node element representing an item.
  * - Attaches an image and title.
- * - Adds a data attribute for the wiki link.
+ * - Adds a data attribute for the item's wiki link.
  * @param {string} node - The item name.
- * @returns {HTMLElement | null} - The created node div, or null if data is missing.
+ * @returns {HTMLElement | null} - The created node element, or null if the item data is missing.
  */
 function handle_item(node) {
     let nodeDiv = document.createElement("div");
     nodeDiv.classList.add("node");
 
-
-
-
     let itemData = itemsData[node];
     if (!itemData) {
         console.warn(`Missing data for item: ${node}`);
+        return null;
     }
+
     let img = document.createElement("img");
     img.src = itemData.imgSrc;
     img.alt = node;
@@ -46,15 +45,16 @@ function handle_item(node) {
     nodeDiv.id = sanitizeId(node);
     nodeDiv.appendChild(img);
     nodeDiv.dataset.wikiLink = itemData.wikiLink;
+
     return nodeDiv;
 }
 
 /**
- * Creates a node element for a skill milestone.
- * - Extracts level and skill name from the string format: "69 ranged".
- * - Generates an icon and displays the level.
+ * Creates a node element representing a skill milestone.
+ * - Parses the level and skill name from a string (e.g., "69 Ranged").
+ * - Generates an icon and displays the required level.
  * @param {string} node - The skill requirement (e.g., "69 Ranged").
- * @returns {HTMLElement | null} - The created node div, or null if data is missing.
+ * @returns {HTMLElement | null} - The created node element, or null if the data is missing.
  */
 function handle_skill(node) {
     let nodeDiv = document.createElement("div");
@@ -80,42 +80,15 @@ function handle_skill(node) {
     nodeDiv.title = `Get ${lvlNum} ${skillName}`;
     nodeDiv.id = "lvl-" + sanitizeId(node);
     nodeDiv.appendChild(skillDiv);
-    let itemData = itemsData[node];
-    if (!itemData) {
-        console.warn(`Missing data for item: ${node}`);
-    }
-    nodeDiv.dataset.wikiLink = itemData.wikiLink;
+
     return nodeDiv;
 }
-
-function enableNodeInteractivity(chartContainer) {
-    if (!chartContainer) {
-        console.error("No valid chart container provided.");
-        return;
-    }
-
-    chartContainer.addEventListener("click", (event) => {
-        let node = event.target.closest(".node");
-        if (!node) return;
-
-        // Toggle green background
-        if (node.classList.contains("green-background")) {
-            node.classList.remove("green-background");
-            localStorage.setItem(node.id, "off");
-        } else {
-            node.classList.add("green-background");
-            localStorage.setItem(node.id, "on");
-        }
-    });
-    return chartContainer; // Optional, for consistency if needed
-}
-
 
 /**
  * Renders the progression chart using nodegroups.
  * - Iterates over node groups and creates node elements.
  * - Appends arrows between groups for visual progression.
- * - Stores the rendered chart in localStorage for quick reloads.
+ * - Caches the rendered chart in localStorage for faster reloads.
  * @param {HTMLElement} chartContainer - The container where the chart is rendered.
  */
 function renderChart(chartContainer) {
@@ -124,18 +97,15 @@ function renderChart(chartContainer) {
         return;
     }
 
-    chartContainer.innerHTML = ""; // Clear any existing content
+    chartContainer.innerHTML = ""; // Clear existing content
 
     for (let nodegroup of nodegroups) {
         let nodeGroupDiv = document.createElement("div");
         nodeGroupDiv.classList.add("node-group");
 
         for (let node of nodegroup) {
-
             let nodeDiv = !isNaN(node.charAt(0)) ? handle_skill(node) : handle_item(node);
-            if (nodeDiv) {
-                nodeGroupDiv.appendChild(nodeDiv);
-            }
+            if (nodeDiv) nodeGroupDiv.appendChild(nodeDiv);
         }
 
         chartContainer.appendChild(nodeGroupDiv);
@@ -147,69 +117,48 @@ function renderChart(chartContainer) {
             chartContainer.appendChild(arrowDiv);
         }
     }
-    enableNodeInteractivity(chartContainer);
-    // Cache the chart for performance
-    localStorage.setItem("cachedChart", chartContainer.innerHTML);
+
+    localStorage.setItem("cachedChart", chartContainer.innerHTML); // Cache the chart for performance
 }
 
 /**
- * Initializes the chart.
- * - Checks if a cached version exists in localStorage.
- * - If cached, loads from localStorage instead of fetching.
- * - If no cache exists, fetches required JSON files and renders the chart.
+ * Initializes the chart by checking for cached content.
+ * - Loads from localStorage if available.
+ * - If not, fetches JSON data and renders the chart.
+ * @returns {Promise<void>}
  */
-function loadChart() {
+async function loadChart() {
     let chartContainer = document.getElementById("chart-container");
     if (!chartContainer) {
         console.error("No element with ID 'chart-container' found.");
-        return;
+        return Promise.reject("Chart container not found");
     }
 
     let cachedChart = localStorage.getItem("cachedChart");
 
     if (cachedChart) {
         chartContainer.innerHTML = cachedChart;
-        attachNodeListeners();
-        restoreNodeStates();
         console.log("Cached chart found, loaded from storage.");
+        return Promise.resolve();
     } else {
         console.log("No cached chart found, fetching data...");
-
-        Promise.all([
-            fetch("data/items.json").then(res => res.json()),
-            fetch("data/sequence.json").then(res => res.json())
-        ])
-            .then(([items, sequence]) => {
-                itemsData = items;
-                nodegroups = Object.values(sequence);
-                renderChart(chartContainer);
-                attachNodeListeners();
-                restoreNodeStates();
-            })
-            .catch(error => console.error("Error loading JSON:", error));
+        try {
+            const [items, sequence] = await Promise.all([
+                fetch("data/items.json").then(res => res.json()),
+                fetch("data/sequence.json").then(res => res.json())
+            ]);
+            itemsData = items;
+            nodegroups = Object.values(sequence);
+            renderChart(chartContainer);
+        } catch (error) {
+            console.error("Error loading JSON:", error);
+        }
     }
 }
 
-
 /**
- * Attaches event listeners to nodes for interactive behavior.
- * - Uses event delegation for efficient handling.
- */
-function attachNodeListeners() {
-    let chartContainer = document.getElementById("chart-container");
-    if (!chartContainer) return;
-
-    chartContainer.addEventListener("click", (event) => {
-        let node = event.target.closest(".node");
-        if (!node) return;
-
-        node.classList.toggle("green-background");
-        saveNodeState(node);
-    });
-}
-
-/**
- * Saves the state of a node to localStorage.
+ * Saves the current state of a node (green background) to localStorage.
+ * @param {HTMLElement} node - The node element whose state is being saved.
  */
 function saveNodeState(node) {
     let savedStates = JSON.parse(localStorage.getItem("nodeStates")) || {};
@@ -218,10 +167,22 @@ function saveNodeState(node) {
 }
 
 /**
- * Restores previously saved node states on page load.
+ * Initializes node states and interactivity.
+ * - Restores previously saved node states.
+ * - Attaches click listeners to toggle the green background and save state.
  */
-function restoreNodeStates() {
+function initializeNodeStates() {
+    let chartContainer = document.getElementById("chart-container");
+    if (!chartContainer) return;
+
     let savedStates = JSON.parse(localStorage.getItem("nodeStates")) || {};
+
+    chartContainer.addEventListener("click", (event) => {
+        let node = event.target.closest(".node");
+        if (!node) return;
+        node.classList.toggle("green-background");
+        saveNodeState(node);
+    });
 
     for (let nodeId in savedStates) {
         let node = document.getElementById(nodeId);
@@ -231,5 +192,29 @@ function restoreNodeStates() {
     }
 }
 
-// Start rendering when the page is loaded
-document.addEventListener("DOMContentLoaded", loadChart);
+/**
+ * Prevents dragging images within the chart container.
+ * This ensures that images cannot be accidentally dragged around the page.
+ */
+function preventDragging() {
+    document.querySelector("#chart-container").addEventListener("dragstart", (event) => {
+        if (event.target.tagName === "IMG") {
+            event.preventDefault();
+        }
+    });
+}
+
+/**
+ * Initializes the application.
+ * - Loads the chart.
+ * - Initializes node states and interactions.
+ * - Prevents image dragging.
+ */
+async function init() {
+    await loadChart();
+    initializeNodeStates();
+    preventDragging();
+}
+
+// Start rendering when the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", init);
