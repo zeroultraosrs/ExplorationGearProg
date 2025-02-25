@@ -138,3 +138,17 @@ body #dark-mode-toggle {
     color: #ffffff;
     /* White text for contrast */
 }
+
+.changelog h1,
+.changelog h2 {
+    text-align: left;
+}
+
+.changelog ul {
+    list-style-type: disc;
+    margin-left: 40px;
+}
+
+.changelog .back-link {
+    margin-top: 40px;
+}
