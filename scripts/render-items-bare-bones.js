@@ -29,8 +29,13 @@ function handle_item(node) {
         return null;
     }
 
+    // Detect if running on GitHub Pages and adjust the path accordingly
+    let basePath = window.location.hostname.includes("github.io")
+        ? "/InteractiveGearProg/"
+        : "../"; // Localhost should still use relative paths
+
     let img = document.createElement("img");
-    img.src = `../${itemData.imgSrc}`;
+    img.src = basePath + itemData.imgSrc; // Ensures correct path
     img.alt = node;
     nodeDiv.title = node;
     nodeDiv.id = sanitizeId(node);
@@ -39,6 +44,7 @@ function handle_item(node) {
 
     return nodeDiv;
 }
+
 
 /**
  * Creates a node element representing a skill milestone.
@@ -55,8 +61,13 @@ function handle_skill(node) {
     let skillDiv = document.createElement("div");
     skillDiv.classList.add("skill");
 
+    // Detect if running on GitHub Pages and adjust the path accordingly
+    let basePath = window.location.hostname.includes("github.io")
+        ? "/InteractiveGearProg/"
+        : "../";
+
     let img = document.createElement("img");
-    img.src = `../images/${skillNameUppercase}_icon.webp`;
+    img.src = basePath + `images/${skillNameUppercase}_icon.webp`; // Ensures correct path
 
     let span = document.createElement("span");
     span.textContent = lvlNum;
@@ -70,6 +81,7 @@ function handle_skill(node) {
 
     return nodeDiv;
 }
+
 
 /**
  * Renders the progression chart and caches it in localStorage.
