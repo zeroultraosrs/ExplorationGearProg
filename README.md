@@ -92,3 +92,8 @@ A special thank you to the Ironscape Discord Community for their quality assuran
 - **Parasailer**: Author of *Parasailer's Gear Progression Chart* and co-author of *BRUHSailer*.  
 - **Drøgøn**: Quality assurance and extensive theorycrafting for new meta strategies.  
 - **Raze**: Quality assurance and valuable feedback.  
+
+## License
+This project is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)](https://creativecommons.org/licenses/by-nc-sa/3.0/) license.
+
+All images are sourced from the OSRS Wiki, which also follows the same license.
