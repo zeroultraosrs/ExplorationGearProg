@@ -123,7 +123,7 @@ function renderChart(chartContainer) {
         }
     }
 
-    localStorage.setItem("cachedChart", chartContainer.innerHTML); // Cache the chart for performance
+    localStorage.setItem("cachedChartBareBones", chartContainer.innerHTML); // Cache the chart for performance
 }
 
 /**
@@ -133,13 +133,13 @@ function renderChart(chartContainer) {
  * @returns {Promise<void>}
  */
 async function loadChart() {
-    let chartContainer = document.getElementById("chart-container");
+    let chartContainer = document.getElementById("chart-container-bare-bones");
     if (!chartContainer) {
-        console.error("No element with ID 'chart-container' found.");
+        console.error("No element with ID 'chart-container-bare-bones' found.");
         return Promise.reject("Chart container not found");
     }
 
-    let cachedChart = localStorage.getItem("cachedChart");
+    let cachedChart = localStorage.getItem("cachedChartBareBones");
 
     if (cachedChart) {
         chartContainer.innerHTML = cachedChart;
@@ -149,8 +149,8 @@ async function loadChart() {
         console.log("No cached chart found, fetching data...");
         try {
             const [items, sequence] = await Promise.all([
-                fetch("data/items.json").then(res => res.json()),
-                fetch("data/sequence.json").then(res => res.json())
+                fetch("/data/items.json").then(res => res.json()),
+                fetch("/data/sequence-bare-bones.json").then(res => res.json())
             ]);
             itemsData = items;
             nodegroups = Object.values(sequence);
@@ -177,7 +177,7 @@ function saveNodeState(node) {
  * - Attaches click listeners to toggle the green background and save state.
  */
 function initializeNodeStates() {
-    let chartContainer = document.getElementById("chart-container");
+    let chartContainer = document.getElementById("chart-container-bare-bones");
     if (!chartContainer) return;
 
     let savedStates = JSON.parse(localStorage.getItem("nodeStates")) || {};
@@ -202,7 +202,7 @@ function initializeNodeStates() {
  * This ensures that images cannot be accidentally dragged around the page.
  */
 function preventDragging() {
-    document.querySelector("#chart-container").addEventListener("dragstart", (event) => {
+    document.querySelector("#chart-container-bare-bones").addEventListener("dragstart", (event) => {
         if (event.target.tagName === "IMG") {
             event.preventDefault();
         }
