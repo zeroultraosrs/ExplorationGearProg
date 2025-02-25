@@ -1,32 +1,23 @@
 /**
  * Global storage for item and node data.
  * - `itemsData`: Maps item names to their metadata (e.g., image source, wiki link).
- * - `nodegroups`: Stores ordered lists of nodes as defined in sequence.json.
+ * - `nodegroups`: Stores ordered lists of nodes as defined in sequence-bare-bones.json.
  */
 let itemsData = {};
 let nodegroups = [];
 
+/** Define a cache version to invalidate outdated stored charts */
+const CACHE_VERSION = "1.2.0-bare-bones"; // Update this when making major changes
+
 /**
  * Sanitizes a string to create a safe HTML element ID.
- * - Removes special characters.
- * - Replaces spaces with hyphens.
- * - Converts the string to lowercase.
- * @param {string} name - The string to sanitize.
- * @returns {string} - The sanitized ID.
  */
 function sanitizeId(name) {
-    return name
-        .replace(/[^\w\s-]/g, '') // Remove special characters
-        .replace(/\s+/g, '-')     // Replace spaces with hyphens
-        .toLowerCase();           // Convert to lowercase
+    return name.replace(/[^\w\s-]/g, '').replace(/\s+/g, '-').toLowerCase();
 }
 
 /**
  * Creates a node element representing an item.
- * - Attaches an image and title.
- * - Adds a data attribute for the item's wiki link.
- * @param {string} node - The item name.
- * @returns {HTMLElement | null} - The created node element, or null if the item data is missing.
  */
 function handle_item(node) {
     let nodeDiv = document.createElement("div");
@@ -51,21 +42,12 @@ function handle_item(node) {
 
 /**
  * Creates a node element representing a skill milestone.
- * - Parses the level and skill name from a string (e.g., "69 Ranged").
- * - Generates an icon and displays the required level.
- * @param {string} node - The skill requirement (e.g., "69 Ranged").
- * @returns {HTMLElement | null} - The created node element, or null if the data is missing.
  */
 function handle_skill(node) {
     let nodeDiv = document.createElement("div");
     nodeDiv.classList.add("node");
 
-    let itemData = itemsData[node];
-    if (!itemData) {
-        console.warn(`Missing data for item: ${node}`);
-    }
-
-    let parts = node.split(" "); // Split into level and skill name
+    let parts = node.split(" ");
     let lvlNum = parts[0];
     let skillName = parts.slice(1).join(" ");
     let skillNameUppercase = skillName.charAt(0).toUpperCase() + skillName.slice(1);
@@ -74,7 +56,7 @@ function handle_skill(node) {
     skillDiv.classList.add("skill");
 
     let img = document.createElement("img");
-    img.src = itemData.imgSrc;
+    img.src = `/images/${skillNameUppercase}_icon.webp`;
 
     let span = document.createElement("span");
     span.textContent = lvlNum;
@@ -85,16 +67,12 @@ function handle_skill(node) {
     nodeDiv.title = `Get ${lvlNum} ${skillName}`;
     nodeDiv.id = "lvl-" + sanitizeId(node);
     nodeDiv.appendChild(skillDiv);
-    nodeDiv.dataset.wikiLink = itemData.wikiLink;
+
     return nodeDiv;
 }
 
 /**
- * Renders the progression chart using nodegroups.
- * - Iterates over node groups and creates node elements.
- * - Appends arrows between groups for visual progression.
- * - Caches the rendered chart in localStorage for faster reloads.
- * @param {HTMLElement} chartContainer - The container where the chart is rendered.
+ * Renders the progression chart and caches it in localStorage.
  */
 function renderChart(chartContainer) {
     if (!chartContainer) {
@@ -102,7 +80,7 @@ function renderChart(chartContainer) {
         return;
     }
 
-    chartContainer.innerHTML = ""; // Clear existing content
+    chartContainer.innerHTML = "";
 
     for (let nodegroup of nodegroups) {
         let nodeGroupDiv = document.createElement("div");
@@ -123,14 +101,12 @@ function renderChart(chartContainer) {
         }
     }
 
-    localStorage.setItem("cachedChartBareBones", chartContainer.innerHTML); // Cache the chart for performance
+    localStorage.setItem("cachedChartBareBones", chartContainer.innerHTML);
+    localStorage.setItem("cacheVersionBareBones", CACHE_VERSION); // Store the cache version
 }
 
 /**
  * Initializes the chart by checking for cached content.
- * - Loads from localStorage if available.
- * - If not, fetches JSON data and renders the chart.
- * @returns {Promise<void>}
  */
 async function loadChart() {
     let chartContainer = document.getElementById("chart-container-bare-bones");
@@ -140,13 +116,20 @@ async function loadChart() {
     }
 
     let cachedChart = localStorage.getItem("cachedChartBareBones");
+    let cachedVersion = localStorage.getItem("cacheVersionBareBones");
 
-    if (cachedChart) {
-        chartContainer.innerHTML = cachedChart;
-        console.log("Cached chart found, loaded from storage.");
-        return Promise.resolve();
-    } else {
-        console.log("No cached chart found, fetching data...");
+    try {
+        if (cachedChart && cachedVersion === CACHE_VERSION) {
+            chartContainer.innerHTML = cachedChart;
+            console.log("Cached chart loaded successfully.");
+            return;
+        } else {
+            throw new Error("Cache outdated or missing"); // Forces a fallback
+        }
+    } catch (error) {
+        console.warn("Cache load failed:", error);
+        console.log("Fetching fresh data...");
+
         try {
             const [items, sequence] = await Promise.all([
                 fetch("/data/items.json").then(res => res.json()),
@@ -162,25 +145,19 @@ async function loadChart() {
 }
 
 /**
- * Saves the current state of a node (green background) to localStorage.
- * @param {HTMLElement} node - The node element whose state is being saved.
+ * Saves and restores node states in localStorage.
  */
 function saveNodeState(node) {
-    let savedStates = JSON.parse(localStorage.getItem("nodeStates")) || {};
+    let savedStates = JSON.parse(localStorage.getItem("nodeStatesBareBones")) || {};
     savedStates[node.id] = node.classList.contains("green-background");
-    localStorage.setItem("nodeStates", JSON.stringify(savedStates));
+    localStorage.setItem("nodeStatesBareBones", JSON.stringify(savedStates));
 }
 
-/**
- * Initializes node states and interactivity.
- * - Restores previously saved node states.
- * - Attaches click listeners to toggle the green background and save state.
- */
 function initializeNodeStates() {
     let chartContainer = document.getElementById("chart-container-bare-bones");
     if (!chartContainer) return;
 
-    let savedStates = JSON.parse(localStorage.getItem("nodeStates")) || {};
+    let savedStates = JSON.parse(localStorage.getItem("nodeStatesBareBones")) || {};
 
     chartContainer.addEventListener("click", (event) => {
         let node = event.target.closest(".node");
@@ -199,7 +176,6 @@ function initializeNodeStates() {
 
 /**
  * Prevents dragging images within the chart container.
- * This ensures that images cannot be accidentally dragged around the page.
  */
 function preventDragging() {
     document.querySelector("#chart-container-bare-bones").addEventListener("dragstart", (event) => {
@@ -211,9 +187,6 @@ function preventDragging() {
 
 /**
  * Initializes the application.
- * - Loads the chart.
- * - Initializes node states and interactions.
- * - Prevents image dragging.
  */
 async function init() {
     await loadChart();
