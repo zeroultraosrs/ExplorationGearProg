@@ -7,7 +7,7 @@ let itemsData = {};
 let nodegroups = [];
 
 /** Define a cache version to invalidate outdated stored charts */
-const CACHE_VERSION = "1.2.0-bare-bones"; // Update this when making major changes
+const CACHE_VERSION = "1.2.1-bare-bones"; // Update this when making major changes
 
 /**
  * Sanitizes a string to create a safe HTML element ID.
