@@ -51,6 +51,11 @@ function handle_item(node) {
 function handle_skill(node) {
     let nodeDiv = document.createElement("div");
     nodeDiv.classList.add("node");
+    let itemData = itemsData[node];
+    if (!itemData) {
+        console.warn(`Missing data for item: ${node}`);
+    }
+
 
     let parts = node.split(" ");
     let lvlNum = parts[0];
@@ -77,6 +82,7 @@ function handle_skill(node) {
     nodeDiv.title = `Get ${lvlNum} ${skillName}`;
     nodeDiv.id = "lvl-" + sanitizeId(node);
     nodeDiv.appendChild(skillDiv);
+    nodeDiv.dataset.wikiLink = itemData.wikiLink;
 
     return nodeDiv;
 }
