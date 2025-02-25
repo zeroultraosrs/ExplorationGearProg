@@ -56,7 +56,7 @@ function handle_skill(node) {
     skillDiv.classList.add("skill");
 
     let img = document.createElement("img");
-    img.src = `/images/${skillNameUppercase}_icon.webp`;
+    img.src = `images/${skillNameUppercase}_icon.webp`;
 
     let span = document.createElement("span");
     span.textContent = lvlNum;
