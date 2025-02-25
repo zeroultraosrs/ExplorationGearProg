@@ -148,22 +148,22 @@ async function loadChart() {
  * Saves and restores node states in localStorage.
  */
 function saveNodeState(node) {
-    let savedStates = JSON.parse(localStorage.getItem("nodeStatesBareBones")) || {};
+    let savedStates = JSON.parse(localStorage.getItem("sharedNodeStates")) || {}; // Use shared storage key
     savedStates[node.id] = node.classList.contains("green-background");
-    localStorage.setItem("nodeStatesBareBones", JSON.stringify(savedStates));
+    localStorage.setItem("sharedNodeStates", JSON.stringify(savedStates)); // Store under shared key
 }
 
 function initializeNodeStates() {
-    let chartContainer = document.getElementById("chart-container-bare-bones");
+    let chartContainer = document.getElementById("chart-container-bare-bones"); // Corrected ID for bare bones
     if (!chartContainer) return;
 
-    let savedStates = JSON.parse(localStorage.getItem("nodeStatesBareBones")) || {};
+    let savedStates = JSON.parse(localStorage.getItem("sharedNodeStates")) || {}; // Load from shared storage
 
     chartContainer.addEventListener("click", (event) => {
         let node = event.target.closest(".node");
         if (!node) return;
         node.classList.toggle("green-background");
-        saveNodeState(node);
+        saveNodeState(node); // Save state under shared key
     });
 
     for (let nodeId in savedStates) {
@@ -173,6 +173,8 @@ function initializeNodeStates() {
         }
     }
 }
+
+
 
 /**
  * Prevents dragging images within the chart container.
