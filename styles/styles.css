@@ -152,3 +152,14 @@ body #dark-mode-toggle {
 .changelog .back-link {
     margin-top: 40px;
 }
+
+a {
+    color: #66aaff;
+    /* Light blue for visibility */
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #aa88ff;
+    /* Light purple */
+}
