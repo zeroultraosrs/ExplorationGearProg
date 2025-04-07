@@ -1,0 +1,165 @@
+:root {
+    --background-color: #555555;
+    --green-complete: rgb(0, 200, 0);
+
+}
+
+/* Center alignment for headings and paragraphs */
+h1,
+h2,
+p {
+    text-align: center;
+}
+
+/* Styles for the main flex container */
+.chart {
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 10px;
+    row-gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styles for node-group items container */
+.node-group {
+    display: grid;
+    grid-template-rows: 40px 40px;
+    grid-auto-columns: 40px;
+    grid-auto-flow: column dense;
+    grid-gap: 5px;
+    margin: 2px;
+}
+
+.node-group>.node {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #aaaaaa;
+}
+
+.node-group>.node>img {
+    width: 40px;
+    height: 40px;
+    object-fit: scale-down;
+}
+
+
+/* === SPECIAL CASE: SINGLE ITEM IN NODE-GROUP === */
+.node-group:has(> .node:only-child) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ensure that the node takes full space */
+.node-group:has(> .node:only-child)>.node {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ensure image inside that node behaves like it used to */
+.node-group:has(> .node:only-child)>.node>img {
+    width: 40px;
+    height: 40px;
+    object-fit: scale-down;
+}
+
+/* Styles for skill containers */
+.node-group>.node>.skill {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.node-group>.node>.skill>img {
+    width: 20px;
+    height: 20px;
+    object-fit: scale-down;
+}
+
+.node-group>.node>.skill>span {
+    font-size: 0.8rem;
+}
+
+/* Green background class for toggled elements */
+.green-background {
+    background-color: rgb(0, 200, 0);
+}
+
+.chart>.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+}
+
+
+/* Dark Mode Styles */
+body {
+    background-color: #2c2c2c;
+    /* Darker background for better contrast */
+    color: #e0e0e0;
+    /* Softer light text to reduce eye strain */
+}
+
+/* Adjust other elements as needed */
+body .skill,
+body .node-group>img,
+body .chart>img {
+    border-color: #aaaaaa;
+    /* Light gray borders for a softer look */
+}
+
+body .arrow {
+    color: #e0e0e0;
+    /* Softer light arrow color */
+}
+
+body .green-background {
+    background-color: #008000;
+    /* Brightened green for better visibility */
+}
+
+/* Style for the dark mode toggle button in dark mode */
+body #dark-mode-toggle {
+    background-color: #555555;
+    /* Subtle dark gray background for button */
+    color: #ffffff;
+    /* White text for contrast */
+}
+
+.changelog h1,
+.changelog h2 {
+    text-align: left;
+}
+
+.changelog ul {
+    list-style-type: disc;
+    margin-left: 40px;
+}
+
+.changelog .back-link {
+    margin-top: 40px;
+}
+
+a {
+    color: #66aaff;
+    /* Light blue for visibility */
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #aa88ff;
+    /* Light purple */
+}
