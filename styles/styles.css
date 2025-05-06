@@ -170,3 +170,33 @@ a:visited {
     color: #aa88ff;
     /* Light purple */
 }
+
+/* Responsive Design for Mobile Devices */
+@media only screen and (max-width: 600px) {
+    .chart {
+        display: grid;
+        row-gap: 40px;
+    }
+
+    .node-group {
+        display: grid;
+        position: relative;
+        grid-template-rows: 40px;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+    
+    .chart>.arrow {
+        display: none;
+    }
+    .node-group:not(:last-child)::after {
+        display: block;
+        position: absolute;
+        top: 45px;
+        width: 100vw;
+        text-align: center;
+        font-size: 25px;
+        content: "↓";
+    }
+}
