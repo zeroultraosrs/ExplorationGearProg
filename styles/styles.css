@@ -183,7 +183,7 @@ a:visited {
     .chart>.arrow {
         display: none;
     }
-    .node-group::after {
+    .node-group:not(:last-child)::after {
         display: block;
         position: absolute;
         top: 45px;
