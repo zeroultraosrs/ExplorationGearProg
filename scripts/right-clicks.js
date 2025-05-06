@@ -19,8 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
     contextMenu.appendChild(buttonContainer);
     document.body.appendChild(contextMenu);
 
-    // === RIGHT CLICK EVENT ===
-    document.addEventListener("contextmenu", (event) => {
+    // === LONG TOUCH/RIGHT CLICK EVENT ===
+    const showContextMenu = (event) => {
         let node = event.target.closest(".node");
         if (!node) return;
         event.preventDefault(); // Prevent default browser menu
@@ -47,7 +47,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Position and show menu
         renderContextMenu(contextMenu, event);
-    });
+    }
+    // Right click event
+    document.addEventListener("contextmenu", showContextMenu);
+
+    const touchduration = 600; //length of time we want the user to touch before we do something
+    const onlongtouch = (e) => {
+        timer = null;
+        showContextMenu(e); // Call the context menu function
+    };
+    let timer;
+
+    document.getElementById('chart-container').addEventListener("touchstart", (e) => !timer ? timer = setTimeout(() => onlongtouch(e), touchduration) : null, false);
+    document.getElementById('chart-container').addEventListener("touchend", () => timer ? timer = clearTimeout(timer) : null, false);
 
     // === CLICK OUTSIDE TO CLOSE ===
     document.addEventListener("click", (event) => {
@@ -98,42 +110,27 @@ function renderContextMenu(contextMenu, event) {
 
     const menuWidth = contextMenu.offsetWidth;
     const menuHeight = contextMenu.offsetHeight;
-    const screenWidth = window.innerWidth;
-    const screenHeight = window.innerHeight;
+    const maxX = document.documentElement.clientWidth; // Use clientWidth for accurate screen width without scrollbars
+    const maxY = window.innerHeight + window.scrollY; // User height + how far we scrolled down to figure out the bottom edge
 
-
-    let clickCoordX = event.pageX;
-    let posX;
-    if (clickCoordX - menuWidth / 2 < 0) { // Default rendering of box would clip out of window.
-        posX = 0; // Solves issue!
-    } else if (clickCoordX + menuWidth > screenWidth) {
-        posX = clickCoordX - menuWidth;
-        console.log("Right edge clip detected.")
-        console.log("clickCoordX:", clickCoordX);
-    } else {
-        console.log("No clip detected.")
-        posX = clickCoordX - menuWidth / 2; // Center menu horizontally at cursor
-        console.log("clickCoordX:", clickCoordX);
-    }
+    let posX = event.pageX - menuWidth / 2; // Center menu horizontally at cursor
     let posY = event.pageY; // Keep top edge at cursor position
 
     // Right edge overflow: Shift left if menu overflows the screen
-
-
-    if (posX + menuWidth > screenWidth) {
-        posX = screenWidth - menuWidth; // Stick to right edge
+    if (posX + menuWidth > maxX) {
+        posX = maxX - menuWidth; // Stick to right edge
     }
     // Left edge overflow: Shift right if menu goes off-screen
     if (posX < 0) {
         posX = 0;
     }
     // Bottom edge overflow: Move menu upwards if needed
-    if (posY + menuHeight > screenHeight) {
-        posY = screenHeight - menuHeight;
+    if (posY + menuHeight > maxY) {
+        posY = maxY - menuHeight;
     }
     // Top edge overflow: Ensure the menu is always visible
-    if (posY < 0) {
-        posY = 0;
+    if (posY < window.scrollY) {
+        posY = window.scrollY;
     }
 
     // Apply computed position
