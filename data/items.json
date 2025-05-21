@@ -833,5 +833,21 @@
     "98 agility": {
         "imgSrc": "images/Agility_icon.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Hallowed_Sepulchre"
+    },
+    "Oathplate chest": {
+        "imgSrc": "images/Oathplate_chest.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Oathplate_chest"
+    },
+    "Oathplate legs": {
+        "imgSrc": "images/Oathplate_legs.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Oathplate_chest"
+    },
+    "Oathplate helm": {
+        "imgSrc": "images/Oathplate_helm.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Oathplate_chest"
+    },
+    "Rite of vile transference": {
+        "imgSrc": "images/Rite_of_vile_transference.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Rite_of_vile_transference"
     }
 }
