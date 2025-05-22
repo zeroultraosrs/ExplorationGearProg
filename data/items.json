@@ -840,14 +840,18 @@
     },
     "Oathplate legs": {
         "imgSrc": "images/Oathplate_legs.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Oathplate_chest"
+        "wikiLink": "https://oldschool.runescape.wiki/w/Oathplate_legs"
     },
     "Oathplate helm": {
         "imgSrc": "images/Oathplate_helm.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Oathplate_chest"
+        "wikiLink": "https://oldschool.runescape.wiki/w/Oathplate_helm"
     },
     "Rite of vile transference": {
         "imgSrc": "images/Rite_of_vile_transference.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Rite_of_vile_transference"
+    },
+    "Purging staff": {
+        "imgSrc": "images/Purging_staff.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Purging_staff"
     }
 }

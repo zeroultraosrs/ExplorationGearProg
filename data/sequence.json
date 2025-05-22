@@ -80,7 +80,8 @@
     ],
     [
         "Prescription goggles",
-        "Alchemist's amulet"
+        "Alchemist's amulet",
+        "Spellbook Swap"
     ],
     [
         "Explorer's ring 4",
@@ -91,8 +92,7 @@
         "Amulet of glory(6)"
     ],
     [
-        "Pharaoh's sceptre",
-        "Spellbook Swap"
+        "Pharaoh's sceptre"
     ],
     [
         "Karamja gloves 4",
@@ -115,9 +115,7 @@
     ],
     [
         "Ancient icon",
-        "Bandos hilt",
-        "Bandos chestplate",
-        "Bandos tassets"
+        "Bandos hilt"
     ],
     [
         "Slayer helmet (i)",
@@ -144,16 +142,13 @@
         "Dragon pickaxe"
     ],
     [
-        "Osmumten's fang",
-        "Thread of elidinis",
-        "Lightbearer"
-    ],
-    [
         "Deadeye",
         "Mystic Vigour"
     ],
     [
-        "Ring of suffering (i)"
+        "Osmumten's fang",
+        "Thread of elidinis",
+        "Lightbearer"
     ],
     [
         "Ghommal's hilt 4"
@@ -175,6 +170,9 @@
         "Eternal boots",
         "Occult necklace",
         "Achievement diary cape (t)"
+    ],
+    [
+        "Ring of suffering (i)"
     ],
     [
         "Trident of the swamp",
