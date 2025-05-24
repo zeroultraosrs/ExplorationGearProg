@@ -30,12 +30,12 @@ p {
     grid-gap: 5px;
     margin: 2px;
     /* stop touch events from selecting text */
-    -webkit-touch-callout:none;
-    -webkit-user-select:none;
-    -khtml-user-select:none;
-    -moz-user-select:none;
-    -ms-user-select:none;
-    user-select:none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .node-group>.node {
@@ -186,10 +186,11 @@ a:visited {
         align-items: center;
         width: 100vw;
     }
-    
+
     .chart>.arrow {
         display: none;
     }
+
     .node-group:not(:last-child)::after {
         display: block;
         position: absolute;
@@ -199,4 +200,15 @@ a:visited {
         font-size: 25px;
         content: "↓";
     }
+}
+
+.subtitle {
+    font-size: 0.85em;
+    font-style: italic;
+    color: #aaa;
+    text-align: center;
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 30px;
+    /* Add this to push the chart downward */
 }
