@@ -114,8 +114,7 @@
         "Bloodbark legs"
     ],
     [
-        "Ancient icon",
-        "Bandos hilt"
+        "Ancient icon"
     ],
     [
         "Slayer helmet (i)",
@@ -126,16 +125,9 @@
     ],
     [
         "Amulet of torture",
-        "Emberlight",
         "Necklace of anguish",
-        "Burning claws",
-        "Tormented bracelet",
-        "Scorching bow",
-        "Bandos godsword",
-        "Zamorakian hasta"
-    ],
-    [
-        "Rite of vile transference"
+        "Zamorakian hasta",
+        "Bandos godsword"
     ],
     [
         "Voidwaker",
@@ -154,11 +146,19 @@
         "Ghommal's hilt 4"
     ],
     [
-        "Abyssal tentacle",
-        "Trident of the seas",
         "Abyssal whip",
+        "Trident of the seas",
+        "Abyssal tentacle",
         "Dragon warhammer",
-        "Dragon boots"
+        "Emberlight",
+        "Dragon boots",
+        "Scorching bow",
+        "Tormented bracelet",
+        "Burning claws",
+        "Ring of suffering (i)"
+    ],
+    [
+        "Rite of vile transference"
     ],
     [
         "Desert amulet 4",
@@ -170,9 +170,6 @@
         "Eternal boots",
         "Occult necklace",
         "Achievement diary cape (t)"
-    ],
-    [
-        "Ring of suffering (i)"
     ],
     [
         "Trident of the swamp",
