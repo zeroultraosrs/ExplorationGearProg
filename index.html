@@ -1,10 +1,6 @@
 <!-- 
-Some documentation
- <div class="chart"> defines the chart-like element,
-<div class="node-group"> defines the groups of items, and must contain >2 img
-<div class="arrow">→</div> makes an arrow between items in chart
-
-the rest is standard HTML afaik.
+chart-container is property of scripts/render-items.js,
+The rest is stock-standard stuff.
 
 -->
 <!DOCTYPE html>
@@ -13,7 +9,7 @@ the rest is standard HTML afaik.
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ladlor's Interactive Progression Chart</title>
+    <title>Ladlor's Chart</title>
     <script src="scripts/render-items.js" defer></script>
     <script src="scripts/right-clicks.js"></script>
     <link rel="stylesheet" href="styles/styles.css">
@@ -23,7 +19,8 @@ the rest is standard HTML afaik.
 </head>
 
 <body>
-    <h1>Ladlor's Interactive Progression Chart</h1>
+    <h1>Interactive Ironman Progression Chart</h1>
+    <span class="subtitle">Curated by the Ironscape community — made by Ladlor</span>
     <div class="chart" id="chart-container"></div>
     </div>
     <h2>Acknowledgements</h2>
@@ -67,7 +64,7 @@ the rest is standard HTML afaik.
     </div>
     <footer>
         <p>Version 1.2.0 | <a href="pages/changelog.html">View Changelog</a> | <a href="pages/privacy.html">Privacy
-                Policy</a></p>
+                Policy</a> | <a href="https://github.com/Madssb/InteractiveGearProg">Source Code</a></p>
         <p>All images used in this tool are sourced from the
             <a href="https://oldschool.runescape.wiki/" target="_blank">Old School RuneScape Wiki</a>,
             and are licensed under the
