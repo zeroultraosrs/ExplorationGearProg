@@ -77,6 +77,7 @@ This project is built with plain HTML, CSS, and JavaScript, with no external dep
 | `scripts/`               | JavaScript files for rendering and interactive behavior.     |
 | └─ `render-items.js`     | Handles chart rendering and interactive features.            |
 | └─ `right-clicks.js`     | Implements the custom right-click menu.                      |
+| └─ `version.js`          | Synchronizes index.html versioning with changelog.html.      |
 | `styles/`                | CSS files for styling the chart and context menu.            |
 | └─ `styles.css`          | Main stylesheet for the chart.                               |
 | └─ `right-clicks.css`    | Styles for the right-click context menu.                     |

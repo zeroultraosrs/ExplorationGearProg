@@ -1,5 +1,6 @@
-
-
+/**
+ * Syncs populates span with version id with latest version text for syncing index.html and changelog.html.
+ */
 function init() {
     fetch('pages/changelog.html')
         .then(response => {
@@ -12,11 +13,7 @@ function init() {
 
             // Parse the text
             const doc = parser.parseFromString(html, "text/html")
-
-            // You can now even select part of that html as you would in the regular DOM
-            // Example:
-            // const docArticle = doc.querySelector('article').innerHTML
-
+            // top h2 always represents latest version.
             const latest_version_text = doc.querySelector('h2').innerHTML.toLowerCase()
 
 
