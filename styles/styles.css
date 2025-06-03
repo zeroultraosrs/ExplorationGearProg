@@ -7,7 +7,15 @@
 /* Center alignment for headings and paragraphs */
 h1,
 h2,
-p {
+p,
+ul,
+li {
+    text-align: center;
+}
+
+ul {
+    list-style-position: inside;
+    padding-left: 0;
     text-align: center;
 }
 
