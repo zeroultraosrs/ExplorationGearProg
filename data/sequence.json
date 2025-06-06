@@ -28,7 +28,6 @@
         "Book of the dead",
         "Ava's accumulator",
         "Piety",
-        "Plank sack",
         "Open gem bag"
     ],
     [
@@ -79,27 +78,18 @@
         "Crystal legs"
     ],
     [
-        "Prescription goggles",
-        "Alchemist's amulet",
         "Spellbook Swap"
     ],
     [
         "Explorer's ring 4",
-        "Varrock armour 4",
         "Wrath rune",
         "Fire cape",
         "Karamja gloves 3",
         "Amulet of glory(6)"
     ],
     [
-        "Pharaoh's sceptre"
-    ],
-    [
-        "Karamja gloves 4",
-        "Ardougne cloak 4",
-        "Fremennik sea boots 4",
-        "Kandarin headgear 4",
-        "Log basket"
+        "Pharaoh's sceptre",
+        "Karamja gloves 4"
     ],
     [
         "Occult altar",
@@ -122,6 +112,10 @@
         "Warped sceptre",
         "Reptile Got Ripped",
         "Greater Challenge"
+    ],
+    [
+        "Prescription goggles",
+        "Alchemist's amulet"
     ],
     [
         "Amulet of torture",
@@ -168,8 +162,7 @@
         "Primordial boots",
         "Amulet of rancour",
         "Eternal boots",
-        "Occult necklace",
-        "Achievement diary cape (t)"
+        "Occult necklace"
     ],
     [
         "Trident of the swamp",

@@ -220,3 +220,10 @@ a:visited {
     margin-bottom: 30px;
     /* Add this to push the chart downward */
 }
+
+ul ul {
+    margin-left: 20px;
+    /* or padding-left */
+    list-style-type: circle;
+    /* or disc, square, none, etc. */
+}
