@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     buttonContainer.id = "button-container";
 
     let wikiButton = initializeWikiButton(buttonContainer);
+    let skipButton = initializeSkipButton(buttonContainer);
     let cancelButton = initializeCancelButton(buttonContainer);
 
     // Append to menu and body
@@ -38,6 +39,25 @@ document.addEventListener("DOMContentLoaded", () => {
             };
         } else {
             wikiButton.style.display = "none";
+        }
+        
+        // Configure Skip Button
+        skipButton.onclick = () => {
+            const currentState = parseInt(node.dataset.state);
+
+            if (currentState === 2 && node.dataset.prevState !== undefined) {
+                // Restore previous state
+                node.dataset.state = node.dataset.prevState;
+                delete node.dataset.prevState;
+            } else {
+                // Save current state and mark as skipped
+                node.dataset.prevState = currentState;
+                node.dataset.state = 2;
+            }
+        
+            contextMenu.style.display = "none";
+            updateNodeVisualState(node);
+            saveNodeState(node);
         }
 
         // Configure Cancel Button
@@ -86,6 +106,25 @@ function initializeWikiButton(buttonContainer) {
     wikiButton.appendChild(orangeText);
     buttonContainer.appendChild(wikiButton);
     return wikiButton;
+}
+
+function initializeSkipButton(buttonContainer) {
+    const skipButton = document.createElement("button");
+    skipButton.id = "skip-button";
+    skipButton.classList.add("menu-button");
+
+    const whiteText = document.createElement("span");
+    whiteText.classList.add("left-text");
+    whiteText.textContent = "Mark as ";
+
+    const orangeText = document.createElement("span");
+    orangeText.classList.add("right-text");
+    orangeText.textContent = "Skipped";
+
+    skipButton.appendChild(whiteText);
+    skipButton.appendChild(orangeText);
+    buttonContainer.appendChild(skipButton);
+    return skipButton;
 }
 
 function initializeCancelButton(buttonContainer) {

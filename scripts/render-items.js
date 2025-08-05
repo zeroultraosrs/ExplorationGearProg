@@ -166,8 +166,14 @@ async function loadChart() {
  */
 function saveNodeState(node) {
     let savedStates = JSON.parse(localStorage.getItem("sharedNodeStates")) || {}; // Use shared storage key
-    savedStates[node.id] = node.classList.contains("green-background");
+    savedStates[node.id] = parseInt(node.dataset.state);
     localStorage.setItem("sharedNodeStates", JSON.stringify(savedStates)); // Store under shared key
+}
+
+function updateNodeVisualState(node) {
+    node.classList.remove("state-0", "state-1", "state-2");
+    let state = parseInt(node.dataset.state);
+    node.classList.add(`state-${state}`);
 }
 
 function initializeNodeStates() {
@@ -179,14 +185,20 @@ function initializeNodeStates() {
     chartContainer.addEventListener("click", (event) => {
         let node = event.target.closest(".node");
         if (!node) return;
-        node.classList.toggle("green-background");
+
+        let currentState = parseInt(node.dataset.state) || 0;
+        let nextState = currentState === 1 ? 0 : 1;
+        node.dataset.state = nextState;
+
+        updateNodeVisualState(node);
         saveNodeState(node); // Save state under shared key
     });
 
     for (let nodeId in savedStates) {
         let node = document.getElementById(nodeId);
-        if (node && savedStates[nodeId]) {
-            node.classList.add("green-background");
+        if (node) {
+            node.dataset.state = savedStates[nodeId];
+            updateNodeVisualState(node);
         }
     }
 }

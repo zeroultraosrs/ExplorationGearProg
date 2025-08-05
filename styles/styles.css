@@ -1,4 +1,5 @@
 :root {
+    --transparent: rgb(0, 0, 0, 0);
     --background-color: #555555;
     --green-complete: rgb(0, 200, 0);
 
@@ -105,9 +106,30 @@ ul {
     font-size: 0.8rem;
 }
 
-/* Green background class for toggled elements */
-.green-background {
-    background-color: rgb(0, 200, 0);
+/* 
+    Individual item states where:
+        state-0 = incomplete
+        state-1 = complete
+        state-2 = skipped
+*/
+.state-0 { background-color: var(--transparent); }
+.state-1 { background-color: var(--green-complete); }
+.state-2 {
+    background-color: var(--green-complete);
+    position: relative;     /* required for pseudo-element positioning */
+}
+  
+/* Add top-right triangle using a pseudo-element for skipped state */
+.state-2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 0; /* triangle shape */
+    border-color: transparent yellow transparent transparent;
 }
 
 .chart>.arrow {
@@ -139,11 +161,6 @@ body .chart>img {
 body .arrow {
     color: #e0e0e0;
     /* Softer light arrow color */
-}
-
-body .green-background {
-    background-color: #008000;
-    /* Brightened green for better visibility */
 }
 
 /* Style for the dark mode toggle button in dark mode */
