@@ -1,7 +1,7 @@
 :root {
     --transparent: rgb(0, 0, 0, 0);
     --background-color: #555555;
-    --green-complete: rgb(0, 200, 0);
+    --green-complete: #008000;
 
 }
 
@@ -112,13 +112,20 @@ ul {
         state-1 = complete
         state-2 = skipped
 */
-.state-0 { background-color: var(--transparent); }
-.state-1 { background-color: var(--green-complete); }
+.state-0 {
+    background-color: var(--transparent);
+}
+
+.state-1 {
+    background-color: var(--green-complete);
+}
+
 .state-2 {
     background-color: var(--green-complete);
-    position: relative;     /* required for pseudo-element positioning */
+    position: relative;
+    /* required for pseudo-element positioning */
 }
-  
+
 /* Add top-right triangle using a pseudo-element for skipped state */
 .state-2::after {
     content: "";
@@ -128,7 +135,8 @@ ul {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 10px 10px 0; /* triangle shape */
+    border-width: 0 10px 10px 0;
+    /* triangle shape */
     border-color: transparent yellow transparent transparent;
 }
 
