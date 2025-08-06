@@ -62,11 +62,13 @@
         "Crystal legs"
     ],
     [
+        "Spellbook Swap"
+    ],
+    [
         "Fire cape",
         "Explorer's ring 4"
     ],
     [
-        "Spellbook Swap",
         "Pharaoh's sceptre"
     ],
     [
@@ -76,10 +78,7 @@
         "Bloodbark legs"
     ],
     [
-        "Ancient icon",
-        "Bandos hilt",
-        "Bandos chestplate",
-        "Bandos tassets"
+        "Ancient icon"
     ],
     [
         "Slayer helmet (i)",
@@ -88,40 +87,44 @@
     ],
     [
         "Amulet of torture",
-        "Emberlight",
         "Necklace of anguish",
-        "Burning claws",
-        "Tormented bracelet",
-        "Scorching bow",
-        "Bandos godsword",
-        "Zamorakian hasta"
+        "Zamorakian hasta",
+        "Bandos godsword"
     ],
     [
         "Voidwaker",
         "Dragon pickaxe"
     ],
     [
-        "Osmumten's fang",
-        "Thread of elidinis",
-        "Lightbearer"
-    ],
-    [
         "Deadeye",
         "Mystic Vigour"
     ],
     [
-        "Ring of suffering (i)"
+        "Thread of elidinis",
+        "Lightbearer"
     ],
     [
         "Ghommal's hilt 4"
     ],
     [
-        "Abyssal tentacle",
-        "Trident of the seas",
         "Abyssal whip",
-        "Neitiznot faceguard",
+        "Abyssal tentacle",
         "Dragon warhammer",
-        "Dragon boots"
+        "Emberlight",
+        "Dragon boots",
+        "Scorching bow",
+        "Tormented bracelet",
+        "Burning claws",
+        "Ring of suffering (i)"
+    ],
+    [
+        "Eye of ayak",
+        "Confliction gauntlets",
+        "Avernic treads"
+    ],
+    [
+        "Toxic blowpipe",
+        "Rite of vile transference"
     ],
     [
         "Desert amulet 4",
@@ -134,10 +137,11 @@
         "Occult necklace"
     ],
     [
-        "Trident of the swamp",
-        "Toxic blowpipe",
         "Dragon hunter lance",
         "Ferocious gloves"
+    ],
+    [
+        "Osmumten's fang"
     ],
     [
         "Rigour",
@@ -145,6 +149,11 @@
     ],
     [
         "Infernal cape"
+    ],
+    [
+        "Oathplate chest",
+        "Oathplate legs",
+        "Oathplate helm"
     ],
     [
         "Ultor ring"
@@ -174,8 +183,7 @@
     [
         "Saturated heart",
         "Venator ring",
-        "Venator bow",
-        "Soulreaper axe"
+        "Venator bow"
     ],
     [
         "Ghommal's hilt 5"

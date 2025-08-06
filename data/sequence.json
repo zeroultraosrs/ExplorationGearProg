@@ -31,17 +31,26 @@
         "Open gem bag"
     ],
     [
+        "98 agility"
+    ],
+    [
         "Dark altar (Construction)",
         "Spirit tree (Construction)",
         "Rejuvenation pool",
         "Basic jewellery box"
     ],
     [
+        "Arkan blade"
+    ],
+    [
         "Black mask (i)",
         "Imbued zamorak cape",
         "Bonecrusher",
         "Ash sanctifier",
-        "Bigger and Badder"
+        "Bigger and Badder",
+        "Ice Barrage",
+        "Infinity boots",
+        "Mage's book"
     ],
     [
         "Mixed hide cape",
@@ -65,11 +74,7 @@
     ],
     [
         "92 ranged",
-        "86 strength",
-        "Ice Barrage",
-        "Infinity boots",
-        "Mage's book",
-        "98 agility"
+        "86 strength"
     ],
     [
         "Crystal helm",
@@ -132,7 +137,6 @@
         "Mystic Vigour"
     ],
     [
-        "Osmumten's fang",
         "Thread of elidinis",
         "Lightbearer"
     ],
@@ -141,7 +145,6 @@
     ],
     [
         "Abyssal whip",
-        "Trident of the seas",
         "Abyssal tentacle",
         "Dragon warhammer",
         "Emberlight",
@@ -150,6 +153,9 @@
         "Tormented bracelet",
         "Burning claws",
         "Ring of suffering (i)"
+    ],
+    [
+        "Avernic treads"
     ],
     [
         "Rite of vile transference"
@@ -165,8 +171,16 @@
         "Occult necklace"
     ],
     [
-        "Trident of the swamp",
-        "Toxic blowpipe",
+        "Eye of ayak",
+        "Confliction gauntlets"
+    ],
+    [
+        "Toxic blowpipe"
+    ],
+    [
+        "Osmumten's fang"
+    ],
+    [
         "Dragon hunter lance",
         "Ferocious gloves"
     ],

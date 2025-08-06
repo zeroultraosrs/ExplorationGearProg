@@ -853,5 +853,25 @@
     "Purging staff": {
         "imgSrc": "images/Purging_staff.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Purging_staff"
+    },
+    "Eye of ayak": {
+        "imgSrc": "images/Eye_of_ayak.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Eye_of_ayak"
+    },
+    "Confliction gauntlets": {
+        "imgSrc": "images/Confliction_gauntlets.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Confliction_gauntlets"
+    },
+    "Avernic treads": {
+        "imgSrc": "images/Avernic_treads.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Avernic_treads"
+    },
+    "Pegasian boots": {
+        "imgSrc": "images/Pegasian_boots.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Pegasian_boots"
+    },
+    "Arkan blade": {
+        "imgSrc": "images/Arkan_blade.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Arkan_blade"
     }
 }
