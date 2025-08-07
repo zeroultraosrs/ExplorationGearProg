@@ -28,8 +28,10 @@
         "Book of the dead",
         "Ava's accumulator",
         "Piety",
-        "Plank sack",
         "Open gem bag"
+    ],
+    [
+        "98 agility"
     ],
     [
         "Dark altar (Construction)",
@@ -38,11 +40,17 @@
         "Basic jewellery box"
     ],
     [
+        "Arkan blade"
+    ],
+    [
         "Black mask (i)",
         "Imbued zamorak cape",
         "Bonecrusher",
         "Ash sanctifier",
-        "Bigger and Badder"
+        "Bigger and Badder",
+        "Ice Barrage",
+        "Infinity boots",
+        "Mage's book"
     ],
     [
         "Mixed hide cape",
@@ -66,11 +74,7 @@
     ],
     [
         "92 ranged",
-        "86 strength",
-        "Ice Barrage",
-        "Infinity boots",
-        "Mage's book",
-        "98 agility"
+        "86 strength"
     ],
     [
         "Crystal helm",
@@ -79,12 +83,10 @@
         "Crystal legs"
     ],
     [
-        "Prescription goggles",
-        "Alchemist's amulet"
+        "Spellbook Swap"
     ],
     [
         "Explorer's ring 4",
-        "Varrock armour 4",
         "Wrath rune",
         "Fire cape",
         "Karamja gloves 3",
@@ -92,14 +94,7 @@
     ],
     [
         "Pharaoh's sceptre",
-        "Spellbook Swap"
-    ],
-    [
-        "Karamja gloves 4",
-        "Ardougne cloak 4",
-        "Fremennik sea boots 4",
-        "Kandarin headgear 4",
-        "Log basket"
+        "Karamja gloves 4"
     ],
     [
         "Occult altar",
@@ -114,10 +109,7 @@
         "Bloodbark legs"
     ],
     [
-        "Ancient icon",
-        "Bandos hilt",
-        "Bandos chestplate",
-        "Bandos tassets"
+        "Ancient icon"
     ],
     [
         "Slayer helmet (i)",
@@ -127,41 +119,46 @@
         "Greater Challenge"
     ],
     [
+        "Prescription goggles",
+        "Alchemist's amulet"
+    ],
+    [
         "Amulet of torture",
-        "Emberlight",
         "Necklace of anguish",
-        "Burning claws",
-        "Tormented bracelet",
-        "Scorching bow",
-        "Bandos godsword",
-        "Zamorakian hasta"
+        "Zamorakian hasta",
+        "Bandos godsword"
     ],
     [
         "Voidwaker",
         "Dragon pickaxe"
     ],
     [
-        "Osmumten's fang",
-        "Thread of elidinis",
-        "Lightbearer"
-    ],
-    [
         "Deadeye",
         "Mystic Vigour"
     ],
     [
-        "Ring of suffering (i)"
+        "Thread of elidinis",
+        "Lightbearer"
     ],
     [
         "Ghommal's hilt 4"
     ],
     [
-        "Abyssal tentacle",
-        "Trident of the seas",
         "Abyssal whip",
-        "Neitiznot faceguard",
+        "Abyssal tentacle",
         "Dragon warhammer",
-        "Dragon boots"
+        "Emberlight",
+        "Dragon boots",
+        "Scorching bow",
+        "Tormented bracelet",
+        "Burning claws",
+        "Ring of suffering (i)"
+    ],
+    [
+        "Avernic treads"
+    ],
+    [
+        "Rite of vile transference"
     ],
     [
         "Desert amulet 4",
@@ -171,12 +168,19 @@
         "Primordial boots",
         "Amulet of rancour",
         "Eternal boots",
-        "Occult necklace",
-        "Achievement diary cape (t)"
+        "Occult necklace"
     ],
     [
-        "Trident of the swamp",
-        "Toxic blowpipe",
+        "Eye of ayak",
+        "Confliction gauntlets"
+    ],
+    [
+        "Toxic blowpipe"
+    ],
+    [
+        "Osmumten's fang"
+    ],
+    [
         "Dragon hunter lance",
         "Ferocious gloves"
     ],
@@ -186,6 +190,11 @@
     ],
     [
         "Infernal cape"
+    ],
+    [
+        "Oathplate chest",
+        "Oathplate legs",
+        "Oathplate helm"
     ],
     [
         "Ultor ring"
@@ -215,8 +224,7 @@
     [
         "Saturated heart",
         "Venator ring",
-        "Venator bow",
-        "Soulreaper axe"
+        "Venator bow"
     ],
     [
         "Ghommal's hilt 5"
