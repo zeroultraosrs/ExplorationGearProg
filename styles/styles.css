@@ -254,10 +254,5 @@ ul ul {
 }
 
 .optional{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border: 2px solid #FF8469;
+    border-color: #FF8469;
 }
