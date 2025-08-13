@@ -251,8 +251,13 @@ ul ul {
     /* or padding-left */
     list-style-type: circle;
     /* or disc, square, none, etc. */
-
-.optional {
-    border-color: #FF8469;
 }
+
+.optional{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #FF8469;
 }
