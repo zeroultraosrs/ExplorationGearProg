@@ -163,6 +163,9 @@ body .skill,
 body .node-group>img,
 body .chart>img {
     border-color: #aaaaaa;
+},
+body .optional {
+    border-color: red;
     /* Light gray borders for a softer look */
 }
 
