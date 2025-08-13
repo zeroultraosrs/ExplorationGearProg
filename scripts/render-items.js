@@ -46,7 +46,6 @@ function handle_item(node) {
         nodeDiv.classList.add(itemData.goalType);
     }
 
-
     return nodeDiv;
 }
 
