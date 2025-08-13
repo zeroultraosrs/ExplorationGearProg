@@ -47,10 +47,6 @@ ul {
     user-select: none;
 }
 
-.itemData.optional {
-    border-color: red !important;
-}
-
 .node-group>.node {
     display: flex;
     justify-content: center;
@@ -58,6 +54,10 @@ ul {
     width: 40px;
     height: 40px;
     border: 2px solid #aaaaaa;
+}
+
+.optional {
+    border: 2px solid red;
 }
 
 .node-group>.node>img {
