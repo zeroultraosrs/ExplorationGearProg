@@ -32,7 +32,7 @@
     "Rune crossbow": {
         "itemID": "10551",
         "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
         "goalType": "optional"
     },
     "Fighter torso": {
