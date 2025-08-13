@@ -163,9 +163,6 @@ body .skill,
 body .node-group>img,
 body .chart>img {
     border-color: #aaaaaa;
-},
-body .optional {
-    border-color: red;
     /* Light gray borders for a softer look */
 }
 
@@ -256,6 +253,6 @@ ul ul {
     /* or disc, square, none, etc. */
 
 .optional {
-    border-color: red;
+    border-color: #FF8469;
 }
 }
