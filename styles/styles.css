@@ -47,7 +47,7 @@ ul {
     user-select: none;
 }
 
-.optional {
+.itemData.optional {
     border-color: red !important;
 }
 
