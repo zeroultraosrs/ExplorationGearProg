@@ -57,7 +57,7 @@ ul {
 }
 
 .optional {
-    border: 2px solid red;
+    border-color: red;
 }
 
 .node-group>.node>img {
