@@ -47,7 +47,7 @@ ul {
     user-select: none;
 }
 
-.optional {
+.node-group>.optional {
     border-color: red;
 }
 
