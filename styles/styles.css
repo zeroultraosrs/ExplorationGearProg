@@ -56,10 +56,6 @@ ul {
     border: 2px solid #aaaaaa;
 }
 
-.optional {
-    border-color: red;
-}
-
 .node-group>.node>img {
     width: 40px;
     height: 40px;
@@ -255,4 +251,8 @@ ul ul {
     /* or padding-left */
     list-style-type: circle;
     /* or disc, square, none, etc. */
+
+.optional {
+    border-color: red;
+}
 }
