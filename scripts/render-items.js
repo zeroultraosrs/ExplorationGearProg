@@ -22,15 +22,15 @@ function sanitizeId(name) {
 function handle_item(node) {
     let nodeDiv = document.createElement("div");
     nodeDiv.classList.add("node");
-
-    if ('goalType' in itemData) {
-        nodeDiv.classList.add(itemData.goalType);
-    }
     
     let itemData = itemsData[node];
     if (!itemData) {
         console.warn(`Missing data for item: ${node}`);
         return null;
+    }
+    
+    if ('goalType' in itemData) {
+        nodeDiv.classList.add(itemData.goalType);
     }
 
     // Detect if running on GitHub Pages and adjust the path accordingly
