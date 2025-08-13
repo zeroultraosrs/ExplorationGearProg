@@ -28,6 +28,14 @@ function handle_item(node) {
         console.warn(`Missing data for item: ${node}`);
         return null;
     }
+    
+        if ('goalType' in itemData) {
+        add class here (itemData.goalType)
+    }
+
+    if ('goalType' in itemData) {
+        nodeDiv.classList.add(itemData.goalType);
+    }
 
     // Detect if running on GitHub Pages and adjust the path accordingly
     let basePath = window.location.hostname.includes("github.io")
