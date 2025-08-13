@@ -2,79 +2,87 @@
     [
         "Amulet of strength",
         "Climbing boots",
-        "Rune pouch"
-    ],
-    [
+        "Rune pouch",
         "Iban's staff (u)",
         "Protect from Melee",
-        "Ancient staff",
-        "Eagle Eye"
+        "Prayer potion"
+    ],
+    [
+        "Rune crossbow"
     ],
     [
         "Fighter torso",
         "Granite body"
     ],
     [
-        "Dragon scimitar",
-        "Berserker ring (i)",
-        "Herb sack"
-    ],
-    [
-        "Dragon defender",
-        "Barrows gloves"
-    ],
-    [
-        "Helm of neitiznot",
-        "Book of the dead",
-        "Ava's accumulator",
-        "Piety",
-        "Open gem bag"
-    ],
-    [
-        "98 agility"
-    ],
-    [
-        "Dark altar (Construction)",
-        "Spirit tree (Construction)",
-        "Rejuvenation pool",
-        "Basic jewellery box"
-    ],
-    [
-        "Arkan blade"
-    ],
-    [
-        "Black mask (i)",
-        "Imbued zamorak cape",
-        "Bonecrusher",
-        "Ash sanctifier",
-        "Bigger and Badder",
-        "Ice Barrage",
-        "Infinity boots",
-        "Mage's book"
-    ],
-    [
-        "Mixed hide cape",
-        "Mixed hide boots",
-        "Red chinchompa",
-        "70 ranged"
-    ],
-    [
-        "Broader Fletching",
-        "69 slayer"
+        "Berserker ring (i)"
     ],
     [
         "Ghommal's hilt 2"
+    ],
+    [
+        "Tank Legs"
+    ],
+    [
+        "Fire cape"
+    ],
+    [
+        "Dragon defender",
+        "Barrows gloves",
+        "Helm of neitiznot",
+        "Dragon scimitar",
+        "Arkan blade"
+    ],
+    [
+        "Piety"
+    ],
+    [
+        "Bones to Peaches",
+        "Mage's book",
+        "Infinity boots"
+    ],
+    [
+        "Zombie axe"
+    ],
+    [
+        "Blood moon set",
+        "Blue moon set",
+        "Eclipse moon set"
+    ],
+    [
+        "Dragon pickaxe"
+    ],
+    [
+        "Deadeye",
+        "Mystic Vigour",
+        "Twinflame staff"
     ],
     [
         "Void ranger helm",
         "Void knight gloves",
         "Elite void top",
         "Elite void robe",
-        "Crystal halberd"
+        "Salve amulet (ei)"
     ],
     [
-        "92 ranged",
-        "86 strength"
+        "Ava's assembler"
+    ],
+    [
+        "Dragon warhammer"
+    ],
+    [
+        "Amulet of torture",
+        "Necklace of anguish",
+        "Tormented bracelet",
+        "Ring of suffering"
+    ],
+    [
+        "Scorching bow",
+        "Emberlight",
+        "Burning claws"
+    ],
+    [
+        "Dragonhunter wand"
     ],
     [
         "Crystal helm",
@@ -83,129 +91,101 @@
         "Crystal legs"
     ],
     [
-        "Spellbook Swap"
+        "Divine rune pouch"
     ],
     [
-        "Explorer's ring 4",
-        "Wrath rune",
-        "Fire cape",
-        "Karamja gloves 3",
-        "Amulet of glory(6)"
-    ],
-    [
-        "Pharaoh's sceptre",
-        "Karamja gloves 4"
-    ],
-    [
-        "Occult altar",
-        "Ornate jewellery box",
-        "Fairy ring (Construction)",
         "Ornate rejuvenation pool"
-    ],
-    [
-        "Ava's assembler",
-        "Bloodbark helm",
-        "Bloodbark body",
-        "Bloodbark legs"
-    ],
-    [
-        "Ancient icon"
-    ],
-    [
-        "Slayer helmet (i)",
-        "Arclight",
-        "Warped sceptre",
-        "Reptile Got Ripped",
-        "Greater Challenge"
-    ],
-    [
-        "Prescription goggles",
-        "Alchemist's amulet"
-    ],
-    [
-        "Amulet of torture",
-        "Necklace of anguish",
-        "Zamorakian hasta",
-        "Bandos godsword"
-    ],
-    [
-        "Voidwaker",
-        "Dragon pickaxe"
-    ],
-    [
-        "Deadeye",
-        "Mystic Vigour"
-    ],
-    [
-        "Thread of elidinis",
-        "Lightbearer"
-    ],
-    [
-        "Ghommal's hilt 4"
-    ],
-    [
-        "Abyssal whip",
-        "Abyssal tentacle",
-        "Dragon warhammer",
-        "Emberlight",
-        "Dragon boots",
-        "Scorching bow",
-        "Tormented bracelet",
-        "Burning claws",
-        "Ring of suffering (i)"
-    ],
-    [
-        "Avernic treads"
-    ],
-    [
-        "Rite of vile transference"
-    ],
-    [
-        "Desert amulet 4",
-        "Rada's blessing 4"
-    ],
-    [
-        "Primordial boots",
-        "Amulet of rancour",
-        "Eternal boots",
-        "Occult necklace"
-    ],
-    [
-        "Eye of ayak",
-        "Confliction gauntlets"
     ],
     [
         "Toxic blowpipe"
     ],
     [
-        "Osmumten's fang"
+        "Ancient icon",
+        "Mage set"
     ],
     [
-        "Dragon hunter lance",
-        "Ferocious gloves"
+        "Ghommal's hilt 3",
+        "Saradomin brew"
+    ],
+    [
+        "Bandos godsword",
+        "Bandos tassets",
+        "Bandos chestplate",
+    ],
+    [
+        "Zamorakian hasta"
+    ],
+    [
+        "Abyssal whip",
+        "Trident of the seas",
+        "Abyssal tentacle",
+        "Abyssal bludgeon"
+    ],
+    [
+        "Voidwaker"
+    ],
+    [
+        "Super combat potion",
+        "Wrath rune"
+    ],
+    [
+        "Primordial boots",
+        "Eternal boots",
+        "Pegasian boots"
+    ],
+    [
+        "Osmumten's fang",
+        "Lightbearer"
+    ],
+    [
+        "Noxious halberd",
+        "Amulet of rancour"
+    ],
+    [
+        "Occult necklace"
+    ],
+    [
+        "Rite of vile transference",
+        "Soulflame horn",
+        "Oathplate helm",
+        "Oathplate chest",
+        "Oathplate legs"
+    ],
+    [
+        "Ultor ring"
+    ],
+    [
+        "Magus ring"
     ],
     [
         "Rigour",
         "Augury"
     ],
     [
-        "Infernal cape"
+        "Dragonhunter lance",
+        "Ferocious gloves"
     ],
     [
-        "Oathplate chest",
-        "Oathplate legs",
-        "Oathplate helm"
+        "Eye of ayak",
+        "Confliction gauntlets",
+        "Avernic Treads"
     ],
     [
-        "Ultor ring"
-    ],
-    [
-        "Dizana's quiver",
-        "Avernic defender"
+        "Soulreaper axe"
     ],
     [
         "Tumeken's shadow",
-        "Magus ring"
+        "Masori body (f)",
+        "Masori chaps (f)",
+        "Masori mask (f)",
+        "Elidinis' ward"
+    ],
+    [
+        "Infernal cape",
+        "Dizana's quiver"
+    ],
+    [
+        "Elidins' ward (f)"
     ],
     [
         "Twisted bow",
@@ -216,25 +196,8 @@
         "Elder maul"
     ],
     [
-        "Masori body (f)",
-        "Masori chaps (f)",
-        "Masori mask (f)",
-        "Elidinis' ward"
+        "Avernic defender",
+        "Scythe of vitur"
     ],
-    [
-        "Saturated heart",
-        "Venator ring",
-        "Venator bow"
-    ],
-    [
-        "Ghommal's hilt 5"
-    ],
-    [
-        "Torva platebody",
-        "Torva platelegs",
-        "Torva full helm",
-        "Scythe of vitur",
-        "Zaryte crossbow",
-        "Zaryte vambraces"
-    ]
+
 ]
