@@ -31,7 +31,7 @@ function handle_item(node) {
 
     // Detect if running on GitHub Pages and adjust the path accordingly
     let basePath = window.location.hostname.includes("github.io")
-        ? "/InteractiveGearProg/"
+        ? "/ExplorationGearProg/"
         : "/";
 
     let img = document.createElement("img");
@@ -67,7 +67,7 @@ function handle_skill(node) {
 
     // Detect if running on GitHub Pages and adjust the path accordingly
     let basePath = window.location.hostname.includes("github.io")
-        ? "/InteractiveGearProg/"
+        ? "/ExplorationGearProg/"
         : "/";
 
     let img = document.createElement("img");
