@@ -256,3 +256,11 @@ ul ul {
 .node.optional{
     border-color: #FF8469;
 }
+
+.node.delay{
+    border-color: #F5E38C;
+}
+
+.node.long{
+    border-color: #A9B6FC;
+}
