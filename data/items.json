@@ -26,13 +26,13 @@
     },
     "Prayer potion": {
         "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Prayer_potion(4).webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Prayer_potion#4_dose"
     },
     "Rune crossbow": {
         "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Rune_crossbow.png",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Rune_crossbow",
         "goalType": "optional"
     },
     "Fighter torso": {
@@ -57,8 +57,8 @@
     },
     "Tank Legs": {
         "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Verac's_plateskirt.png",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Verac%27s_plateskirt",
         "goalType": "optional"
     },
     "Fire cape": {
@@ -99,8 +99,8 @@
     },
     "Bones to Peaches": {
         "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Bones_to_Peaches.png",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Bones_to_Peaches"
     },
     "Mage's book": {
         "itemID": "skip",
@@ -114,26 +114,26 @@
     },
     "Zombie axe": {
         "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Zombie_axe.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Zombie_axe",
         "goalType": "optional"
     },
     "Blood moon set": {
         "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Dual_macuahuitl.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Blood_moon_armour",
         "goalType": "optional"
     },
     "Blue moon set": {
         "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Blue_moon_spear.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Blue_moon_armour",
         "goalType": "optional"
     },
     "Eclipse moon set": {
         "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Eclipse_atlatl.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Eclipse_moon_armour",
         "goalType": "optional"
     },
     "Super attack potion": {
