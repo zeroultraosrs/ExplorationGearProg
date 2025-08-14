@@ -1,28 +1,28 @@
 {
     "Amulet of strength": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "itemID": "skip",
+        "imgSrc": "images/Amulet_of_strength.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Amulet_of_strength"
     },
     "Climbing boots": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "itemID": "skip",
+        "imgSrc": "images/Climbing_boots.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Climbing_boots"
     },
     "Rune pouch": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "itemID": "skip",
+        "imgSrc": "images/Rune_pouch.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Rune_pouch"
     },
     "Iban's staff (u)": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "itemID": "skip",
+        "imgSrc": "images/Iban's_staff_(u).webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Iban's_staff_(u)"
     },
     "Protect from Melee": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "itemID": "skip",
+        "imgSrc": "images/Protect_from_Melee.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Protect_from_Melee"
     },
     "Prayer potion": {
         "itemID": "10551",
@@ -36,24 +36,24 @@
         "goalType": "optional"
     },
     "Fighter torso": {
-        "itemID": "10551",
+        "itemID": "skip",
         "imgSrc": "images/Fighter_torso.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
     },
     "Granite body": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "itemID": "skip",
+        "imgSrc": "images/Granite_body.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Granite_body"
     },
     "Berserker ring (i)": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "itemID": "skip",
+        "imgSrc": "images/Berserker_ring_(i).webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Berserker_ring_(i)"
     },
     "Ghommal's hilt 2": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "itemID": "skip",
+        "imgSrc": "images/Ghommal's_hilt_2.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Ghommal's_hilt_2"
     },
     "Tank Legs": {
         "itemID": "10551",
@@ -62,40 +62,40 @@
         "goalType": "optional"
     },
     "Fire cape": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "itemID": "skip",
+        "imgSrc": "images/Fire_cape.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Fire_cape",
         "goalType": "delay"
     },
     "Dragon defender": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "itemID": "skip",
+        "imgSrc": "images/Dragon_defender.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Dragon_defender"
     },
     "Barrows gloves": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "itemID": "skip",
+        "imgSrc": "images/Barrows_gloves.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Barrows_gloves"
     },
     "Helm of neitiznot": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "itemID": "skip",
+        "imgSrc": "images/Helm_of_neitiznot.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Helm_of_neitiznot"
     },
     "Dragon scimitar": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "itemID": "skip",
+        "imgSrc": "images/Dragon_scimitar.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Dragon_scimitar"
     },
     "Arkan blade": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "itemID": "skip",
+        "imgSrc": "images/Arkan_blade.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Arkan_blade"
     },
     "Piety": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "itemID": "skip",
+        "imgSrc": "images/Piety.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Piety"
     },
     "Bones to Peaches": {
         "itemID": "10551",
@@ -103,14 +103,14 @@
         "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
     },
     "Mage's book": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "itemID": "skip",
+        "imgSrc": "images/Mage's_book.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Mage's_book"
     },
     "Infinity boots": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "itemID": "ski[",
+        "imgSrc": "images/Infinity_boots.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Infinity_boots"
     },
     "Zombie axe": {
         "itemID": "10551",
@@ -152,21 +152,19 @@
         "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
     },
     "Dragon pickaxe": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "itemID": "skip",
+        "imgSrc": "images/Dragon_pickaxe.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Dragon_pickaxe",
         "goalType": "delay"
     },
     "Deadeye": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Deadeye.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Deadeye",
         "goalType": "delay"
     },
     "Mystic Vigour": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Mystic_Vigour.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Mystic_Vigour",
         "goalType": "delay"
     },
     "Twinflame staff": {
@@ -176,24 +174,20 @@
         "goalType": "optional"
     },
     "Void ranger helm": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Void_ranger_helm.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Void_ranger_helm"
     },
     "Void knight gloves": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Void_knight_gloves.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Void_knight_gloves"
     },
     "Elite void top": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Elite_void_top.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Elite_void_top"
     },
     "Elite void robe": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Elite_void_robe.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Elite_void_robe"
     },
     "Salve amulet (ei)": {
         "itemID": "10551",
@@ -201,33 +195,28 @@
         "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
     },
     "Ava's assembler": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Ava's_assembler.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Ava's_assembler",
         "goalType": "delay"
     },
     "Dragon warhammer": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Dragon_warhammer.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Dragon_warhammer",
         "goalType": "long"
     },
     "Amulet of torture": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Amulet_of_torture.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Amulet_of_torture",
         "goalType": "long"
     },
     "Necklace of anguish": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Necklace_of_anguish.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Necklace_of_anguish",
         "goalType": "long"
     },
     "Tormented bracelet": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Tormented_bracelet.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Tormented_bracelet",
         "goalType": "long"
     },
     "Ring of suffering": {
@@ -237,21 +226,24 @@
         "goalType": "long"
     },
     "Scorching bow": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Scorching_bow.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Scorching_bow",
         "goalType": "long"
     },
     "Emberlight": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Emberlight.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Emberlight",
         "goalType": "long"
     },
     "Burning claws": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Burning_claws.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Burning_claws",
+        "goalType": "long"
+    },
+    "Neitiznot faceguard": {
+        "itemID": "24271",
+        "imgSrc": "images/Neitiznot_faceguard.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Neitiznot_faceguard",
         "goalType": "long"
     },
     "Dragonhunter wand": {
@@ -261,24 +253,20 @@
         "goalType": "optional"
     },
     "Crystal helm": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Crystal_helm.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Crystal_helm"
     },
     "Bow of faerdhinen (c)": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Bow_of_faerdhinen_(c).webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Bow_of_faerdhinen_(c)"
     },
     "Crystal body": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Crystal_body.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Crystal_body"
     },
     "Crystal legs": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Crystal_legs.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Crystal_legs"
     },
     "Divine rune pouch": {
         "itemID": "10551",
@@ -286,20 +274,17 @@
         "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
     },
     "Ornate rejuvenation pool": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Ornate_rejuvenation_pool_icon.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Ornate_rejuvenation_pool",
     },
     "Toxic blowpipe": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Toxic_blowpipe.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Toxic_blowpipe",
         "goalType": "delay"
     },
     "Ancient icon": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Ancient_icon.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Ancient_icon"
     },
     "Mage set": {
         "itemID": "10551",
@@ -317,43 +302,36 @@
         "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
     },
     "Bandos godsword": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Bandos_hilt.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Bandos_hilt"
     },
     "Bandos tassets": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Bandos_tassets.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Bandos_tassets",
         "goalType": "optional"
     },
     "Bandos chestplate": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Bandos_chestplate.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Bandos_chestplate",
         "goalType": "optional"
     },
     "Zamorakian hasta": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Zamorakian_hasta.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Zamorakian_hasta"
     },
     "Abyssal whip": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Abyssal_whip.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Abyssal_whip",
         "goalType": "long"
     },
     "Trident of the seas": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Trident_of_the_seas_(full).webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Trident_of_the_seas_(full)",
         "goalType": "long"
     },
     "Abyssal tentacle": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Abyssal_tentacle.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Abyssal_tentacle",
         "goalType": "long"
     },
     "Abyssal bludgeon": {
@@ -363,9 +341,8 @@
         "goalType": "optional"
     },
     "Voidwaker": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Voidwaker.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Voidwaker"
     },
     "Super combat potion": {
         "itemID": "10551",
@@ -373,37 +350,31 @@
         "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
     },
     "Wrath rune": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Wrath_rune.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Wrath_rune"
     },
     "Primordial boots": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Primordial_boots.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Primordial_boots",
         "goalType": "long"
     },
     "Eternal boots": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Eternal_boots.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Eternal_boots",
         "goalType": "long"
     },
     "Pegasian boots": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Pegasian_boots.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Pegasian_boots",
         "goalType": "optional"
     },
     "Osmumten's fang": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Osmumten's_fang.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Osmumten's_fang"
     },
     "Lightbearer": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Lightbearer.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Lightbearer"
     },
     "Noxious halberd": {
         "itemID": "10551",
@@ -412,21 +383,18 @@
         "goalType": "long"
     },
     "Amulet of rancour": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Amulet_of_rancour.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Amulet_of_rancour",
         "goalType": "long"
     },
     "Occult necklace": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Occult_necklace.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Occult_necklace",
         "goalType": "long"
     },
     "Rite of vile transference": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Rite_of_vile_transference.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Rite_of_vile_transference"
     },
     "Soulflame horn": {
         "itemID": "10551",
@@ -434,112 +402,92 @@
         "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
     },
     "Oathplate helm": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Oathplate_helm.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Oathplate_helm"
     },
     "Oathplate chest": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Oathplate_chest.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Oathplate_chest"
     },
     "Oathplate legs": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Oathplate_legs.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Oathplate_legs"
     },
     "Ultor ring": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Ultor_ring.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Ultor_ring"
     },
     "Magus ring": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Magus_ring.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Magus_ring"
     },
     "Rigour": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Rigour.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Rigour"
     },
     "Augury": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Augury.png",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Augury"
     },
     "Dragonhunter lance": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Dragon_hunter_lance.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Dragon_hunter_lance",
         "goalType": "long"
     },
     "Ferocious gloves": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Ferocious_gloves.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Ferocious_gloves"
         "goalType": "long"
     },
     "Eye of ayak": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Eye_of_ayak.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Eye_of_ayak"
     },
     "Confliction gauntlets": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Confliction_gauntlets.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Confliction_gauntlets"
     },
     "Avernic Treads": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Avernic_treads.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Avernic_treads"
     },
     "Soulreaper axe": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Soulreaper_axe.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Soulreaper_axe",
         "goalType": "optional"
     },
     "Tumeken's shadow": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Tumeken's_shadow.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Tumeken's_shadow",
         "goalType": "long"
     },
     "Masori body (f)": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Masori_body_(f).webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Masori_body_(f)",
         "goalType": "long"
     },
     "Masori chaps (f)": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Masori_chaps_(f).webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Masori_chaps_(f)",
         "goalType": "long"
     },
     "Masori mask (f)": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Masori_mask_(f).webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Masori_mask_(f)",
         "goalType": "long"
     },
     "Elidinis' ward": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Elidinis'_ward.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Elidinis'_ward",
         "goalType": "long"
     },
     "Infernal cape": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Infernal_cape.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Infernal_cape"
     },
     "Dizana's quiver": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Dizana's_quiver.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Dizana's_quiver"
     },
     "Elidins' ward (f)": {
         "itemID": "10551",
@@ -548,39 +496,33 @@
         "goalType": "optional"
     },
     "Twisted bow": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Twisted_bow.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Twisted_bow",
         "goalType": "long"
     },
     "Dragon claws": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Dragon_claws.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Dragon_claws",
         "goalType": "long"
     },
     "Ancestral robe top": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Ancestral_robe_top.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Ancestral_robe_top",
         "goalType": "long"
     },
     "Ancestral robe bottom": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Ancestral_robe_bottom.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Ancestral_robe_bottom",
         "goalType": "long"
     },
     "Ancestral hat": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Ancestral_hat.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Ancestral_hat",
         "goalType": "long"
     },
     "Elder maul": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Elder_maul.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Elder_maul",
         "goalType": "long"
     },
     "Avernic defender": {
@@ -590,39 +532,33 @@
         "goalType": "long"
     },
     "Scythe of vitur": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Scythe_of_vitur.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Scythe_of_vitur",
         "goalType": "long"
     },
     "Torva platebody": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Torva_platebody.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Torva_platebody",
         "goalType": "long"
     },
     "Torva platelegs": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Torva_platelegs.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Torva_platelegs",
         "goalType": "long"
     },
     "Torva full helm": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Torva_full_helm.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Torva_full_helm",
         "goalType": "long"
     },
     "Zaryte crossbow": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Zaryte_crossbow.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Zaryte_crossbow",
         "goalType": "long"
     },
     "Zaryte vambraces": {
-        "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Zaryte_vambraces.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Zaryte_vambraces",
         "goalType": "long"
     }
 }
