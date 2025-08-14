@@ -158,11 +158,13 @@
         "goalType": "delay"
     },
     "Deadeye": {
+        "itemID": "skip",
         "imgSrc": "images/Deadeye.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Deadeye",
         "goalType": "delay"
     },
     "Mystic Vigour": {
+        "itemID": "skip",
         "imgSrc": "images/Mystic_Vigour.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Mystic_Vigour",
         "goalType": "delay"
@@ -174,18 +176,22 @@
         "goalType": "optional"
     },
     "Void ranger helm": {
+        "itemID": "skip",
         "imgSrc": "images/Void_ranger_helm.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Void_ranger_helm"
     },
     "Void knight gloves": {
+        "itemID": "skip",
         "imgSrc": "images/Void_knight_gloves.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Void_knight_gloves"
     },
     "Elite void top": {
+        "itemID": "skip",
         "imgSrc": "images/Elite_void_top.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Elite_void_top"
     },
     "Elite void robe": {
+        "itemID": "skip",
         "imgSrc": "images/Elite_void_robe.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Elite_void_robe"
     },
@@ -195,26 +201,31 @@
         "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
     },
     "Ava's assembler": {
+        "itemID": "skip",
         "imgSrc": "images/Ava's_assembler.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Ava's_assembler",
         "goalType": "delay"
     },
     "Dragon warhammer": {
+        "itemID": "skip",
         "imgSrc": "images/Dragon_warhammer.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Dragon_warhammer",
         "goalType": "long"
     },
     "Amulet of torture": {
+        "itemID": "skip",
         "imgSrc": "images/Amulet_of_torture.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Amulet_of_torture",
         "goalType": "long"
     },
     "Necklace of anguish": {
+        "itemID": "skip",
         "imgSrc": "images/Necklace_of_anguish.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Necklace_of_anguish",
         "goalType": "long"
     },
     "Tormented bracelet": {
+        "itemID": "skip",
         "imgSrc": "images/Tormented_bracelet.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Tormented_bracelet",
         "goalType": "long"
@@ -226,16 +237,19 @@
         "goalType": "long"
     },
     "Scorching bow": {
+        "itemID": "skip",
         "imgSrc": "images/Scorching_bow.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Scorching_bow",
         "goalType": "long"
     },
     "Emberlight": {
+        "itemID": "skip",
         "imgSrc": "images/Emberlight.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Emberlight",
         "goalType": "long"
     },
     "Burning claws": {
+        "itemID": "skip",
         "imgSrc": "images/Burning_claws.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Burning_claws",
         "goalType": "long"
@@ -253,18 +267,22 @@
         "goalType": "optional"
     },
     "Crystal helm": {
+        "itemID": "skip",
         "imgSrc": "images/Crystal_helm.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Crystal_helm"
     },
     "Bow of faerdhinen (c)": {
+        "itemID": "skip",
         "imgSrc": "images/Bow_of_faerdhinen_(c).webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Bow_of_faerdhinen_(c)"
     },
     "Crystal body": {
+        "itemID": "skip",
         "imgSrc": "images/Crystal_body.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Crystal_body"
     },
     "Crystal legs": {
+        "itemID": "skip",
         "imgSrc": "images/Crystal_legs.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Crystal_legs"
     },
@@ -274,15 +292,18 @@
         "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
     },
     "Ornate rejuvenation pool": {
+        "itemID": "skip",
         "imgSrc": "images/Ornate_rejuvenation_pool_icon.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Ornate_rejuvenation_pool",
     },
     "Toxic blowpipe": {
+        "itemID": "skip",
         "imgSrc": "images/Toxic_blowpipe.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Toxic_blowpipe",
         "goalType": "delay"
     },
     "Ancient icon": {
+        "itemID": "skip",
         "imgSrc": "images/Ancient_icon.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Ancient_icon"
     },
@@ -302,34 +323,41 @@
         "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
     },
     "Bandos godsword": {
+        "itemID": "skip",
         "imgSrc": "images/Bandos_hilt.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Bandos_hilt"
     },
     "Bandos tassets": {
+        "itemID": "skip",
         "imgSrc": "images/Bandos_tassets.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Bandos_tassets",
         "goalType": "optional"
     },
     "Bandos chestplate": {
+        "itemID": "skip",
         "imgSrc": "images/Bandos_chestplate.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Bandos_chestplate",
         "goalType": "optional"
     },
     "Zamorakian hasta": {
+        "itemID": "skip",
         "imgSrc": "images/Zamorakian_hasta.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Zamorakian_hasta"
     },
     "Abyssal whip": {
+        "itemID": "skip",
         "imgSrc": "images/Abyssal_whip.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Abyssal_whip",
         "goalType": "long"
     },
     "Trident of the seas": {
+        "itemID": "skip",
         "imgSrc": "images/Trident_of_the_seas_(full).webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Trident_of_the_seas_(full)",
         "goalType": "long"
     },
     "Abyssal tentacle": {
+        "itemID": "skip",
         "imgSrc": "images/Abyssal_tentacle.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Abyssal_tentacle",
         "goalType": "long"
@@ -341,6 +369,7 @@
         "goalType": "optional"
     },
     "Voidwaker": {
+        "itemID": "skip",
         "imgSrc": "images/Voidwaker.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Voidwaker"
     },
@@ -350,29 +379,35 @@
         "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
     },
     "Wrath rune": {
+        "itemID": "skip",
         "imgSrc": "images/Wrath_rune.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Wrath_rune"
     },
     "Primordial boots": {
+        "itemID": "skip",
         "imgSrc": "images/Primordial_boots.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Primordial_boots",
         "goalType": "long"
     },
     "Eternal boots": {
+        "itemID": "skip",
         "imgSrc": "images/Eternal_boots.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Eternal_boots",
         "goalType": "long"
     },
     "Pegasian boots": {
+        "itemID": "skip",
         "imgSrc": "images/Pegasian_boots.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Pegasian_boots",
         "goalType": "optional"
     },
     "Osmumten's fang": {
+        "itemID": "skip",
         "imgSrc": "images/Osmumten's_fang.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Osmumten's_fang"
     },
     "Lightbearer": {
+        "itemID": "skip",
         "imgSrc": "images/Lightbearer.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Lightbearer"
     },
@@ -383,16 +418,19 @@
         "goalType": "long"
     },
     "Amulet of rancour": {
+        "itemID": "skip",
         "imgSrc": "images/Amulet_of_rancour.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Amulet_of_rancour",
         "goalType": "long"
     },
     "Occult necklace": {
+        "itemID": "skip",
         "imgSrc": "images/Occult_necklace.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Occult_necklace",
         "goalType": "long"
     },
     "Rite of vile transference": {
+        "itemID": "skip",
         "imgSrc": "images/Rite_of_vile_transference.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Rite_of_vile_transference"
     },
@@ -402,90 +440,110 @@
         "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
     },
     "Oathplate helm": {
+        "itemID": "skip",
         "imgSrc": "images/Oathplate_helm.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Oathplate_helm"
     },
     "Oathplate chest": {
+        "itemID": "skip",
         "imgSrc": "images/Oathplate_chest.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Oathplate_chest"
     },
     "Oathplate legs": {
+        "itemID": "skip",
         "imgSrc": "images/Oathplate_legs.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Oathplate_legs"
     },
     "Ultor ring": {
+        "itemID": "skip",
         "imgSrc": "images/Ultor_ring.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Ultor_ring"
     },
     "Magus ring": {
+        "itemID": "skip",
         "imgSrc": "images/Magus_ring.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Magus_ring"
     },
     "Rigour": {
+        "itemID": "skip",
         "imgSrc": "images/Rigour.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Rigour"
     },
     "Augury": {
+        "itemID": "skip",
         "imgSrc": "images/Augury.png",
         "wikiLink": "https://oldschool.runescape.wiki/w/Augury"
     },
     "Dragonhunter lance": {
+        "itemID": "skip",
         "imgSrc": "images/Dragon_hunter_lance.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Dragon_hunter_lance",
         "goalType": "long"
     },
     "Ferocious gloves": {
+        "itemID": "skip",
         "imgSrc": "images/Ferocious_gloves.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Ferocious_gloves",
         "goalType": "long"
     },
     "Eye of ayak": {
+        "itemID": "skip",
         "imgSrc": "images/Eye_of_ayak.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Eye_of_ayak"
     },
     "Confliction gauntlets": {
+        "itemID": "skip",
         "imgSrc": "images/Confliction_gauntlets.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Confliction_gauntlets"
     },
     "Avernic Treads": {
+        "itemID": "skip",
         "imgSrc": "images/Avernic_treads.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Avernic_treads"
     },
     "Soulreaper axe": {
+        "itemID": "skip",
         "imgSrc": "images/Soulreaper_axe.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Soulreaper_axe",
         "goalType": "optional"
     },
     "Tumeken's shadow": {
+        "itemID": "skip",
         "imgSrc": "images/Tumeken's_shadow.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Tumeken's_shadow",
         "goalType": "long"
     },
     "Masori body (f)": {
+        "itemID": "skip",
         "imgSrc": "images/Masori_body_(f).webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Masori_body_(f)",
         "goalType": "long"
     },
     "Masori chaps (f)": {
+        "itemID": "skip",
         "imgSrc": "images/Masori_chaps_(f).webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Masori_chaps_(f)",
         "goalType": "long"
     },
     "Masori mask (f)": {
+        "itemID": "skip",
         "imgSrc": "images/Masori_mask_(f).webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Masori_mask_(f)",
         "goalType": "long"
     },
     "Elidinis' ward": {
+        "itemID": "skip",
         "imgSrc": "images/Elidinis'_ward.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Elidinis'_ward",
         "goalType": "long"
     },
     "Infernal cape": {
+        "itemID": "skip",
         "imgSrc": "images/Infernal_cape.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Infernal_cape"
     },
     "Dizana's quiver": {
+        "itemID": "skip",
         "imgSrc": "images/Dizana's_quiver.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Dizana's_quiver"
     },
@@ -496,31 +554,37 @@
         "goalType": "optional"
     },
     "Twisted bow": {
+        "itemID": "skip",
         "imgSrc": "images/Twisted_bow.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Twisted_bow",
         "goalType": "long"
     },
     "Dragon claws": {
+        "itemID": "skip",
         "imgSrc": "images/Dragon_claws.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Dragon_claws",
         "goalType": "long"
     },
     "Ancestral robe top": {
+        "itemID": "skip",
         "imgSrc": "images/Ancestral_robe_top.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Ancestral_robe_top",
         "goalType": "long"
     },
     "Ancestral robe bottom": {
+        "itemID": "skip",
         "imgSrc": "images/Ancestral_robe_bottom.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Ancestral_robe_bottom",
         "goalType": "long"
     },
     "Ancestral hat": {
+        "itemID": "skip",
         "imgSrc": "images/Ancestral_hat.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Ancestral_hat",
         "goalType": "long"
     },
     "Elder maul": {
+        "itemID": "skip",
         "imgSrc": "images/Elder_maul.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Elder_maul",
         "goalType": "long"
@@ -532,31 +596,37 @@
         "goalType": "long"
     },
     "Scythe of vitur": {
+        "itemID": "skip",
         "imgSrc": "images/Scythe_of_vitur.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Scythe_of_vitur",
         "goalType": "long"
     },
     "Torva platebody": {
+        "itemID": "skip",
         "imgSrc": "images/Torva_platebody.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Torva_platebody",
         "goalType": "long"
     },
     "Torva platelegs": {
+        "itemID": "skip",
         "imgSrc": "images/Torva_platelegs.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Torva_platelegs",
         "goalType": "long"
     },
     "Torva full helm": {
+        "itemID": "skip",
         "imgSrc": "images/Torva_full_helm.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Torva_full_helm",
         "goalType": "long"
     },
     "Zaryte crossbow": {
+        "itemID": "skip",
         "imgSrc": "images/Zaryte_crossbow.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Zaryte_crossbow",
         "goalType": "long"
     },
     "Zaryte vambraces": {
+        "itemID": "skip",
         "imgSrc": "images/Zaryte_vambraces.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Zaryte_vambraces",
         "goalType": "long"
