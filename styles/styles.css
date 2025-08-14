@@ -253,6 +253,6 @@ ul ul {
     /* or disc, square, none, etc. */
 }
 
-.optional{
+.node.optional{
     border-color: #FF8469;
 }
