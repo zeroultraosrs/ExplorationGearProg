@@ -138,18 +138,18 @@
     },
     "Super attack potion": {
         "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Super_attack(4).webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Super_attack#4_dose"
     },
     "Super strength potion": {
         "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Super_strength(4).webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Super_strength#4_dose"
     },
     "Ranging potion": {
         "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Ranging_potion(4).webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Ranging_potion#4_dose"
     },
     "Dragon pickaxe": {
         "itemID": "skip",
@@ -171,8 +171,8 @@
     },
     "Twinflame staff": {
         "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Twinflame_staff.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Twinflame_staff",
         "goalType": "optional"
     },
     "Void ranger helm": {
@@ -197,8 +197,8 @@
     },
     "Salve amulet (ei)": {
         "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Salve_amulet(ei).webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Salve_amulet(ei)"
     },
     "Ava's assembler": {
         "itemID": "skip",
@@ -232,8 +232,8 @@
     },
     "Ring of suffering": {
         "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Ring_of_suffering.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Ring_of_suffering",
         "goalType": "long"
     },
     "Scorching bow": {
@@ -262,8 +262,8 @@
     },
     "Dragonhunter wand": {
         "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Dragon_hunter_wand.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Dragon_hunter_wand",
         "goalType": "optional"
     },
     "Crystal helm": {
@@ -288,8 +288,8 @@
     },
     "Divine rune pouch": {
         "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Divine_rune_pouch.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Divine_rune_pouch"
     },
     "Ornate rejuvenation pool": {
         "itemID": "skip",
@@ -314,13 +314,13 @@
     },
     "Ghommal's hilt 3": {
         "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Ghommal's_hilt_3.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Ghommal%27s_hilt_3"
     },
     "Saradomin brew": {
         "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Saradomin_brew(4).webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Saradomin_brew#4_dose"
     },
     "Bandos godsword": {
         "itemID": "skip",
@@ -364,8 +364,8 @@
     },
     "Abyssal bludgeon": {
         "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Abyssal_bludgeon.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Abyssal_bludgeon",
         "goalType": "optional"
     },
     "Voidwaker": {
@@ -375,8 +375,8 @@
     },
     "Super combat potion": {
         "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Super_combat_potion(4).webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Super_combat_potion#4_dose"
     },
     "Wrath rune": {
         "itemID": "skip",
@@ -413,8 +413,8 @@
     },
     "Noxious halberd": {
         "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Noxious_halberd.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Noxious_halberd",
         "goalType": "long"
     },
     "Amulet of rancour": {
@@ -436,8 +436,8 @@
     },
     "Soulflame horn": {
         "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso"
+        "imgSrc": "images/Soulflame_horn.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Soulflame_horn"
     },
     "Oathplate helm": {
         "itemID": "skip",
@@ -549,8 +549,8 @@
     },
     "Elidins' ward (f)": {
         "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Elidinis'_ward_(f).webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Elidinis%27_ward_(f)",
         "goalType": "optional"
     },
     "Twisted bow": {
@@ -591,8 +591,8 @@
     },
     "Avernic defender": {
         "itemID": "10551",
-        "imgSrc": "images/Fighter_torso.webp",
-        "wikiLink": "https://oldschool.runescape.wiki/w/Fighter_torso",
+        "imgSrc": "images/Avernic_defender.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Avernic_defender",
         "goalType": "long"
     },
     "Scythe of vitur": {
