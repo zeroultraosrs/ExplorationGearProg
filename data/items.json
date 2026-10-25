@@ -486,6 +486,17 @@
         "wikiLink": "https://oldschool.runescape.wiki/w/Ferocious_gloves",
         "goalType": "long"
     },
+    "Necklace of rupture": {
+        "itemID": "skip",
+        "imgSrc": "images/Necklace_of_rupture.png",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Necklace_of_rupture",
+    },
+    "Crimson kisten": {
+        "itemID": "skip",
+        "imgSrc": "images/Crimson_kisten.png",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Crimson_kisten",
+        "goalType": "delay"
+    },
     "Eye of ayak": {
         "itemID": "skip",
         "imgSrc": "images/Eye_of_ayak.webp",
