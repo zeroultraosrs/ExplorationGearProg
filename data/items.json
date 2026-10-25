@@ -474,6 +474,12 @@
         "imgSrc": "images/Augury.png",
         "wikiLink": "https://oldschool.runescape.wiki/w/Augury"
     },
+    "Armadyl crossbow": {
+        "itemID": "skip",
+        "imgSrc": "images/Armadyl_crossbow.png",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Armadyl_crossbow",
+        "goalType": "optional"
+    },
     "Dragonhunter lance": {
         "itemID": "skip",
         "imgSrc": "images/Dragon_hunter_lance.webp",
