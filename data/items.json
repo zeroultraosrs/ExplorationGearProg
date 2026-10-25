@@ -518,6 +518,36 @@
         "wikiLink": "https://oldschool.runescape.wiki/w/Soulreaper_axe",
         "goalType": "optional"
     },
+    "Inquisitor's great helm": {
+        "itemID": "skip",
+        "imgSrc": "images/Inquisitor's_great_helm.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Inquisitor%27s_great_helm",
+        "goalType": "optional"
+    },
+    "Inquisitor's mace": {
+        "itemID": "skip",
+        "imgSrc": "images/Inquisitor's_mace.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Inquisitor%27s_mace",
+        "goalType": "optional"
+    },
+    "Inquisitor's hauberk": {
+        "itemID": "skip",
+        "imgSrc": "images/Inquisitor's_hauberk.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Inquisitor%27s_hauberk",
+        "goalType": "optional"
+    },
+    "Inquisitor's plateskirt": {
+        "itemID": "skip",
+        "imgSrc": "images/Inquisitor's_plateskirt.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Inquisitor%27s_plateskirt",
+        "goalType": "optional"
+    },
+    "Harmonised nightmare staff": {
+        "itemID": "skip",
+        "imgSrc": "images/Harmonised_nightmare_staff.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Harmonised_nightmare_staff",
+        "goalType": "optional"
+    },
     "Tumeken's shadow": {
         "itemID": "skip",
         "imgSrc": "images/Tumeken's_shadow.webp",
@@ -610,6 +640,30 @@
         "itemID": "skip",
         "imgSrc": "images/Scythe_of_vitur.webp",
         "wikiLink": "https://oldschool.runescape.wiki/w/Scythe_of_vitur",
+        "goalType": "long"
+    },
+    "Obligator": {
+        "itemID": "skip",
+        "imgSrc": "images/Obligator.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Obligator",
+        "goalType": "long"
+    },
+    "Zeal": {
+        "itemID": "skip",
+        "imgSrc": "images/Zeal.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Zeal",
+        "goalType": "long"
+    },
+    "Zorya's tome": {
+        "itemID": "skip",
+        "imgSrc": "images/Zorya's_tome.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Zorya's_tome",
+        "goalType": "long"
+    },
+    "Ascension crossbows": {
+        "itemID": "skip",
+        "imgSrc": "images/Ascension_crossbows.webp",
+        "wikiLink": "https://oldschool.runescape.wiki/w/Ascension_crossbows",
         "goalType": "long"
     },
     "Torva platebody": {
